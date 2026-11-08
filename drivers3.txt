@@ -1,0 +1,8 @@
+===linux-firmware===
+ii  linux-firmware                        20240318.git3b128b60.0ubuntu3.1                  all          Firmware for Linux kernel drivers (metapackage)
+ii  linux-firmware-amd-graphics           20240318.git3b128b60-0ubuntu3.3                  all          Firmware for AMD/ATI graphics
+ii  linux-firmware-amd-misc               20240318.git3b128b60-0ubuntu3.1                  all          Firmware for AMD NPU accelerators
+===mesa/gl libs===
+===radeontop/glxinfo===
+===lspci 无驱动设备===
+15

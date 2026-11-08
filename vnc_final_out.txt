@@ -1,0 +1,31 @@
+=== daemon-reload + vnc unit ===
+enabled: enabled
+active:  active
+=== 5900 listener ===
+LISTEN 0      32           0.0.0.0:5900      0.0.0.0:*          
+LISTEN 0      32              [::]:5900         [::]:*          
+=== install2 (第二批) ===
+inactive
+(install2 已结束)
+=== 中文语言包/字体 ===
+ii fonts-noto-cjk 1:20230817+repack1-3
+ii fonts-wqy-microhei 0.2.0-beta-3.1
+ii fonts-wqy-zenhei 0.9.45-8
+ii language-pack-zh-hans 1:24.04+20260905
+ii language-pack-zh-hans-base 1:24.04+20260905
+=== 实用软件包 ===
+htop OK
+neofetch OK
+git OK
+curl OK
+wget OK
+vim OK
+nano OK
+ffmpeg OK
+gparted OK
+gnome-disk-utility OK
+firefox OK
+mousepad OK
+xfce4-terminal OK
+
+[e][sudo] password for user: 

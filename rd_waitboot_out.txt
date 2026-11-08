@@ -1,0 +1,233 @@
+等待 75 秒让机器重启...
+Exception (client): Error reading SSH protocol banner[WinError 10054] 远程主机强迫关闭了一个现有的连接。
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 663, in _read_timeout
+    x = self.__socket.recv(128)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+[0] 等待中... SSHException
+Exception (client): Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 665, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+[1] 等待中... SSHException
+Exception (client): Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 665, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+[2] 等待中... SSHException
+Exception (client): Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[3] 等待中... SSHException
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 665, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+Exception (client): Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 665, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+[4] 等待中... SSHException
+Exception (client): Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 665, in _read_timeout
+    raise EOFError()
+[5] 等待中... SSHException
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+Exception (client): Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 665, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+[6] 等待中... SSHException
+Exception (client): Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 665, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+[7] 等待中... SSHException
+Exception (client): Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2213, in _check_banner
+    buf = self.packetizer.readline(timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 395, in readline
+    buf += self._read_timeout(timeout)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\packet.py", line 665, in _read_timeout
+    raise EOFError()
+EOFError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2029, in run
+    self._check_banner()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\transport.py", line 2217, in _check_banner
+    raise SSHException(
+        "Error reading SSH protocol banner" + str(e)
+    )
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+
+[8] 等待中... SSHException
+[9] 等待中... TimeoutError
+[10] 等待中... TimeoutError
+[11] 等待中... TimeoutError
+[12] 等待中... TimeoutError
+[13] 等待中... TimeoutError
+[14] 等待中... TimeoutError
+[15] 等待中... TimeoutError
+[16] 等待中... TimeoutError
+[17] 等待中... TimeoutError
+[18] 等待中... TimeoutError
+[19] 等待中... TimeoutError
+[20] 等待中... TimeoutError
+[21] 等待中... TimeoutError
+[22] 等待中... TimeoutError
+[23] 等待中... TimeoutError
+机器未在 4 分钟内连回，请检查

@@ -1,0 +1,38 @@
+=== lightdm RustDesk2.toml 当前内容 ===
+rendezvous_server = 'yc.445800773.xyz:21116'
+nat_type = 1
+serial = 0
+unlock_pin = ''
+trusted_devices = ''
+
+[options]
+key=[REDACTED]
+allow-linux-headless = 'Y'
+av1-test = 'Y'
+verification-method = 'use-permanent-password'
+custom-rendezvous-server = 'yc.445800773.xyz'
+local-ip-addr = '192.168.0.20'
+=== root RustDesk2.toml 当前内容 ===
+rendezvous_server = 'yc.445800773.xyz:21116'
+nat_type = 1
+serial = 0
+unlock_pin = ''
+trusted_devices = ''
+
+[options]
+key=[REDACTED]
+allow-linux-headless = 'Y'
+local-ip-addr = '192.168.0.20'
+custom-rendezvous-server = 'yc.445800773.xyz'
+av1-test = 'Y'
+verification-method = 'use-permanent-password'
+=== lightdm 能否读该文件 ===
+-rw------- 1 lightdm lightdm 336 Nov  2 08:27 /var/lib/lightdm/.config/rustdesk/RustDesk2.toml
+rendezvous_server = 'yc.445800773.xyz:21116'
+nat_type = 1
+=== 服务里 --server 到底读哪个配置（看 /proc/fd）===
+server pid=82875
+lrwxrwxrwx 1 lightdm lightdm 0 Nov  2 08:33 /proc/82875/cwd -> /
+l-wx------ 1 lightdm lightdm 64 Nov  2 08:33 3 -> /var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_rCURRENT.log
+=== DONE ===
+

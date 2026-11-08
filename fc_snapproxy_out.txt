@@ -1,0 +1,12 @@
+=== 给 snapd 配置代理加速 ===
+=== snap 代理配置 ===
+{
+	"proxy.http": "http://192.168.0.6:7897",
+	"proxy.https": "http://192.168.0.6:7897"
+}
+=== 重启 snapd 后 snap 继续安装 ===
+active
+=== snap 进度 ===
+5    Doing  今天 13:17 UTC  -             Install "freecad" snap
+=== DONE ===
+

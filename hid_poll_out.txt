@@ -1,0 +1,12 @@
+=== 安装日志尾部 ===
+正在安装 runtime/io.github.jeffshee.Hidamari.Locale/x86_64/stable
+正在安装 runtime/org.freedesktop.Platform.GL.default/x86_64/25.08
+正在安装 runtime/org.freedesktop.Platform.GL.default/x86_64/25.08-extra
+正在安装 runtime/org.freedesktop.Platform.codecs-extra/x86_64/25.08-extra
+正在安装 runtime/org.gnome.Platform.Locale/x86_64/50
+=== 是否已装好 ===
+Hidamari 翻译	io.github.jeffshee.Hidamari.Locale		stable	system
+--- 运行中的安装进程 ---
+263119 flatpak install -y --noninteractive flathub io.github.jeffshee.Hidamari
+=== DONE ===
+

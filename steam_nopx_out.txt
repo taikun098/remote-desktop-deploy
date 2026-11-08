@@ -1,0 +1,8 @@
+=== 还原 steam.desktop Exec ===
+Exec=/usr/games/steam %U
+=== 删除代理启动器 ===
+已删除 steam-px
+=== 停止当前带代理的 Steam ===
+
+[e] 已终止
+

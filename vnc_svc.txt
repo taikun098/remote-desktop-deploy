@@ -1,0 +1,20 @@
+===vnc.service===
+[Unit]
+Description=VNC Remote Desktop (Xvfb + xfce4 + x11vnc)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/vnc-start.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+===x11vnc path===
+/usr/bin/x11vnc
+===vnc active?===
+active
+===5900 listening===
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=2057,fd=8))                       
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=2057,fd=9))                       

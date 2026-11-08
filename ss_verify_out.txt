@@ -1,0 +1,13 @@
+=== 1) Web 管理界面可访问性 ===
+http://192.168.0.20:47990 -> HTTP 000
+=== 2) sunshine 日志：编码器/显示/DRM ===
+=== 3) 配置位置与关键项 ===
+/home/user/.config/sunshine
+/home/user/.config/sunshine/sunshine.conf
+/home/user/.config/sunshine/sunshine.log
+--- sunshine.conf 关键项 ---
+=== 4) 通过 EasyTier/内网可到达的地址提示 ===
+192.168.0.20/24
+10.1.0.20/24
+=== DONE ===
+

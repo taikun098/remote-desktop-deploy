@@ -1,0 +1,12 @@
+=== 解包日志 ===
+mkdir_p error: Permission denied
+=== 手动重试解包（到 /opt/orcaslicer/xr）===
+extract exit=0
+=== 若失败, 用 unsquashfs 直接解开 ===
+/usr/bin/unsquashfs
+=== 原 wrapper 内容（.steam 无关，看 /usr/local/bin 残留）===
+-rwxr-xr-x 1 root root 105 11月  2 13:53 /usr/local/bin/orcaslicer
+=== DONE ===
+
+[e] mkdir: 无法创建目录 "/opt/orcaslicer/xr": 权限不够
+

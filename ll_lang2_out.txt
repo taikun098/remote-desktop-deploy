@@ -1,0 +1,25 @@
+=== 商店程序目录里的翻译文件 ===
+=== 商店进程的 LANGUAGE/LC_* 环境 ===
+PID=134727
+QT_ACCESSIBILITY=1
+LANGUAGE=zh_CN:zh:en
+LC_ADDRESS=zh_CN.UTF-8
+LC_NAME=zh_CN.UTF-8
+LC_MONETARY=zh_CN.UTF-8
+GDM_LANG=en
+LC_PAPER=zh_CN.UTF-8
+LANG=zh_CN.UTF-8
+LC_IDENTIFICATION=zh_CN.UTF-8
+LC_TELEPHONE=zh_CN.UTF-8
+=== 商店 settings/选项 配置（找语言项）===
+总计 92
+drwxr-xr-x 5 root root  4096 11月  2 13:42 .
+drwxr-xr-x 5 root root  4096 11月  2 14:45 ..
+drwxr-xr-x 3 root root  4096 11月  2 13:42 data
+drwxr-xr-x 2 root root  4096 11月  2 13:42 lib
+drwxr-xr-x 2 root root  4096 11月  2 13:42 libexec
+-rw-r--r-- 1 root root  1073 10月  6 14:55 LICENSE
+-rwxr-xr-x 1 root root 59240 10月  6 14:55 linglong_store
+-rw-r--r-- 1 root root  6511 10月  6 14:55 logo.png
+=== DONE ===
+

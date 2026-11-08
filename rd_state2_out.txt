@@ -1,0 +1,19 @@
+=== rustdesk 服务状态 ===
+active
+=== rustdesk 进程 ===
+  31143 /usr/bin/rustdesk --service
+  43446 [rustdesk] <defunct>
+  56318 /usr/share/rustdesk/rustdesk --check-hwcodec-config
+=== 监听的 rustdesk 端口 (ss) ===
+LISTEN 4      128                *:21118            *:*    users:(("rustdesk",pid=67381,fd=18))                   
+UNCONN 0      0                                0.0.0.0:21119      0.0.0.0:*    users:(("rustdesk",pid=67381,fd=19))     
+=== 所有监听端口（找 rustdesk 相关）===
+LISTEN 4      128                *:21118            *:*    users:(("rustdesk",pid=67381,fd=18))                   
+UNCONN 6400   0                                0.0.0.0:56893      0.0.0.0:*    users:(("rustdesk",pid=67381,fd=20))     
+UNCONN 0      0                                0.0.0.0:21119      0.0.0.0:*    users:(("rustdesk",pid=67381,fd=19))     
+=== RustDesk 配置（中继/密钥）===
+key_pair = [
+key_confirmed = true
+[keys_confirmed]
+=== DONE ===
+

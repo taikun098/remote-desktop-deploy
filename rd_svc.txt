@@ -1,0 +1,11 @@
+===service===
+rustdesk.service                             enabled         enabled
+===running===
+33873 /usr/bin/rustdesk --service
+34038 sudo -E XDG_RUNTIME_DIR=/run/user/1000 -u user /usr/share/rustdesk/rustdesk --server
+34039 /usr/share/rustdesk/rustdesk --server
+34048 /usr/share/rustdesk/rustdesk --tray
+34389 bash -c echo '===service==='; systemctl list-unit-files 2>/dev/null | grep -i rustdesk || echo '(无 rustdesk systemd 服务)'; echo '===running==='; pgrep -fa rustdesk || echo '(rustdesk 未运行)'; echo '===config dir==='; ls ~/.config/rustdesk 2>/dev/null || echo '(无配置，首次启动会生成)'
+===config dir===
+RustDesk2.toml
+RustDesk.toml

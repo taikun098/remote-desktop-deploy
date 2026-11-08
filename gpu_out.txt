@@ -1,0 +1,8 @@
+C:\Users\user\Doubao\chats\2026-11-01\new-chat-2\gpu_check.py:16: SyntaxWarning: invalid escape sequence '\$'
+  run("echo '===session env==='; pid=$(pgrep -u user -f xfce4-session | head -1); echo pid=\$pid; tr '\\0' '\\n' < /proc/\$pid/environ | grep -E '^(DISPLAY|XAUTHORITY)='", sudo=False)
+### $ echo '===session env==='; pid=$(pgrep -u user -f xfce4-session | head -1); echo pid=\$pid; tr '\0' '\n' < /proc/\$pid/environ | grep -E '^(DISPLAY|XAUTHORITY)='
+===session env===
+pid=$pid
+[e] bash: line 1: /proc/$pid/environ: No such file or directory
+### $ echo 1 | sudo -S bash -c 'echo '\''===glxinfo on :1 (sudo, lightdm auth)==='\''; DISPLAY=:1 XAUTHORITY=/var/run/lightdm/root/:1 glxinfo 2>&1 | grep -iE '\''OpenGL renderer|OpenGL vendor|direct rendering'\'' | head -4'
+===glxinfo on :1 (sudo, lightdm auth)===

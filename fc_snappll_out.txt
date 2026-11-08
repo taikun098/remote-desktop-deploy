@@ -1,0 +1,33 @@
+snap freecad 安装已提交
+
+轮询00 fc-snap=active
+轮询04 fc-snap=active
+轮询08 fc-snap=active
+轮询12 fc-snap=active
+轮询16 fc-snap=active
+轮询20 fc-snap=active
+轮询24 fc-snap=active
+轮询28 fc-snap=active
+轮询32 fc-snap=active
+轮询36 fc-snap=active
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\channel.py", line 697, in recv
+    out = self.in_buffer.read(nbytes, self.timeout)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\buffered_pipe.py", line 154, in read
+    raise PipeTimeout()
+paramiko.buffered_pipe.PipeTimeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Doubao\chats\2026-11-01\new-chat-2\fc_snappll_run.py", line 18, in <module>
+    _,so,se=c.exec_command("bash /tmp/fc_snappll.sh", timeout=60); print(so.read().decode());
+                                                                         ~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\file.py", line 184, in read
+    new_data = self._read(self._DEFAULT_BUFSIZE)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\channel.py", line 1359, in _read
+    return self.channel.recv(size)
+           ~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\channel.py", line 699, in recv
+    raise socket.timeout()
+TimeoutError

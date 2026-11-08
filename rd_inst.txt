@@ -1,0 +1,16 @@
+
+Restarting services...
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ user @ session #3: sshd[1183]
+ user @ user manager service: systemd[1188]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+RC=True

@@ -1,0 +1,18 @@
+=== 1) 启用用户 linger（开机自启用户服务）===
+linger: Linger=yes
+=== 2) 检查用户 systemd 实例 ===
+drwx------ 16 user user 480 11月  2 14:45 /run/user/1000
+1679
+(用户 systemd 在跑)
+=== 3) 以 user 启用并启动 sunshine 用户服务 ===
+Created symlink /home/user/.config/systemd/user/xdg-desktop-autostart.target.wants/sunshine.service → /usr/lib/systemd/user/sunshine.service.
+--- 服务状态: active
+=== 4) 端口监听 ===
+LISTEN 0      4096         0.0.0.0:48010      0.0.0.0:*    users:(("sunshine",pid=164550,fd=17))                  
+LISTEN 0      4096         0.0.0.0:47990      0.0.0.0:*    users:(("sunshine",pid=164550,fd=32))                  
+=== 5) sunshine 进程 ===
+164510 timeout 40 bash -c  UID1000=$(id -u user) echo "=== 1) 启用用户 linger（开机自启用户服务）===" echo 1 | sudo -S loginctl enable-linger user 2>&1 | tail -1 echo "linger: $(loginctl show-user user -p Linger 2>/dev/null)" echo "=== 2) 检查用户 systemd 实例 ===" ls -ld /run/user/$UID1000 2>/dev/null pgrep -u user -f systemd | head -1 && echo "(用户 systemd 在跑)" || echo "(需启动)" echo "=== 3) 以 user 启用并启动 sunshine 用户服务 ===" echo 1 | sudo -S -u user env XDG_RUNTIME_DIR=/run/user/$UID1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID1000/bus \   systemctl --user enable --now sunshine 2>&1 | tail -3 sleep 4 echo "--- 服务状态: $(echo 1 | sudo -S -u user env XDG_RUNTIME_DIR=/run/user/$UID1000 systemctl --user is-active sunshine 2>/dev/null)" echo "=== 4) 端口监听 ===" echo 1 | sudo -S ss -tlnp 2>/dev/null | grep -E "47990|48010" | head echo "=== 5) sunshine 进程 ===" pgrep -af "sunshine$|sunshine /" | head -2 echo "=== 6) 日志关键行 ===" echo 1 | sudo -S journalctl --user -u sunshine --no-pager -n 15 2>/dev/null | grep -iE "error|fail|listen|bind|encoder|vaapi|drm|/dev/dri|display" | tail -10 echo "=== DONE ===" 
+164511 bash -c  UID1000=$(id -u user) echo "=== 1) 启用用户 linger（开机自启用户服务）===" echo 1 | sudo -S loginctl enable-linger user 2>&1 | tail -1 echo "linger: $(loginctl show-user user -p Linger 2>/dev/null)" echo "=== 2) 检查用户 systemd 实例 ===" ls -ld /run/user/$UID1000 2>/dev/null pgrep -u user -f systemd | head -1 && echo "(用户 systemd 在跑)" || echo "(需启动)" echo "=== 3) 以 user 启用并启动 sunshine 用户服务 ===" echo 1 | sudo -S -u user env XDG_RUNTIME_DIR=/run/user/$UID1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID1000/bus \   systemctl --user enable --now sunshine 2>&1 | tail -3 sleep 4 echo "--- 服务状态: $(echo 1 | sudo -S -u user env XDG_RUNTIME_DIR=/run/user/$UID1000 systemctl --user is-active sunshine 2>/dev/null)" echo "=== 4) 端口监听 ===" echo 1 | sudo -S ss -tlnp 2>/dev/null | grep -E "47990|48010" | head echo "=== 5) sunshine 进程 ===" pgrep -af "sunshine$|sunshine /" | head -2 echo "=== 6) 日志关键行 ===" echo 1 | sudo -S journalctl --user -u sunshine --no-pager -n 15 2>/dev/null | grep -iE "error|fail|listen|bind|encoder|vaapi|drm|/dev/dri|display" | tail -10 echo "=== DONE ===" 
+=== 6) 日志关键行 ===
+=== DONE ===
+

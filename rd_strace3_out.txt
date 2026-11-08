@@ -1,0 +1,22 @@
+---IPV4_CONNECT---
+82504 connect(23, {sa_family=AF_INET6, sin6_port=htons(53), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "2001:4860:4860::8888", &sin6_addr), sin6_scope_id=0}, 28) = -1 ENETUNREACH (Network is unreachable)
+82512 connect(33, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("162.159.207.0")}, 16 <unfinished ...>
+82512 connect(33, {sa_family=AF_INET6, sin6_port=htons(0), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "2606:4700:49::", &sin6_addr), sin6_scope_id=0}, 28) = -1 ENETUNREACH (Network is unreachable)
+82514 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("74.125.250.129")}, 16 <unfinished ...>
+82514 connect(29, {sa_family=AF_INET6, sin6_port=htons(0), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "2001:4860:4864:5:8000::1", &sin6_addr), sin6_scope_id=0}, 28 <unfinished ...>
+82516 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("5.39.72.109")}, 16 <unfinished ...>
+82516 connect(29, {sa_family=AF_INET6, sin6_port=htons(0), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "2001:41d0:8:8a6d::1", &sin6_addr), sin6_scope_id=0}, 28) = -1 ENETUNREACH (Network is unreachable)
+82517 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("46.225.95.169")}, 16 <unfinished ...>
+82517 connect(29, {sa_family=AF_INET6, sin6_port=htons(0), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "2a01:4f8:1c1e:d769::1", &sin6_addr), sin6_scope_id=0}, 28) = -1 ENETUNREACH (Network is unreachable)
+82506 connect(17, {sa_family=AF_INET, sin_port=htons(21116), sin_addr=inet_addr("36.102.85.112")}, 16 <unfinished ...>
+82506 connect(17, {sa_family=AF_INET, sin_port=htons(21115), sin_addr=inet_addr("36.102.85.112")}, 16) = -1 EINPROGRESS (Operation now in progress)
+82499 connect(18, {sa_family=AF_INET, sin_port=htons(21116), sin_addr=inet_addr("36.102.85.112")}, 16) = -1 EINPROGRESS (Operation now in progress)
+82507 connect(19, {sa_family=AF_INET, sin_port=htons(21114), sin_addr=inet_addr("36.102.85.112")}, 16) = -1 EINPROGRESS (Operation now in progress)
+82507 connect(19, {sa_family=AF_INET, sin_port=htons(21114), sin_addr=inet_addr("36.102.85.112")}, 16) = -1 EINPROGRESS (Operation now in progress)
+82507 connect(19, {sa_family=AF_INET, sin_port=htons(21114), sin_addr=inet_addr("36.102.85.112")}, 16) = -1 EINPROGRESS (Operation now in progress)
+---YC_IP---
+6
+---DNS_QUERIES_by_host---
+---getaddrinfo---
+0
+

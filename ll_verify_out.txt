@@ -1,0 +1,30 @@
+=== 商店桌面入口 ===
+Name=Linyaps Store Community Edition
+Name[ar]=متجر تطبيقات Linglong (الإصدار المجتمعي)
+Name[de]=Linyaps Store Community Edition
+Name[en]=Linyaps Store Community Edition
+Name[es]=Tienda de Aplicaciones Linyaps Edición Comunitaria
+Name[fr]=Linyaps Store Édition Communautaire
+Name[ja]=Linyaps ストアコミュニティ版
+Name[ko]=Linyaps 스토어 커뮤니티 에디션
+Name[ru]=Магазин Linyaps — версия сообщества
+Name[zh_CN]=玲珑应用商店社区版
+Name[zh_TW]=玲瓏應用商店社群版
+Exec=linglong-store %u
+Icon=linglong-store
+=== 商店二进制 ===
+/usr/bin/linglong-store
+/opt/linglong-store/libexec/linglong_store_helper
+/opt/linglong-store/linglong_store
+/usr/share/metainfo/linglong-store.appdata.xml
+/usr/bin/linglong-store
+=== ll-cli / 玲珑环境 ===
+=== 尝试启动商店（:0 物理屏，user）===
+进程: 73851 sudo -S -u user env DISPLAY=:0 XAUTHORITY=/home/user/.Xauthority /usr/bin/linglong-store
+73853 /opt/linglong-store/linglong_store
+商店GUI进程已启动
+--- GUI 日志 ---
+
+** (com.dongpl.linglong-store.v2:73853): WARNING **: 13:43:08.510: 系统强调色：ReadAll 调用失败: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.freedesktop.portal.Settings 的对象上没有“/org/freedesktop/portal/desktop”接口
+=== DONE ===
+

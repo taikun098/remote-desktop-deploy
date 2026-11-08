@@ -1,0 +1,31 @@
+=== 探查 deepin OBS release 仓库目录 ===
+href="../"
+href="Anolis_23.3/"
+href="Anolis_23.4/"
+href="Anolis_23.5/"
+href="Debian_12/"
+href="Debian_13/"
+href="Deepin_23.1/"
+href="Deepin_25/"
+href="Fedora_43/"
+href="Fedora_44/"
+href="Ubuntu_24.04/"
+href="Ubuntu_25.04/"
+href="Ubuntu_25.10/"
+href="Ubuntu_26.04/"
+href="openEuler_24.03/"
+href="openEuler_25.03/"
+href="openEuler_25.09/"
+href="openkylin_2.0/"
+href="openkylin_3.0/"
+href="uos_1070/"
+=== 试常见 xUbuntu 路径 ===
+xUbuntu_24.04 -> 404
+Ubuntu_24.04 -> 200
+xUbuntu_24.04/ -> 404
+24.04 -> 404
+=== Gitee 玲珑源 / 官方仓库查找 ===
+OpenAtom-Linyaps/sig-linyaps-simple-store
+OpenAtom-Linyaps/template-sig
+=== DONE ===
+

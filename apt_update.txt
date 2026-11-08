@@ -1,0 +1,25 @@
+Get:46 http://mirrors.aliyun.com/ubuntu noble-backports/multiverse amd64 Packages [748 B]
+Get:47 http://mirrors.aliyun.com/ubuntu noble-backports/multiverse Translation-en [340 B]
+Get:48 http://mirrors.aliyun.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:49 http://mirrors.aliyun.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:50 http://mirrors.aliyun.com/ubuntu noble-security/main amd64 Packages [1,146 kB]
+Get:51 http://mirrors.aliyun.com/ubuntu noble-security/main Translation-en [231 kB]
+Get:52 http://mirrors.aliyun.com/ubuntu noble-security/main amd64 Components [46.3 kB]
+Get:53 http://mirrors.aliyun.com/ubuntu noble-security/main amd64 c-n-f Metadata [11.9 kB]
+Get:54 http://mirrors.aliyun.com/ubuntu noble-security/restricted amd64 Packages [1,713 kB]
+Get:55 http://mirrors.aliyun.com/ubuntu noble-security/restricted Translation-en [392 kB]
+Get:56 http://mirrors.aliyun.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:57 http://mirrors.aliyun.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [444 B]
+Get:58 http://mirrors.aliyun.com/ubuntu noble-security/universe amd64 Packages [1,223 kB]
+Get:59 http://mirrors.aliyun.com/ubuntu noble-security/universe Translation-en [246 kB]
+Get:60 http://mirrors.aliyun.com/ubuntu noble-security/universe amd64 Components [76.2 kB]
+Get:61 http://mirrors.aliyun.com/ubuntu noble-security/universe amd64 c-n-f Metadata [24.2 kB]
+Get:62 http://mirrors.aliyun.com/ubuntu noble-security/multiverse amd64 Packages [45.4 kB]
+Get:63 http://mirrors.aliyun.com/ubuntu noble-security/multiverse Translation-en [12.1 kB]
+Get:64 http://mirrors.aliyun.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:65 http://mirrors.aliyun.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [468 B]
+Fetched 40.8 MB in 1min 18s (522 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+27 packages can be upgraded. Run 'apt list --upgradable' to see them.

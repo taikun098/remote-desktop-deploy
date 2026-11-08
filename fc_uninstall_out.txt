@@ -1,0 +1,21 @@
+=== 1) 卸载 snap freecad ===
+freecad 已移除（snap 数据快照已保存）
+snap freecad 已移除 ✅
+=== 2) 删除旧 AppImage /opt/freecad ===
+已删除 /opt/freecad ✅
+=== 3) 删除启动器软链 ===
+已删除 freecad/freecadcmd ✅
+=== 4) 删除桌面图标 ===
+已删除桌面图标 ✅
+=== 5) 删除用户配置 ===
+已删除 ~/.config/FreeCAD ✅
+=== 6) 查找其他 freecad 残留 ===
+/usr/share/applications/freecad.desktop
+=== 残留检查 ===
+/opt/freecad 不存在 ✅
+freecad/freecadcmd 不在 PATH ✅
+桌面无 freecad 图标 ✅
+=== 释放空间检查 ===
+/dev/mapper/ubuntu--vg-ubuntu--lv   98G   22G   72G   24% /
+=== DONE ===
+

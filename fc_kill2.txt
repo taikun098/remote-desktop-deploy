@@ -1,0 +1,6 @@
+===proc===
+dead
+===cfg===
+===fcdir===
+/root/.config/FreeCAD
+/root/.config/FreeCAD/FreeCAD.conf

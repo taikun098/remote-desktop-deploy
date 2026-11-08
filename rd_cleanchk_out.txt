@@ -1,0 +1,24 @@
+===Xorg===
+  24538 /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+  28001 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt8 -novtswitch
+  93565 bash -c echo 1 | sudo -S bash -c 'echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions; echo ===rustdesk-server===; ps -eo pid,args | grep "[r]ustdesk --server"; echo ===rustdesk服务===; systemctl is-active rustdesk.service'
+  93567 sudo -S bash -c echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions; echo ===rustdesk-server===; ps -eo pid,args | grep "[r]ustdesk --server"; echo ===rustdesk服务===; systemctl is-active rustdesk.service
+  93568 bash -c echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions; echo ===rustdesk-server===; ps -eo pid,args | grep "[r]ustdesk --server"; echo ===rustdesk服务===; systemctl is-active rustdesk.service
+===活动VT===
+tty8
+===会话===
+SESSION  UID USER   SEAT  TTY  STATE   IDLE SINCE
+    141 1000 user -     -    closing no   -
+    150 1000 user -     -    closing no   -
+    154 1000 user -     -    closing no   -
+    157 1000 user -     -    closing no   -
+    159 1000 user -     -    closing no   -
+    171 1000 user -     -    closing no   -
+    172 1000 user -     -    active  no   -
+     c5 1000 user seat0 tty7 online  no   -
+
+8 sessions listed.
+===rustdesk-server===
+===rustdesk服务===
+inactive
+

@@ -1,0 +1,12 @@
+### $ echo '===menu file==='; echo 1 | sudo -S cat /usr/share/applications/orcaslicer.desktop
+===menu file===
+1
+### $ echo '===launch on :1==='; DISPLAY=:1 XAUTHORITY=/home/user/.Xauthority nohup /usr/local/bin/orcaslicer >/tmp/orca_run2.log 2>&1 & echo LAUNCHED; sleep 18; echo '===process==='; pgrep -f 'orca-slicer' | head; echo '===log tail==='; tail -8 /tmp/orca_run2.log 2>/dev/null
+===launch on :1===
+LAUNCHED
+===process===
+26596
+26597
+===log tail===
+
+(orca-slicer:26597): Gtk-CRITICAL **: 03:15:26.727: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar

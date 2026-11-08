@@ -1,0 +1,45 @@
+Running as unit: i18n-install.service; invocation ID: 4b5e1fffa0ad4f2482c238992f92fe60
+已提交中文语言包安装任务
+
+[e] + systemctl reset-failed i18n-install
++ echo 1
++ sudo -S systemd-run --unit=i18n-install --collect --setenv=DEBIAN_FRONTEND=noninteractive bash -c 'apt-get install -y language-pack-zh-hans > /tmp/i18n_apt.log 2>&1'
++ echo 已提交中文语言包安装任务
+
+
+########## 轮询中文包安装 + 设置 locale ##########
+
+=== apt 日志尾部 ===
+Reading package lists...
+Building dependency tree...
+Reading state information...
+language-pack-zh-hans is already the newest version (1:24.04+20260905).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+=== language-pack-zh 已装？ ===
+ii  language-pack-zh-hans                          1:24.04+20260905                                 all          translation updates for language Simplified Chinese
+ii  language-pack-zh-hans-base                     1:24.04+20260905                                 all          translations for language Simplified Chinese
+=== zh_CN locale 已生成？ ===
+zh_CN.utf8
+zh_SG.utf8
+=== 写 /etc/default/locale 为中文 ===
+--- 写入结果 ---
+LANG=zh_CN.UTF-8
+LANGUAGE=zh_CN:zh:en
+LC_NUMERIC=zh_CN.UTF-8
+LC_TIME=zh_CN.UTF-8
+LC_MONETARY=zh_CN.UTF-8
+LC_PAPER=zh_CN.UTF-8
+LC_NAME=zh_CN.UTF-8
+LC_ADDRESS=zh_CN.UTF-8
+LC_TELEPHONE=zh_CN.UTF-8
+LC_MEASUREMENT=zh_CN.UTF-8
+LC_IDENTIFICATION=zh_CN.UTF-8
+=== 同步到 /etc/environment ===
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+LANG=zh_CN.UTF-8
+LANGUAGE=zh_CN:zh:en
+=== 立即生效验证（新 shell 内测试中文 locale）===
+  zh_CN.UTF-8... done
+Generation complete.
+=== DONE ===
+

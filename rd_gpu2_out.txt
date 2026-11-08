@@ -1,0 +1,38 @@
+=== GPU ===
+01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Polaris 20 XL [Radeon RX 580 2048SP] [1002:6fdf] (rev e7)
+	Subsystem: Dataland Polaris 20 XL [Radeon RX 580 2048SP] [1e7b:aa07]
+	Kernel driver in use: amdgpu
+	Kernel modules: amdgpu
+01:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Ellesmere HDMI Audio [Radeon RX 470/480 / 570/580/590] [1002:aaf0]
+=== amdgpu 模块 ===
+amdgpu              17182720  23
+amdxcp                 12288  1 amdgpu
+drm_exec               12288  1 amdgpu
+gpu_sched              61440  1 amdgpu
+drm_buddy              20480  1 amdgpu
+drm_suballoc_helper    16384  1 amdgpu
+drm_ttm_helper         12288  1 amdgpu
+ttm                   110592  2 amdgpu,drm_ttm_helper
+drm_display_helper    237568  1 amdgpu
+i2c_algo_bit           16384  1 amdgpu
+video                  77824  1 amdgpu
+=== /dev/dri ===
+total 0
+drwxr-xr-x   3 root root        100 Nov  1 23:49 .
+drwxr-xr-x  21 root root       4660 Nov  2 03:20 ..
+drwxr-xr-x   2 root root         80 Nov  1 23:49 by-path
+crw-rw----+  1 root video  226,   1 Nov  2 04:29 card1
+crw-rw----+  1 root render 226, 128 Nov  1 23:49 renderD128
+=== lightdm 组 ===
+uid=111(lightdm) gid=112(lightdm) groups=112(lightdm)
+=== vainfo (10s超时) ===
+timeout: failed to run command ‘vainfo’: No such file or directory
+(vainfo 无/超时)
+=== Xorg 进程 ===
+  24538 /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+  28001 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt8 -novtswitch
+=== DISPLAY :0 探测 (5s) ===
+=== DISPLAY :1 探测 (5s) ===
+xdpyinfo:  unable to open display ":1".
+DONE
+

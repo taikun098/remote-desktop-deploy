@@ -1,0 +1,27 @@
+玲珑商店下载安装已提交
+
+轮询00 ll-store=active
+ll-store 结束
+=== ll-store 状态 ===
+inactive
+=== journal 进度 ===
+11月 02 13:39:36 g01 bash[69930]: DOWNLOAD_FAIL
+11月 02 13:39:36 g01 bash[69930]: + ls -lh llstore.deb
+11月 02 13:39:36 g01 bash[70071]: ls: 无法访问 'llstore.deb': 没有那个文件或目录
+11月 02 13:39:36 g01 bash[70073]: ++ sha256sum llstore.deb
+11月 02 13:39:36 g01 bash[70074]: ++ awk '{print $1}'
+11月 02 13:39:36 g01 bash[70073]: sha256sum: llstore.deb: 没有那个文件或目录
+11月 02 13:39:36 g01 bash[69930]: + GOT=
+11月 02 13:39:36 g01 bash[69930]: + echo '本地sha: '
+11月 02 13:39:36 g01 bash[69930]: 本地sha:
+11月 02 13:39:36 g01 bash[69930]: + '[' '' '!=' E8DECF181BB82A7F9E15A1B6579498798DE79239B2A435453ABF7FE97E8BF8A9 ']'
+11月 02 13:39:36 g01 bash[69930]: + echo SHA_MISMATCH
+11月 02 13:39:36 g01 bash[69930]: SHA_MISMATCH
+11月 02 13:39:36 g01 bash[69930]: + exit 1
+11月 02 13:39:36 g01 systemd[1]: ll-store.service: Main process exited, code=exited, status=1/FAILURE
+11月 02 13:39:36 g01 systemd[1]: ll-store.service: Failed with result 'exit-code'.
+=== 校验点 ===
+=== 已装包 ===
+=== 桌面入口 ===
+=== DONE ===
+

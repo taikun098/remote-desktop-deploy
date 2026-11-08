@@ -1,0 +1,19 @@
+=== 是否已是挂载点 ===
+/dev/sdd1 on /var/lib/linglong type ext4 (rw,relatime)
+=== 谁占用 /var/lib/linglong ===
+                     用户     进程号 权限   命令
+/var/lib/linglong:   root     kernel mount /data
+=== linglong 相关 systemd 服务 ===
+  var-lib-linglong.mount                                                                                                  loaded    active   mounted   Bind for linglong root dir
+  linglong-store-gui.service                                                                                              loaded    active   running   /usr/bin/linglong-store
+  org.deepin.linglong.PackageManager.service                                                                              loaded    active   running   Linglong dbus service
+  snapd.system-shutdown.service                                                                                           loaded    inactive dead      Ubuntu core (all-snaps) system shutdown helper setup service
+=== linglong 相关进程 ===
+80644 /usr/libexec/linglong/ll-package-manager
+92118 /opt/linglong-store/linglong_store
+=== /data 挂载与可用空间 ===
+/dev/sdd1       458G  2.6G  432G    1% /data
+=== /var/lib/linglong 大小 ===
+2.6G	/var/lib/linglong
+=== DONE ===
+

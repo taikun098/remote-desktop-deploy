@@ -1,0 +1,51 @@
+=== 所有 translations 目录 ===
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations
+/opt/freecad/squashfs-root/usr/share/qt6/translations
+=== 查找 FreeCAD 主翻译（文件名含 FreeCAD 的 qm）===
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_uk.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_el.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_be.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_pt-BR.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_pl.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_ja.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_hr.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_fr.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_ka.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_pt-PT.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_es-CO.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_sr-CS.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_sr-SP.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_ca.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_da.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_es-ES.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_zh-CN.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_ru.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_it.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_cs.qm
+=== 所有含 zh/CN 的 qm 完整列表 ===
+23
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_zh-CN.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_zh-TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/designer_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtbase_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/designer_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/linguist_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/assistant_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtdeclarative_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtmultimedia_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtwebengine_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtconnectivity_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtmultimedia_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qt_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/linguist_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtdeclarative_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qt_help_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qt_help_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qt_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtlocation_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtserialport_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtbase_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtwebsockets_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/assistant_zh_TW.qm
+=== DONE ===
+

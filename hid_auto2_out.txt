@@ -1,0 +1,13 @@
+=== autostart 目录属主 ===
+drwxr-xr-x 2 root root 4096 11月  2 11:54 /home/user/.config/autostart
+=== 修正属主并写入 ===
+=== 验证 ===
+-rwxrwxr-x 1 user user 149 11月  3 00:31 /home/user/.config/autostart/hidamari.desktop
+[Desktop Entry]
+Type=Application
+Name=Hidamari
+Comment=Dynamic wallpaper
+Exec=flatpak run io.github.jeffshee.Hidamari
+X-GNOME-Autostart-enabled=true
+=== DONE ===
+

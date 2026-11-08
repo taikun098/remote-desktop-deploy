@@ -1,0 +1,75 @@
+=== kuwan/ 一层 ===
+总计 3344
+drwxr-xr-x 1 user user   4096  9月 12  2025 .
+drwxrwxrwx 1 user user   8192 10月 30 03:22 ..
+drwxr-xr-x 1 user user      0  8月 10  2025 0000
+drwxr-xr-x 1 user user      0  9月 12  2025 ._cache_KwGame.exe.WebView2
+drwxr-xr-x 1 user user      0  9月 12  2025 config
+-rwxr-xr-x 1 user user  13031  5月 26  2025 kw1.ico
+-rwxr-xr-x 1 user user 273408  7月 25  2025 KwGame.exe
+-rwxr-xr-x 1 user user    187  5月 19  2025 KwGame.exe.config
+drwxr-xr-x 1 user user      0  9月 12  2025 KwGame.exe.WebView2
+-rwxr-xr-x 1 user user 134656  6月  3  2025 KwGame.pdb
+-rwxr-xr-x 1 user user  26622  5月 26  2025 kw.ico
+-rwxr-xr-x 1 user user    762  9月  1  2025 kwlog_20250901.log
+-rwxr-xr-x 1 user user    762  9月  2  2025 kwlog_20250902.log
+-rwxr-xr-x 1 user user 632432  4月 28  2025 Microsoft.Web.WebView2.Core.dll
+-rwxr-xr-x 1 user user 566546  4月 28  2025 Microsoft.Web.WebView2.Core.xml
+-rwxr-xr-x 1 user user  38992  4月 28  2025 Microsoft.Web.WebView2.WinForms.dll
+-rwxr-xr-x 1 user user  41870  4月 28  2025 Microsoft.Web.WebView2.WinForms.xml
+-rwxr-xr-x 1 user user  82000  4月 28  2025 Microsoft.Web.WebView2.Wpf.dll
+-rwxr-xr-x 1 user user 142442  4月 28  2025 Microsoft.Web.WebView2.Wpf.xml
+-rwxr-xr-x 1 user user 711952  3月  8  2023 Newtonsoft.Json.dll
+-rwxr-xr-x 1 user user 713541  3月  8  2023 Newtonsoft.Json.xml
+drwxr-xr-x 1 user user      0  9月 12  2025 runtimes
+
+=== Playnite/ 一层 ===
+总计 276491
+drwxr-xr-x 1 user user     28672 11月  1 05:12 .
+drwxrwxrwx 1 user user      8192 10月 30 03:22 ..
+drwxr-xr-x 1 user user     20480  9月 11  2025 0000
+drwxr-xr-x 1 user user         0  7月 17  2025 a
+-rwxr-xr-x 1 user user   1223680 10月  7  2016 AngleSharp.dll
+drwxr-xr-x 1 user user         0 10月 30 13:04 Backup
+drwxr-xr-x 1 user user      4096 11月  1 05:12 browsercache
+drwxr-xr-x 1 user user         0  7月 17  2025 c
+-rwxr-xr-x 1 user user    940544  7月 19  2024 CefSharp.BrowserSubprocess.Core.dll
+-rwxr-xr-x 1 user user   9859072  7月 19  2024 CefSharp.BrowserSubprocess.Core.pdb
+-rwxr-xr-x 1 user user      7168  7月 19  2024 CefSharp.BrowserSubprocess.exe
+-rwxr-xr-x 1 user user     19968  7月 19  2024 CefSharp.BrowserSubprocess.pdb
+-rwxr-xr-x 1 user user    942080  7月 19  2024 CefSharp.Core.dll
+-rwxr-xr-x 1 user user   1399808  7月 19  2024 CefSharp.Core.Runtime.dll
+-rwxr-xr-x 1 user user  11005952  7月 19  2024 CefSharp.Core.Runtime.pdb
+-rwxr-xr-x 1 user user    593773  7月 19  2024 CefSharp.Core.Runtime.xml
+-rwxr-xr-x 1 user user    279552  7月 19  2024 CefSharp.dll
+-rwxr-xr-x 1 user user     42496  7月 19  2024 CefSharp.OffScreen.dll
+-rwxr-xr-x 1 user user    117760  7月 19  2024 CefSharp.Wpf.dll
+-rwxr-xr-x 1 user user    681818  7月 17  2024 chrome_100_percent.pak
+-rwxr-xr-x 1 user user   1066267  7月 17  2024 chrome_200_percent.pak
+-rwxr-xr-x 1 user user   1052160  7月 17  2024 chrome_elf.dll
+-rwxr-xr-x 1 user user    217088  5月  1  2020 CommandLine.dll
+-rwxr-xr-x 1 user user       570  1月 28  2025 Common.config
+-rwxr-xr-x 1 user user    243592  1月 28  2025 concrt140.dll
+-rwxr-xr-x 1 user user     13654 11月  1 05:12 config.json
+-rwxr-xr-x 1 user user       118  1月 28  2025 crash_reporter.cfg
+-rwxr-xr-x 1 user user      7680 12月  7  2017 Crc32.NET.dll
+-rwxr-xr-x 1 user user   4127224  6月 12  2024 d3dcompiler_47.dll
+-rwxr-xr-x 1 user user     79872  1月 28  2025 DiscordRPC.dll
+drwxr-xr-x 1 user user         0  4月 15  2025 Emulation
+drwxr-xr-x 1 user user         0  4月 15  2025 Extensions
+drwxr-xr-x 1 user user         0  4月 15  2025 ExtensionsData
+drwxr-xr-x 1 user user         0  9月 11  2025 ExtraMetadata
+-rwxr-xr-x 1 user user     22528  4月  4  2018 Flurl.dll
+-rwxr-xr-x 1 user user      1455 11月  1 05:12 fullscreenConfig.json
+-rwxr-xr-x 1 user user    559709  1月 28  2025 gamecontrollerdb.txt
+-rwxr-xr-x 1 user user     45056  4月  2  2016 Hardcodet.Wpf.TaskbarNotification.dll
+-rwxr-xr-x 1 user user    224256  1月 28  2025 HtmlRenderer.dll
+=== 游戏可执行文件抽样（kuwan 下前几个目录）===
+--- 0000 ---
+
+--- config ---
+
+--- KwGame.exe.WebView2 ---
+
+=== DONE ===
+

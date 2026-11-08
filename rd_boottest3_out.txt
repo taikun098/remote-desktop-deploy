@@ -1,0 +1,28 @@
+=== 开机时间 ===
+2026-11-02 11:33:07
+=== 桌面自动登录 ===
+活动终端: tty7
+user   tty7         2026-11-02 11:33 (:0)
+=== 自启服务总览 ===
+rustdesk   : active / enabled
+novnc      : active / enabled
+vnc        : active / enabled
+easytier   : active / enabled
+=== 端口监听 ===
+LISTEN 0      100          0.0.0.0:6080       0.0.0.0:*    users:(("websockify",pid=1330,fd=3))                   
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=1549,fd=8))                       
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=1549,fd=9))                       
+LISTEN 0      128                *:21118            *:*    users:(("rustdesk",pid=2021,fd=24))                    
+=== rustdesk 21118 握手 ===
+00000000: b04a 2a0a 206b 3736 7237 726b            .J*. k76r7rk
+=== 5900 VNC 握手 ===
+00000000: 5246 4220 3030 332e 3030 380a            RFB 003.008.
+=== EasyTier tun0 ===
+    inet 10.1.0.20/24 brd 10.1.0.255 scope global tun0
+=== rustdesk 日志尾 4 ===
+[2026-11-02 11:34:11.742705 +00:00] INFO [libs/enigo/src/linux/xdo.rs:100] xdo context created successfully
+[2026-11-02 11:34:11.742863 +00:00] INFO [libs/enigo/src/linux/xdo.rs:72] X11 pointer has 10 buttons, side buttons supported
+[2026-11-02 11:34:11.742870 +00:00] DEBUG [src/server/connection.rs:1315] Input thread exited
+[2026-11-02 11:34:11.756097 +00:00] WARN [src/server/connection.rs:1738] Audit post failed (attempt 1/3): unexpected response body: {"code":0,"message":"success","data":""}
+=== DONE ===
+

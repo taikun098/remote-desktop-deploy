@@ -1,0 +1,29 @@
+===Xorg===
+  24538 [Xorg] <defunct>
+  28001 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt8 -novtswitch
+  93813 bash -c echo 1 | sudo -S bash -c 'echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions; echo ===lightdm日志===; journalctl -u lightdm --no-pager -n 6 2>/dev/null | tail -6'
+  93815 sudo -S bash -c echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions; echo ===lightdm日志===; journalctl -u lightdm --no-pager -n 6 2>/dev/null | tail -6
+  93816 bash -c echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions; echo ===lightdm日志===; journalctl -u lightdm --no-pager -n 6 2>/dev/null | tail -6
+===活动VT===
+tty8
+===会话===
+SESSION  UID USER   SEAT  TTY  STATE   IDLE SINCE
+    141 1000 user -     -    closing no   -
+    150 1000 user -     -    closing no   -
+    154 1000 user -     -    closing no   -
+    157 1000 user -     -    closing no   -
+    159 1000 user -     -    closing no   -
+    171 1000 user -     -    closing no   -
+    174 1000 user -     -    closing no   -
+    175 1000 user -     -    active  no   -
+     c5 1000 user seat0 tty7 closing no   -
+
+9 sessions listed.
+===lightdm日志===
+Nov 02 09:22:09 g01 lightdm[24528]: Session pid=28244: Error writing to session: Broken pipe
+Nov 02 09:22:09 g01 lightdm[24528]: Session pid=28244: Error writing to session: Broken pipe
+Nov 02 09:22:09 g01 lightdm[24528]: Session pid=28244: Error writing to session: Broken pipe
+Nov 02 09:22:09 g01 lightdm[24528]: Session pid=28244: Error writing to session: Broken pipe
+Nov 02 09:22:09 g01 lightdm[24528]: Session pid=28244: Error writing to session: Broken pipe
+Nov 02 09:22:09 g01 lightdm[24528]: Session pid=28244: Error writing to session: Broken pipe
+

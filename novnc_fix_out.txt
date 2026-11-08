@@ -1,0 +1,41 @@
+=== vnc.service 状态 ===
+active
+=== 清理旧 websockify ===
+=== novnc.service 状态 ===
+active
+=== 5900 监听 ===
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=43185,fd=8))                      
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=43185,fd=9))                      
+=== 6080 监听 ===
+LISTEN 0      100          0.0.0.0:6080       0.0.0.0:*    users:(("websockify",pid=43334,fd=3))                  
+=== 本地 5900 VNC 握手（RFB banner）===
+00000000: 5246 4220 3030 332e 3030 380a            RFB 003.008.
+=== 通过 websockify 6080 能否代理到 5900（RFB banner）===
+HTTP: b'HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9oad7gtH4ahBwplKRKVqgyG'
+=== DONE ===
+
+[e] + cat
++ systemctl daemon-reload
++ systemctl enable vnc.service
++ systemctl restart vnc.service
++ sleep 3
++ echo '=== vnc.service 状态 ==='
++ systemctl is-active vnc.service
++ echo '=== 清理旧 websockify ==='
++ pkill -f 'websockify --web=/usr/share/novnc'
++ systemctl restart novnc.service
++ sleep 3
++ echo '=== novnc.service 状态 ==='
++ systemctl is-active novnc.service
++ echo '=== 5900 监听 ==='
++ ss -tlnp
++ grep 5900
++ echo '=== 6080 监听 ==='
++ ss -tlnp
++ grep 6080
++ echo '=== 本地 5900 VNC 握手（RFB banner）==='
++ timeout 3 bash -c 'exec 3<>/dev/tcp/127.0.0.1/5900; head -c 12 <&3 | xxd'
++ echo '=== 通过 websockify 6080 能否代理到 5900（RFB banner）==='
++ python3 -
++ echo '=== DONE ==='
+

@@ -1,0 +1,42 @@
+===unit===
+[Unit]
+Description=RustDesk
+Requires=network.target
+After=systemd-user-sessions.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rustdesk --service
+# kill --tray and --server both
+ExecStop=/usr/bin/pkill -f "rustdesk --"
+# below two lines do not work, have to use above one line
+#ExecStop=/usr/bin/pkill -f "rustdesk --tray"
+#ExecStop=/usr/bin/pkill -f "rustdesk --server"
+PIDFile=/run/rustdesk.pid
+KillMode=mixed
+TimeoutStopSec=30
+User=root
+LimitNOFILE=100000
+Environment="PULSE_LATENCY_MSEC=60" "PIPEWIRE_LATENCY=1024/48000"
+
+[Install]
+WantedBy=multi-user.target
+===cmdline===
+  33873 /usr/bin/rustdesk --service
+ 180527 sudo -E XDG_RUNTIME_DIR=/run/user/1000 -u user /usr/share/rustdesk/rustdesk --server
+ 180528 /usr/share/rustdesk/rustdesk --server
+ 180537 /usr/share/rustdesk/rustdesk --tray
+ 181129 bash -c echo '===unit==='; echo 1 | sudo -S cat /etc/systemd/system/rustdesk.service 2>/dev/null || echo 1 | sudo -S cat /usr/lib/systemd/system/rustdesk.service 2>/dev/null; echo '===cmdline==='; echo 1 | sudo -S ps -eo pid,cmd | grep -E '[r]ustdesk' | head; echo '===state==='; echo 1 | sudo -S systemctl status rustdesk --no-pager 2>&1 | head -12
+===state===
+● rustdesk.service - RustDesk
+     Loaded: loaded (/usr/lib/systemd/system/rustdesk.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-11-01 16:40:58 UTC; 7h ago
+   Main PID: 33873 (rustdesk)
+      Tasks: 55 (limit: 18860)
+     Memory: 41.0M (peak: 748.1M)
+        CPU: 24min 51.738s
+     CGroup: /system.slice/rustdesk.service
+             ├─ 33873 /usr/bin/rustdesk --service
+             ├─180527 sudo -E XDG_RUNTIME_DIR=/run/user/1000 -u user /usr/share/rustdesk/rustdesk --server
+             ├─180528 /usr/share/rustdesk/rustdesk --server
+             └─180537 /usr/share/rustdesk/rustdesk --tray

@@ -1,0 +1,9 @@
+=== 核心 FreeCAD 中文翻译文件 ===
+--- 主 translations 目录内容(采样) ---
+=== 用 sudo 建 freecadcmd 软链 ===
+lrwxrwxrwx 1 root root 45 11月  2 13:10 /usr/local/bin/freecadcmd -> /opt/freecad/squashfs-root/usr/bin/freecadcmd
+/usr/local/bin/freecadcmd
+=== 创建桌面菜单项 ===
+-rw-r--r-- 1 root root 239 11月  2 13:10 /usr/share/applications/freecad.desktop
+=== DONE ===
+

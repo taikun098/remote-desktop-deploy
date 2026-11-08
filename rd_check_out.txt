@@ -1,0 +1,34 @@
+=== 重启服务 ===
+=== 状态 ===
+active
+=== 21116 TCP/UDP 监听 ===
+(21116 TCP 未监听)
+(21116 UDP 未监听)
+=== 到 yc(36.102.85.112) 的全部连接 TCP+UDP ===
+ESTAB    0      0             192.168.0.20:43205 36.102.85.112:46139 users:(("easytier-core",pid=55290,fd=40))              
+SYN-SENT 0      1      192.168.0.20%enp2s0:38067 36.102.85.112:11011 users:(("easytier-core",pid=55290,fd=32))              
+(无 UDP 到 yc)
+=== rustdesk 全部 TCP 监听 ===
+(无)
+=== rustdesk 全部 UDP 监听 ===
+UNCONN 0      0                                0.0.0.0:36930      0.0.0.0:*    users:(("rustdesk",pid=82875,fd=18))     
+UNCONN 0      0                                0.0.0.0:21119      0.0.0.0:*    users:(("rustdesk",pid=82875,fd=19))     
+=== 进程 ===
+  43446 [rustdesk] <defunct>
+  82826 /usr/bin/rustdesk --service
+  82874 sudo -E XDG_RUNTIME_DIR=/run/user/111 -u lightdm /usr/share/rustdesk/rustdesk --server
+  82875 /usr/share/rustdesk/rustdesk --server
+  82883 /usr/share/rustdesk/rustdesk --tray
+=== 日志尾部 25 ===
+[2026-11-02 08:32:58.033105 +00:00] INFO [src/core_main.rs:394] start --service
+[2026-11-02 08:32:58.046897 +00:00] INFO [src/server/uinput.rs:1012] start uinput control service
+[2026-11-02 08:32:58.046909 +00:00] INFO [src/server/uinput.rs:1005] start uinput mouse service
+[2026-11-02 08:32:58.046911 +00:00] INFO [src/server/uinput.rs:998] start uinput keyboard service
+[2026-11-02 08:32:58.116054 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_control server at path: /tmp/RustDesk-service/ipc_uinput_control
+[2026-11-02 08:32:58.116064 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_mouse server at path: /tmp/RustDesk-service/ipc_uinput_mouse
+[2026-11-02 08:32:58.116074 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_keyboard server at path: /tmp/RustDesk-service/ipc_uinput_keyboard
+[2026-11-02 08:32:58.116104 +00:00] INFO [src/ipc.rs:723] Started protected ipc service server: postfix=_service
+[2026-11-02 08:33:04.331310 +00:00] INFO [src/platform/linux.rs:981] DISPLAY: :0
+[2026-11-02 08:33:04.331334 +00:00] INFO [src/platform/linux.rs:982] XAUTHORITY: /var/lib/lightdm/.Xauthority
+=== DONE ===
+

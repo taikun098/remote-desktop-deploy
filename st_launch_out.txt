@@ -1,0 +1,6 @@
+launched. steam PIDs:
+132454
+steam.sh[132346]: Running Steam on ubuntu 24.04 64-bit
+steam.sh[132346]: STEAM_RUNTIME is enabled automatically
+setup.sh[132384]: Steam runtime environment up-to-date!
+

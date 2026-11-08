@@ -1,0 +1,16 @@
+=== x11vnc 是否在跑 ===
+  24551 /usr/bin/x11vnc -display :1 -auth guess -forever -shared -noxdamage -repeat -rfbauth /etc/x11vnc.pass -rfbport 5900 -o /var/log/x11vnc.log
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=24551,fd=8))                      
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=24551,fd=9))                      
+=== novnc / websockify 是否已装 ===
+(未安装)
+(无 websockify 命令)
+(无 /usr/share/novnc)
+=== python3 / pip3 ===
+Python 3.12.3
+=== 当前在跑的 GUI 显示 ===
+tty8
+=== ufw 状态（若有）===
+Status: inactive
+=== DONE ===
+

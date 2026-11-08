@@ -1,0 +1,10 @@
+===DM unit===
+/lib/systemd/system/lightdm.service
+active
+===dm pkgs===
+ii  liblightdm-gobject-1-0:amd64                   1.30.0-0ubuntu14                                 amd64        LightDM GObject client library
+ii  lightdm                                        1.30.0-0ubuntu14                                 amd64        Display Manager
+===svc===
+active
+active
+active

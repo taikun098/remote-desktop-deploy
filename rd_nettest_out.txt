@@ -1,0 +1,11 @@
+=== firewall ===
+Status: inactive
+=== reachability ===
+36.102.84.142:21116 FAIL
+rs.rustdesk.com:21116 FAIL
+rs.rustdesk.com:21118 FAIL
+rs.rustdesk.com:21119 FAIL
+rs.rustdesk.com:443 FAIL
+=== DNS ===
+DNS FAIL for rs.rustdesk.com
+

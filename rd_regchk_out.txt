@@ -1,0 +1,28 @@
+=== 现在 21116 ===
+TCP未监听
+UDP未监听
+=== 当前配置 key（脱敏看前8位）===
+=== rendezvous 配置 ===
+rendezvous_server = 'yc.445800773.xyz:21116'
+custom-rendezvous-server = 'yc.445800773.xyz'
+=== rustdesk --server 进程状态 ===
+pid=2082
+State:	S (sleeping)
+VmRSS:	    7476 kB
+Threads:	1
+=== 完整日志行数 & 最后的 register/hbbs 相关行 ===
+24
+[2026-11-02 09:57:02.923117 +00:00] WARN [src/common.rs:2683] Failed to bind IPv6 socket: Network is unreachable (os error 101)
+[2026-11-02 09:57:02.960426 +00:00] ERROR [src/common.rs:2735] Failed to get public IPv6 address: UDP socket error
+[2026-11-02 09:57:05.989064 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+=== 日志最新 6 行 ===
+[2026-11-02 09:57:02.963872 +00:00] DEBUG [libs/hbb_common/src/udp.rs:36] Receive buf size of udp 0.0.0.0:0: Ok(212992)
+[2026-11-02 09:57:02.971793 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 6.834ms
+[2026-11-02 09:57:03.203085 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:523] set hwcodec config
+[2026-11-02 09:57:03.203110 +00:00] DEBUG [libs/scrap/src/common/hwcodec.rs:524] HwCodecConfig { signature: 0, ram_encode: [CodecInfo { name: "h264_vaapi", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_NONE }], ram_decode: [CodecInfo { name: "h264", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "h264", mc_name: None, format: H264, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }] }
+[2026-11-02 09:57:03.953060 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:742] Check hwcodec config, exit with: exit status: 0
+[2026-11-02 09:57:05.989064 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+=== DONE ===
+
+[e] sed: -e expression #1, char 29: unknown option to `s'
+

@@ -1,0 +1,28 @@
+### $ echo 1 | sudo -S cp /tmp/orca_wrapper.sh /usr/local/bin/orcaslicer && echo 1 | sudo -S chmod 755 /usr/local/bin/orcaslicer && cat /usr/local/bin/orcaslicer
+#!/bin/bash
+export DISPLAY=:1
+export XAUTHORITY=/home/user/.Xauthority
+exec /opt/orcaslicer/OrcaSlicer.AppImage "$@"
+Traceback (most recent call last):
+  File "C:\Users\user\Doubao\chats\2026-11-01\new-chat-2\orca_finish.py", line 37, in <module>
+    with sftp.open("/tmp/orcaslicer.desktop","w") as f: f.write(desktop)
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\sftp_client.py", line 372, in open
+    t, msg = self._request(CMD_OPEN, filename, imode, attrblock)
+             ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\sftp_client.py", line 856, in _request
+    num = self._async_request(type(None), t, *args)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\sftp_client.py", line 881, in _async_request
+    self._send_packet(t, msg)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\sftp.py", line 209, in _send_packet
+    self._write_all(out)
+    ~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\sftp.py", line 173, in _write_all
+    n = self.sock.send(out)
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\channel.py", line 799, in send
+    return self._send(s, m)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\user\AppData\Local\Doubao\User Data\sandbox_runtime\bases\772984f6fd3a8ae0ae7d2422cd7c2bfa\python\Lib\site-packages\paramiko\channel.py", line 1196, in _send
+    raise socket.error("Socket is closed")
+OSError: Socket is closed

@@ -1,0 +1,38 @@
+=== 旧 /usr/local/bin/freecad ===
+lrwxrwxrwx 1 root root 29 11月  1 17:16 /usr/local/bin/freecad -> /opt/freecad/FreeCAD.AppImage
+/usr/local/bin/freecad: symbolic link to /opt/freecad/FreeCAD.AppImage
+language set
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+=== user.cfg 语言项 ===
+/home/user/.config/FreeCAD/v1-1/user.cfg
+          <FCText Name="Language">Chinese (Simplified)</FCText>
+        </FCParamGroup>
+        <FCParamGroup Name="Units"/>
+=== 翻译文件存在？ ===
+=== DONE ===
+
+[e] + SQUASH=/opt/freecad/squashfs-root
++ echo '=== 旧 /usr/local/bin/freecad ==='
++ ls -la /usr/local/bin/freecad
++ file /usr/local/bin/freecad
++ '[' -e /usr/local/bin/freecad ']'
++ '[' '!' -L /usr/local/bin/freecad ']'
++ cat
++ echo 1
++ sudo -S -u user env LD_LIBRARY_PATH=/opt/freecad/squashfs-root/usr/lib HOME=/home/user QT_QPA_PLATFORM=offscreen /opt/freecad/squashfs-root/usr/bin/freecadcmd /tmp/fcsetlang.py
++ tail -6
++ echo '=== user.cfg 语言项 ==='
++ find /home/user/.config/FreeCAD -name user.cfg
++ head -6
+++ find /home/user/.config/FreeCAD -name user.cfg
+++ head -1
++ grep -A2 -i Language /home/user/.config/FreeCAD/v1-1/user.cfg
++ echo '=== 翻译文件存在？ ==='
++ ls /opt/freecad/squashfs-root/usr/share/freecad/translations/
++ grep -iE 'zh_CN|zh_TW'
++ head
++ echo '=== DONE ==='
+

@@ -1,0 +1,36 @@
+===cleanup done===
+===user.cfg===
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FCParameters>
+  <FCParamGroup Name="Root">
+    <FCParamGroup Name="BaseApp">
+      <FCParamGroup Name="LogLevels">
+        <FCInt Name="Default" Value="2"/>
+      </FCParamGroup>
+      <FCParamGroup Name="Preferences">
+        <FCParamGroup Name="General">
+          <FCText Name="Language">Chinese (Simplified)</FCText>
+        </FCParamGroup>
+        <FCParamGroup Name="Units"/>
+        <FCParamGroup Name="Macro"/>
+        <FCParamGroup Name="Mod">
+          <FCParamGroup Name="OpenSCAD"/>
+          <FCParamGroup Name="CAM"/>
+          <FCParamGroup Name="Path"/>
+        </FCParamGroup>
+      </FCParamGroup>
+    </FCParamGroup>
+  </FCParamGroup>
+
+</FCParameters>
+===opt freecad===
+total 801588
+drwxr-xr-x 2 root root      4096 Nov  1 17:18 .
+drwxr-xr-x 4 root root      4096 Nov  1 16:57 ..
+-rwxr-xr-x 1 root root 820812280 Nov  1 17:03 FreeCAD.AppImage
+===edge ver===
+Microsoft Edge 156.0.4314.58 
+===freecad link===
+-rwxr-xr-x 1 root root 165 Nov  1 16:57 /usr/local/bin/edge
+lrwxrwxrwx 1 root root  29 Nov  1 17:16 /usr/local/bin/freecad -> /opt/freecad/FreeCAD.AppImage
+[sudo] password for user: 

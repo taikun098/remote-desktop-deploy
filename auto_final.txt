@@ -1,0 +1,15 @@
+===who on Xorg :1===
+   8694 root     /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+===desktop sessions===
+root        1341 xfce4-session
+root        1345 dbus-launch --exit-with-session xfce4-session
+root        1379 xfwm4 --display :0.0 --sm-client-id 290428608-ccf9-4bdc-9b95-b72e4031e30c
+===log tail===
+Nov 02 00:01:13 g01 systemd[1]: Stopping lightdm.service - Light Display Manager...
+Nov 02 00:01:13 g01 systemd[1]: lightdm.service: Deactivated successfully.
+Nov 02 00:01:13 g01 systemd[1]: Stopped lightdm.service - Light Display Manager.
+Nov 02 00:01:14 g01 systemd[1]: Starting lightdm.service - Light Display Manager...
+Nov 02 00:01:14 g01 systemd[1]: Started lightdm.service - Light Display Manager.
+Nov 02 00:01:14 g01 lightdm[8723]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 02 00:01:14 g01 lightdm[8723]: gkr-pam: couldn't unlock the login keyring.
+Nov 02 00:01:14 g01 lightdm[8792]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" was met by user "user"

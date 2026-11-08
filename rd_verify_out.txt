@@ -1,0 +1,34 @@
+等待 rustdesk 初始化 60 秒...
+===Xorg===
+   1384 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   5701 bash -c echo 1 | sudo -S bash -c 'echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions | grep -iE "active|online"; echo ===rustdesk进程===; ps -eo pid,user,args | grep "[r]ustdesk" | grep -vE "grep"; echo ===21116===; ss -tlnp 2>/dev/null | grep 21116 || echo TCP未监听; ss -ulnp 2>/dev/null | grep 21116 || echo UDP未监听; echo ===全部监听===; ss -tlnp 2>/dev/null | grep rustdesk; echo ===--server日志尾部===; sudo -u lightdm tail -12 /var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_rCURRENT.log 2>/dev/null'
+   5703 sudo -S bash -c echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions | grep -iE "active|online"; echo ===rustdesk进程===; ps -eo pid,user,args | grep "[r]ustdesk" | grep -vE "grep"; echo ===21116===; ss -tlnp 2>/dev/null | grep 21116 || echo TCP未监听; ss -ulnp 2>/dev/null | grep 21116 || echo UDP未监听; echo ===全部监听===; ss -tlnp 2>/dev/null | grep rustdesk; echo ===--server日志尾部===; sudo -u lightdm tail -12 /var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_rCURRENT.log 2>/dev/null
+   5705 bash -c echo ===Xorg===; ps -eo pid,args | grep "[X]org"; echo ===活动VT===; cat /sys/class/tty/tty0/active; echo ===会话===; loginctl list-sessions | grep -iE "active|online"; echo ===rustdesk进程===; ps -eo pid,user,args | grep "[r]ustdesk" | grep -vE "grep"; echo ===21116===; ss -tlnp 2>/dev/null | grep 21116 || echo TCP未监听; ss -ulnp 2>/dev/null | grep 21116 || echo UDP未监听; echo ===全部监听===; ss -tlnp 2>/dev/null | grep rustdesk; echo ===--server日志尾部===; sudo -u lightdm tail -12 /var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_rCURRENT.log 2>/dev/null
+===活动VT===
+tty7
+===会话===
+      3 1000 user -     -    active no   -
+     c1 1000 user seat0 tty7 active no   -
+===rustdesk进程===
+   1363 root     /usr/bin/rustdesk --service
+   2082 root     sudo -E XDG_RUNTIME_DIR=/run/user/1000 -u user /usr/share/rustdesk/rustdesk --server
+   2083 user   /usr/share/rustdesk/rustdesk --server
+   2101 user   /usr/share/rustdesk/rustdesk --tray
+===21116===
+TCP未监听
+UDP未监听
+===全部监听===
+===--server日志尾部===
+[2026-11-02 08:52:45.354815 +00:00] ERROR [src/common.rs:2735] Failed to get public IPv6 address: UDP socket error
+[2026-11-02 08:52:45.370660 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21116: port=32841
+[2026-11-02 08:52:45.386326 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21115: port=32841
+[2026-11-02 08:52:45.386360 +00:00] INFO [src/common.rs:760] Tested nat type: ASYMMETRIC in 33.63981ms
+[2026-11-02 08:52:45.389287 +00:00] INFO [libs/scrap/src/common/codec.rs:1046] skip test av1
+[2026-11-02 08:52:45.389301 +00:00] INFO [src/lan.rs:31] lan discovery listener started
+[2026-11-02 08:52:45.389327 +00:00] INFO [src/rendezvous_mediator.rs:659] start rendezvous mediator of yc.445800773.xyz
+[2026-11-02 08:52:45.389616 +00:00] INFO [src/rendezvous_mediator.rs:369] start udp: yc.445800773.xyz:21116
+[2026-11-02 08:52:45.398768 +00:00] DEBUG [libs/hbb_common/src/udp.rs:36] Receive buf size of udp 0.0.0.0:0: Ok(212992)
+[2026-11-02 08:52:45.405705 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 5.836ms
+[2026-11-02 08:52:48.416643 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+[2026-11-02 08:53:15.384705 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:745] Check hwcodec config, status not ready yet, let's really wait
+

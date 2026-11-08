@@ -1,0 +1,2 @@
+[sudo] password for user: Running as unit: vnc-install2.service; invocation ID: fb557c3466eb4d47a729f9a7749705f7
+LAUNCHED_RC=True

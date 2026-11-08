@@ -1,0 +1,35 @@
+=== 当前 fcitx5 profile ===
+[Groups/0]
+# Group Name
+Name=默认
+# Layout
+Default Layout=us
+# Default Input Method
+DefaultIM=pinyin
+
+[Groups/0/Items/0]
+# Name
+Name=keyboard-us
+# Layout
+Layout=
+
+[Groups/0/Items/1]
+# Name
+Name=pinyin
+# Layout
+Layout=
+
+[GroupOrder]
+0=默认
+
+=== fcitx5 自启入口 ===
+(无自启入口)
+=== im-config 当前 ===
+# im-config(8) generated on Sun, 30 Mar 2014 02:45:02 +0900
+run_im default
+# im-config signature: d57688c8151277a0c25d15aa0523da6b  -
+/usr/bin/im-config
+=== 当前 IM 环境变量 ===
+(环境变量未设)
+=== DONE ===
+

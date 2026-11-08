@@ -1,0 +1,27 @@
+=== 单元状态 ===
+inactive
+=== journal 尾部 ===
+11月 02 12:40:38 g01 bash[19261]: ERROR: ppa 'freecad-maintainers/freecad-ppa' not found (use --login if private)
+11月 02 12:40:39 g01 bash[18820]: + apt-get update
+11月 02 12:40:39 g01 bash[19417]: Hit:1 http://mirrors.aliyun.com/ubuntu noble InRelease
+11月 02 12:40:39 g01 bash[19417]: Hit:2 http://mirrors.aliyun.com/ubuntu noble-updates InRelease
+11月 02 12:40:39 g01 bash[19417]: Hit:3 http://mirrors.aliyun.com/ubuntu noble-backports InRelease
+11月 02 12:40:39 g01 bash[19417]: Hit:4 http://mirrors.aliyun.com/ubuntu noble-security InRelease
+11月 02 12:40:39 g01 bash[19417]: Hit:5 https://packages.microsoft.com/repos/edge-stable stable InRelease
+11月 02 12:40:40 g01 bash[19417]: Reading package lists...
+11月 02 12:40:40 g01 bash[18820]: + apt-get install -y freecad steam-installer libfuse2
+11月 02 12:40:40 g01 bash[19652]: Reading package lists...
+11月 02 12:40:40 g01 bash[19652]: Building dependency tree...
+11月 02 12:40:40 g01 bash[19652]: Reading state information...
+11月 02 12:40:40 g01 bash[19652]: Package freecad is not available, but is referred to by another package.
+11月 02 12:40:40 g01 bash[19652]: This may mean that the package is missing, has been obsoleted, or
+11月 02 12:40:40 g01 bash[19652]: is only available from another source
+11月 02 12:40:40 g01 bash[19652]: E: Package 'freecad' has no installation candidate
+11月 02 12:40:40 g01 bash[18820]: + echo '=== INSTALL_DONE ==='
+11月 02 12:40:40 g01 bash[18820]: === INSTALL_DONE ===
+11月 02 12:40:40 g01 systemd[1]: fcsteam-install.service: Deactivated successfully.
+11月 02 12:40:40 g01 systemd[1]: fcsteam-install.service: Consumed 5.483s CPU time.
+=== 已装关键包 ===
+=== DONE ===
+
+单元状态: inactive（安装已结束）

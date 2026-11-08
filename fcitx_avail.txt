@@ -1,0 +1,95 @@
+fcitx5-anthy - Fcitx5 wrapper for Anthy IM engine
+fcitx5-bamboo - Bamboo (Vietnamese Input Method) engine support for Fcitx
+fcitx5-chewing - Chewing input method support for fcitx5
+fcitx5-chinese-addons-bin - Chinese-related addon for fcitx5 (binary tools)
+fcitx5-chinese-addons - Chinese-related addon for fcitx5 (metapackage)
+fcitx5-chinese-addons-data - Chinese-related addon for fcitx5 (shared data files)
+fcitx5-config-qt - configuration tool for Fcitx5 (Qt version)
+fcitx5-data - Fcitx Input Method Framework v5 (common data files)
+fcitx5-frontend-all - Fcitx Input Method Framework v5 (IM Module Metapackage)
+fcitx5-frontend-fbterm - FbTerm frontend for fcitx5
+fcitx5-frontend-gtk2 - GTK2 IM Module for fcitx5
+fcitx5-frontend-gtk3 - GTK3 IM Module for fcitx5
+fcitx5-frontend-gtk4 - GTK4 IM Module for fcitx5
+fcitx5-frontend-qt5 - Qt5 IM module for fcitx5
+fcitx5-frontend-qt6 - Qt6 IM module for fcitx5
+fcitx5-frontend-tmux - Tmux fcitx5 client
+fcitx5-hangul - Hangul input method wrapper for fcitx5
+fcitx5-jyutping - Fcitx5 libime implementation of jyutping input method
+fcitx5-keyman - Fcitx5 wrapper for Keyman keyboarding platform
+fcitx5-kkc - Fcitx5 wrapper for libkkc IM engine
+fcitx5-libthai - Thai input method engine for Fcitx5 based on LibThai
+fcitx5-m17n - m17n support module for Fcitx5 Input Method Framework
+fcitx5-material-color - UI theme for fcitx5 following Material Design
+fcitx5-module-chttrans - Fcitx Input Method Framework v5 (chttrans module)
+fcitx5-module-cloudpinyin-dev - Development files for fcitx5 cloudpinyin module
+fcitx5-module-cloudpinyin - Fcitx Input Method Framework v5 (cloudpinyin module)
+fcitx5-module-fullwidth - Fcitx Input Method Framework v5 (fullwidth module)
+fcitx5-module-lua-common - Lua support for fcitx5 (common files)
+fcitx5-module-lua-dev - Lua support for fcitx5 (development files)
+fcitx5-module-lua - Lua support for fcitx5
+fcitx5-module-pinyinhelper-dev - Development files for fcitx5 pinyinhelper module
+fcitx5-module-pinyinhelper - Fcitx Input Method Framework v5 (pinyinhelper module)
+fcitx5-module-punctuation-dev - Development files for fcitx5 punctuation module
+fcitx5-module-punctuation - Fcitx Input Method Framework v5 (punctuation module)
+fcitx5-modules-dev - Fcitx Input Method Framework v5 (input modules dev files)
+fcitx5-modules - Fcitx Input Method Framework v5 (core modules)
+fcitx5-mozc - Mozc engine for fcitx5 - Client of the Mozc input method
+fcitx5 - Next generation of Fcitx Input Method Framework
+fcitx5-pinyin - Fcitx Input Method Framework v5 (builtin pinyin support)
+fcitx5-pinyin-gui - Fcitx Input Method Framework v5 (builtin pinyin GUI tools)
+fcitx5-quwei - Fcitx Input Method Framework v5 (Qu Wei input method)
+fcitx5-rime - Rime input method support for fcitx5
+fcitx5-sayura - Fcitx5 wrapper for Sayura IM engine
+fcitx5-skin-nord - Fcitx5 theme based on Nord color
+fcitx5-skk - Japanese SKK input engine for Fcitx5
+fcitx5-solarized - Fcitx5 theme based on solarized color
+fcitx5-table-amharic - Flexible Input Method Framework v5 - Amharic table
+fcitx5-table-arabic - Flexible Input Method Framework v5 - Arabic table
+fcitx5-table-array30 - Flexible Input Method Framework v5 - Array30 table
+fcitx5-table-array30-large - Flexible Input Method Framework v5 - Array30-Large table
+fcitx5-table-boshiamy - Flexible Input Method Framework v5 - Boshiamy table
+fcitx5-table-cangjie3 - Flexible Input Method Framework v5 - Cangjie3 table
+fcitx5-table-cangjie5 - Flexible Input Method Framework v5 - Cangjie5 table
+fcitx5-table-cangjie-large - Flexible Input Method Framework v5 - Cangjie-Large table
+fcitx5-table-cantonese - Flexible Input Method Framework v5 - Cantonese table
+fcitx5-table-cantonhk - Flexible Input Method Framework v5 - Cantonhk table
+fcitx5-table-cns11643 - Flexible Input Method Framework v5 - Cns11643 table
+fcitx5-table-compose - Flexible Input Method Framework v5 - Compose table
+fcitx5-table-easy-large - Flexible Input Method Framework v5 - Easy-Large table
+fcitx5-table-emoji - Flexible Input Method Framework v5 - Emoji table
+fcitx5-table-extra - Additional table based input method for Fcitx 5
+fcitx5-table - Fcitx Input Method Framework v5 (builtin table support)
+fcitx5-table-ipa-x-sampa - Flexible Input Method Framework v5 - IPA-X-SAMPA table
+fcitx5-table-jyutping - Flexible Input Method Framework v5 - Jyutping table
+fcitx5-table-latex - Flexible Input Method Framework v5 - LaTeX table
+fcitx5-table-malayalam-phonetic - Flexible Input Method Framework v5 - Malayalam phonetic table
+fcitx5-table-other - Additional table based input method for Fcitx 5
+fcitx5-table-quick3 - Flexible Input Method Framework v5 - Quick3 table
+fcitx5-table-quick5 - Flexible Input Method Framework v5 - Quick5 table
+fcitx5-table-quick-classic - Flexible Input Method Framework v5 - Quick-Classic table
+fcitx5-table-rustrad - Flexible Input Method Framework v5 - Rustrad table
+fcitx5-table-scj6 - Flexible Input Method Framework v5 - Scj6 table
+fcitx5-table-stroke5 - Flexible Input Method Framework v5 - Stroke5 table
+fcitx5-table-t9 - Flexible Input Method Framework v5 - T9 table
+fcitx5-table-tamil-remington - Flexible Input Method Framework v5 - Tamil Remington table
+fcitx5-table-thai - Flexible Input Method Framework v5 - Thai table
+fcitx5-table-translit - Flexible Input Method Framework v5 - Translit table
+fcitx5-table-translit-ua - Flexible Input Method Framework v5 - Ukrainian Translit table
+fcitx5-table-viqr - Flexible Input Method Framework v5 - Viqr table
+fcitx5-table-wubi98 - Flexible Input Method Framework v5 - Wubi98 table
+fcitx5-table-wubi98-pinyin - Flexible Input Method Framework v5 - Wubi98-Pinyin table
+fcitx5-table-wubi98-single - Flexible Input Method Framework v5 - Wubi98-Single table
+fcitx5-table-wubi-large - Flexible Input Method Framework v5 - Wubi-Large table
+fcitx5-table-wu - Flexible Input Method Framework v5 - Wu table
+fcitx5-table-yawerty - Flexible Input Method Framework v5 - Yawerty table
+fcitx5-table-zhengma - Flexible Input Method Framework v5 - Zhengma table
+fcitx5-table-zhengma-large - Flexible Input Method Framework v5 - Zhengma-Large table
+fcitx5-table-zhengma-pinyin - Flexible Input Method Framework v5 - Zhengma-Pinyin table
+fcitx5-unikey - Vietnamese Input Method Engine for Fcitx5 using Unikey Engine
+fcitx5-zhuyin - Libzhuyin Wrapper for Fcitx5
+libime-data-jyutping - Fcitx5 libime implementation of jyutping input method (data)
+libime-data-jyutping-language-model - Fcitx5 libime implementation of jyutping input method (model)
+libimejyutping1 - Fcitx5 libime implementation of jyutping input method (lib)
+libime-jyutping-bin - Fcitx5 libime implementation of jyutping input method (tools)
+libimejyutping-dev - Fcitx5 libime implementation of jyutping input method (dev)

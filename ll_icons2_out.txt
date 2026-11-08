@@ -1,0 +1,28 @@
+=== linglong 应用 desktop 源目录 ===
+bilibili.desktop
+io.github.leleya-x.linyaps-seal.desktop
+mimeinfo.cache
+motrix.desktop
+wechat.desktop
+=== 同步到 ~/Desktop ===
+添加: bilibili.desktop
+添加: io.github.leleya-x.linyaps-seal.desktop
+添加: motrix.desktop
+添加: wechat.desktop
+共新增 4 个
+=== 桌面 desktop 最终 ===
+426 /home/user/Desktop/bilibili.desktop
+2530 /home/user/Desktop/com.dongpl.linglong-store.v2.desktop
+1202 /home/user/Desktop/freecad_freecad.desktop
+1666 /home/user/Desktop/io.github.leleya-x.linyaps-seal.desktop
+8187 /home/user/Desktop/microsoft-edge.desktop
+515 /home/user/Desktop/motrix.desktop
+193 /home/user/Desktop/Wallpaper
+381 /home/user/Desktop/wechat.desktop
+=== 微信 desktop 内容（确认能启动）===
+Name=wechat
+Name[zh_CN]=微信
+Exec=/usr/bin/ll-cli run com.tencent.wechat --url %U -- -- /opt/apps/com.tencent.wechat/files/bin/com.tencent.wechat %%U
+TryExec=/usr/bin/ll-cli
+=== DONE ===
+

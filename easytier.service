@@ -1,0 +1,13 @@
+[Unit]
+Description=EasyTier P2P VPN (g01, network lw)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/easytier-core --network-name lw --network-secret admin@8897802. -i 10.1.0.20 -p tcp://60.31.207.20:11011 tcp://yc.445800773.xyz:11011 --instance-name g01 --multi-thread true --bind-device true
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

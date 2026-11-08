@@ -1,0 +1,13 @@
+launched
+===proc===
+46258
+46267
+46268
+===log===
+method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[46258:46258:1101/171740.391039:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[46258:46277:1101/171740.391103:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[46258:46258:1101/171740.403092:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[46258:46277:1101/171740.403449:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[46258:46258:1101/171740.422014:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[46258:46258:1101/171740.537300:ERROR:CONSOLE:51] "Uncaught TypeError: Cannot read properties of undefined (reading 'importerType')", source: edge://welcome-edge/bundle.js (51)

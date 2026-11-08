@@ -1,0 +1,7 @@
+11629 apt install -y xfce4 xfce4-goodies x11vnc xvfb dbus-x11
+12190 /usr/bin/dpkg --status-fd 43 --no-triggers --unpack --auto-deconfigure --recursive /tmp/apt-dpkg-install-cy4CtN
+12193 /bin/sh /usr/lib/needrestart/dpkg-status
+[sudo] password for user: dpkg: error: dpkg frontend lock was locked by another process with pid 11629
+Note: removing the lock file is always wrong, can damage the locked area
+and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ#db-lock>.
+CONFIGURE_RC=True

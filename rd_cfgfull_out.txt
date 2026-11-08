@@ -1,0 +1,77 @@
+=== 生成的 TOML 内容 ===
+rendezvous_server = 'yc.445800773.xyz:21116'
+relay_server = 'yc.445800773.xyz:21116'
+api_server = 'http://yc.445800773.xyz:21114'
+nat_type = 2
+serial = 0
+unlock_pin = ''
+trusted_devices = ''
+
+[options]
+av1-test = 'Y'
+local-ip-addr = '192.168.0.20'
+custom-rendezvous-server = 'yc.445800773.xyz'
+key = 'Or36bSikmefnl+vTHhlXeuPcZq8VaxRLJJdzSlMlI9M='
+verification-method = 'use-permanent-password'
+allow-linux-headless = 'Y'
+=== 校验 root 配置 ===
+rendezvous_server = 'yc.445800773.xyz:21116'
+relay_server = 'yc.445800773.xyz:21116'
+api_server = 'http://yc.445800773.xyz:21114'
+nat_type = 2
+serial = 0
+unlock_pin = ''
+trusted_devices = ''
+
+[options]
+av1-test = 'Y'
+local-ip-addr = '192.168.0.20'
+custom-rendezvous-server = 'yc.445800773.xyz'
+key = 'Or36bSikmefnl+vTHhlXeuPcZq8VaxRLJJdzSlMlI9M='
+verification-method = 'use-permanent-password'
+allow-linux-headless = 'Y'
+=== 重启 rustdesk ===
+active
+等 80 秒（注册握手）...
+=== 21116 ===
+TCP未监听
+UDP未监听
+=== --server 日志尾部 10 行 ===
+[2026-11-02 10:03:54.129205 +00:00] INFO [src/rendezvous_mediator.rs:369] start udp: yc.445800773.xyz:21116
+[2026-11-02 10:03:54.136909 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21115: port=44883
+[2026-11-02 10:03:54.137139 +00:00] INFO [src/common.rs:760] Tested nat type: ASYMMETRIC in 34.174769ms
+[2026-11-02 10:03:54.137480 +00:00] DEBUG [libs/hbb_common/src/udp.rs:36] Receive buf size of udp 0.0.0.0:0: Ok(212992)
+[2026-11-02 10:03:54.144668 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 6.087ms
+[2026-11-02 10:03:54.319872 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:523] set hwcodec config
+[2026-11-02 10:03:54.319884 +00:00] DEBUG [libs/scrap/src/common/hwcodec.rs:524] HwCodecConfig { signature: 0, ram_encode: [CodecInfo { name: "h264_vaapi", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_NONE }], ram_decode: [CodecInfo { name: "h264", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "h264", mc_name: None, format: H264, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }] }
+[2026-11-02 10:03:54.403010 +00:00] INFO [src/server.rs:893] config updated, sync to root
+[2026-11-02 10:03:55.133106 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:742] Check hwcodec config, exit with: exit status: 0
+[2026-11-02 10:03:57.162211 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+=== DONE ===
+
+[e] + systemctl stop rustdesk.service
++ sleep 1
++ cat
++ echo '=== 生成的 TOML 内容 ==='
++ cat /tmp/RustDesk2.toml
++ cp /tmp/RustDesk2.toml /root/.config/rustdesk/RustDesk2.toml
++ cp /tmp/RustDesk2.toml /home/user/.config/rustdesk/RustDesk2.toml
++ echo '=== 校验 root 配置 ==='
++ cat /root/.config/rustdesk/RustDesk2.toml
++ echo '=== 重启 rustdesk ==='
++ systemctl start rustdesk.service
++ sleep 2
++ systemctl is-active rustdesk.service
++ echo '等 80 秒（注册握手）...'
++ sleep 80
++ echo '=== 21116 ==='
++ ss -tlnp
++ grep 21116
++ echo TCP未监听
++ ss -ulnp
++ grep 21116
++ echo UDP未监听
++ echo '=== --server 日志尾部 10 行 ==='
++ tail -10 /home/user/.local/share/logs/RustDesk/server/rustdesk_rCURRENT.log
++ echo '=== DONE ==='
+

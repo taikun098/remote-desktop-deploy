@@ -1,0 +1,104 @@
+=== 新配置目录 ===
+total 16
+drwxr-xr-x  2 root root 4096 Nov  2 08:14 .
+drwx------ 13 root root 4096 Nov  2 08:14 ..
+-rw-------  1 root root  165 Nov  2 08:14 RustDesk2.toml
+-rw-------  1 root root 1018 Nov  2 08:14 RustDesk.toml
+total 16
+drwxrwxr-x 2 lightdm lightdm 4096 Nov  2 08:14 .
+drwx------ 7 lightdm lightdm 4096 Nov  2 08:14 ..
+-rw------- 1 lightdm lightdm  165 Nov  2 08:14 RustDesk2.toml
+-rw------- 1 lightdm lightdm 1018 Nov  2 08:14 RustDesk.toml
+=== root RustDesk.toml 结构 ===
+enc_id = '00AQP15IjchYodsmPNOLLl5UtYSbAcfVzKBmNxeai5eQW+Le+WLUQlGqUtmC5dudjZ8HAI'
+password=******
+salt=[REDACTED]
+key_pair=[REDACTED]
+    [
+    146,
+    253,
+    44,
+    113,
+    211,
+    35,
+    98,
+    230,
+    38,
+    86,
+    241,
+    230,
+    231,
+    2,
+    20,
+    66,
+    85,
+    8,
+    155,
+    185,
+    137,
+    104,
+    141,
+    189,
+    228,
+    212,
+    202,
+    180,
+    175,
+    151,
+    60,
+    121,
+    92,
+    192,
+    70,
+=== lightdm RustDesk.toml 结构 ===
+enc_id = '00Ae9eLcYq7A1MsKEDzN3BonkamJi7MD5Hxg/azUmXyFD37f5YYlyACVWHgL0Oh4xetCjH'
+password=******
+salt=[REDACTED]
+key_pair=[REDACTED]
+    [
+    146,
+    253,
+    44,
+    113,
+    211,
+    35,
+    98,
+    230,
+    38,
+    86,
+    241,
+    230,
+    231,
+    2,
+    20,
+    66,
+    85,
+    8,
+    155,
+    185,
+    137,
+    104,
+    141,
+    189,
+    228,
+    212,
+    202,
+    180,
+    175,
+    151,
+    60,
+    121,
+    92,
+    192,
+    70,
+=== 服务日志（rendezvous/connect）===
+[2026-11-02 08:14:02.850997 +00:00] INFO [src/server/uinput.rs:998] start uinput keyboard service
+[2026-11-02 08:14:02.850997 +00:00] INFO [src/server/uinput.rs:1005] start uinput mouse service
+[2026-11-02 08:14:02.850989 +00:00] INFO [src/server/uinput.rs:1012] start uinput control service
+[2026-11-02 08:14:02.917608 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_control server at path: /tmp/RustDesk-service/ipc_uinput_control
+[2026-11-02 08:14:02.917648 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_keyboard server at path: /tmp/RustDesk-service/ipc_uinput_keyboard
+[2026-11-02 08:14:02.919017 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_mouse server at path: /tmp/RustDesk-service/ipc_uinput_mouse
+[2026-11-02 08:14:02.919122 +00:00] INFO [src/ipc.rs:723] Started protected ipc service server: postfix=_service
+[2026-11-02 08:14:09.102885 +00:00] INFO [src/platform/linux.rs:981] DISPLAY: :0
+=== DONE ===
+

@@ -1,0 +1,2 @@
+31606 fcitx5 -d
+31678 bash -c pgrep -fa fcitx5 || echo NO_FCITX

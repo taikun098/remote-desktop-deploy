@@ -1,0 +1,22 @@
+=== 是否已持久化（fstab）===
+(fstab 无 linglong，需添加)
+=== 写入 fstab 持久化 bind 挂载 ===
+已添加
+=== 验证 fstab 挂载单元可解析 ===
+What=/data/linglong
+Where=/var/lib/linglong
+Options=bind
+=== 当前挂载状态 ===
+TARGET            SOURCE
+/var/lib/linglong /dev/sdd1[/linglong]
+=== 玲珑数据实际所在（确认在 /data/linglong）===
+2.6G	/data/linglong
+=== ll-cli 仍能识别应用（移动后数据未坏）===
+[38;5;214mID                                         名称                             版本            渠道            模块        描述[0m
+com.tencent.wechat                         微信                             4.1.13.26       main            binary      微信是一款国内知名的免费即时通讯应用程序,这是其Linux...
+io.github.leleya-x.linyaps-seal            linyaps-seal                     0.0.18.0        main            binary      如意玲珑应用权限管理器（基于社区项目 Linyaps-Seal 的...
+io.github.motrix                           Motrix                           1.8.19.7        main            binary      Motrix是一个强大的万能开源下载器,这是其Linux原生版本
+io.msojocs.bilibili                        哔哩哔哩                         1.20.0.1        main            binary      哔哩哔哩是国内出名的弹幕视频网站,这是基于其Windows版...
+org.deepin.base                            deepin-base                      25.2.2.8        main            binary      deepin base environment.
+=== DONE ===
+

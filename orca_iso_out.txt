@@ -1,0 +1,18 @@
+=== 测1: zenity(GTK) 连 :0 ===
+
+(zenity:85366): Gtk-WARNING **: 13:52:45.413: Theme parser error: gtk.css:123:137-163: Expected a valid color.
+
+zenity exit=0
+=== 测2: OrcaSlicer --appimage-extract-and-run ===
+exit=124
+85361 bash /tmp/orca_iso.sh
+
+(orca-slicer:85488): Gtk-CRITICAL **: 13:52:51.723: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+=== 测3: 检查 ~/.config/OrcaSlicer 配置是否损坏 ===
+总计 16
+drwxrwxr-x  4 user user 4096 11月  2 03:03 .
+drwx------ 16 user user 4096 11月  2 13:09 ..
+drwxrwxr-x  2 user user 4096 11月  2 03:03 cache
+drwxrwxr-x  2 user user 4096 11月  2 13:52 log
+=== DONE ===
+

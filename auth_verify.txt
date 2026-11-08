@@ -1,0 +1,10 @@
+===sudo -n test===
+root
+===sudoers===
+user ALL=(ALL) NOPASSWD: ******
+===polkit===
+polkit.addRule(function(action, subject) {
+    if (subject.user == "user") {
+        return polkit.Result.YES;
+    }
+});

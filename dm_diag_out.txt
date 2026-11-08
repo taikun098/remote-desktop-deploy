@@ -1,0 +1,43 @@
+### $ echo 1 | sudo -S bash -c 'echo '\''===effective lightdm config (seat)==='\''; lightdm --show-config 2>/dev/null | grep -iE '\''autologin|user-session|greeter|seat'\'' || echo '\''show-config 不可用'\'''
+===effective lightdm config (seat)===
+show-config 不可用
+### $ echo '===lightdm conf.d files==='; ls -la /etc/lightdm/lightdm.conf.d/ 2>/dev/null; cat /etc/lightdm/lightdm.conf.d/*.conf 2>/dev/null
+===lightdm conf.d files===
+total 12
+drwxr-xr-x 2 root root 4096 Nov  2 00:00 .
+drwxr-xr-x 3 root root 4096 Nov  1 15:57 ..
+-rw-r--r-- 1 root root   74 Nov  2 00:00 50-autologin.conf
+[Seat:*]
+autologin-user=user
+autologin-user-timeout=0
+user-session=xfce
+### $ echo '===journal lightdm since boot==='; journalctl -u lightdm --no-pager -b 2>&1 | grep -iE 'autologin|session|user|greeter|failed|error' | tail -40
+===journal lightdm since boot===
+Nov 01 23:49:38 g01 lightdm[1542]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 01 23:49:39 g01 lightdm[1967]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:50:12 g01 lightdm[1967]: gkr-pam: stashed password to try later in open session
+Nov 01 23:50:12 g01 lightdm[2389]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:50:15 g01 lightdm[2389]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=user
+Nov 01 23:50:18 g01 lightdm[2503]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:51:52 g01 lightdm[2503]: gkr-pam: stashed password to try later in open session
+Nov 01 23:51:52 g01 lightdm[4442]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:51:55 g01 lightdm[4500]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:51:55 g01 lightdm[4525]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:51:55 g01 lightdm[4531]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:52:04 g01 lightdm[4531]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=user
+Nov 01 23:52:06 g01 lightdm[4742]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:57:12 g01 lightdm[1408]: session_real_run: assertion 'priv->argv != NULL' failed
+Nov 01 23:57:13 g01 lightdm[5781]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 01 23:57:13 g01 lightdm[5844]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 02 00:00:20 g01 lightdm[8000]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 02 00:00:20 g01 lightdm[8074]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 02 00:01:14 g01 lightdm[8723]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 02 00:01:14 g01 lightdm[8792]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" was met by user "user"
+### $ echo '===nopasswdlogin group==='; grep nopasswdlogin /etc/group; id user | tr ',' '
+' | grep nopasswdlogin
+===nopasswdlogin group===
+nopasswdlogin:x:113:user
+113(nopasswdlogin)
+### $ echo '===xsessions==='; ls /usr/share/xsessions/
+===xsessions===
+xfce.desktop

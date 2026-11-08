@@ -1,0 +1,53 @@
+=== findmnt 精确视图 ===
+TARGET            SOURCE               FSTYPE OPTIONS
+/var/lib/linglong /dev/sdd1[/linglong] ext4   rw,relatime
+=== /proc/mounts 相关行 ===
+/dev/sdd1 /data ext4 rw,relatime 0 0
+/dev/sdd1 /var/lib/linglong ext4 rw,relatime 0 0
+=== /data/linglong 内容 ===
+总计 44
+drwxr-xr-x 7 deepin-linglong deepin-linglong 4096 11月  2 14:19 .
+drwxr-xr-x 4 root            root            4096 11月  2 14:17 ..
+drwxr-xr-x 4 deepin-linglong deepin-linglong 4096 11月  2 14:12 cache
+-rw-r--r-- 1 deepin-linglong deepin-linglong  119 11月  2 13:48 config.yaml
+drwxr-xr-x 4 deepin-linglong deepin-linglong 4096 11月  2 14:04 entries
+drwxr-xr-x 7 deepin-linglong deepin-linglong 4096 11月  2 14:19 layers
+drwxr-xr-x 2 deepin-linglong deepin-linglong 4096 11月  2 14:04 merged
+drwxr-xr-x 7 deepin-linglong deepin-linglong 4096 11月  2 14:10 repo
+-rw-r--r-- 1 deepin-linglong deepin-linglong 8125 11月  2 14:19 states.json
+-rw-r--r-- 1 deepin-linglong deepin-linglong    6 11月  2 14:19 .version
+=== /var/lib/linglong 内容（当前看到的）===
+总计 44
+drwxr-xr-x  7 deepin-linglong deepin-linglong 4096 11月  2 14:19 .
+drwxr-xr-x 65 root            root            4096 11月  2 14:17 ..
+drwxr-xr-x  4 deepin-linglong deepin-linglong 4096 11月  2 14:12 cache
+-rw-r--r--  1 deepin-linglong deepin-linglong  119 11月  2 13:48 config.yaml
+drwxr-xr-x  4 deepin-linglong deepin-linglong 4096 11月  2 14:04 entries
+drwxr-xr-x  7 deepin-linglong deepin-linglong 4096 11月  2 14:19 layers
+drwxr-xr-x  2 deepin-linglong deepin-linglong 4096 11月  2 14:04 merged
+drwxr-xr-x  7 deepin-linglong deepin-linglong 4096 11月  2 14:10 repo
+-rw-r--r--  1 deepin-linglong deepin-linglong 8125 11月  2 14:19 states.json
+-rw-r--r--  1 deepin-linglong deepin-linglong    6 11月  2 14:19 .version
+=== 是否有 backup 残留 ===
+总计 44
+drwxr-xr-x  7 deepin-linglong deepin-linglong 4096 11月  2 14:10 .
+drwxr-xr-x 65 root            root            4096 11月  2 14:17 ..
+drwxr-xr-x  4 deepin-linglong deepin-linglong 4096 11月  2 14:12 cache
+-rw-r--r--  1 deepin-linglong deepin-linglong  119 11月  2 13:48 config.yaml
+drwxr-xr-x  4 deepin-linglong deepin-linglong 4096 11月  2 14:04 entries
+drwxr-xr-x  5 deepin-linglong deepin-linglong 4096 11月  2 14:10 layers
+drwxr-xr-x  2 deepin-linglong deepin-linglong 4096 11月  2 14:04 merged
+drwxr-xr-x  7 deepin-linglong deepin-linglong 4096 11月  2 14:19 repo
+-rw-r--r--  1 deepin-linglong deepin-linglong 7062 11月  2 14:10 states.json
+=== fstab 里 linglong 行 ===
+(fstab 无 linglong)
+=== mount 单元定义 ===
+What=/data/linglong
+Where=/var/lib/linglong
+Type=none
+Options=bind
+=== /data 挂载详情 ===
+TARGET SOURCE    FSTYPE
+/data  /dev/sdd1 ext4
+=== DONE ===
+

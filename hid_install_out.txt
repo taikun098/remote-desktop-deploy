@@ -1,0 +1,9 @@
+=== 1) apt 安装 flatpak（阿里云源，快）===
+flatpak 安装完成 ✅
+Flatpak 1.14.6
+=== 2) 添加 flathub 源 ===
+flathub	system
+=== 3) 后台安装 Hidamari（走代理，防断连）===
+安装已在后台 PID 263119，日志 /tmp/hid_install.log
+=== DONE ===
+

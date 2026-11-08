@@ -1,0 +1,32 @@
+=== 开机自启服务总览（active/enabled）===
+rustdesk   active=active enabled=enabled
+novnc      active=active enabled=enabled
+vnc        active=active enabled=enabled
+easytier   active=active enabled=enabled
+ssh        active=active enabled=disabled
+lightdm    active=active enabled=indirect
+=== 端口监听总览 ===
+0.0.0.0:22 
+0.0.0.0:6080 
+0.0.0.0:5900 
+[::]:22 
+[::]:5900 
+*:21118 
+=== 系统健康 ===
+ 12:06:49 up 33 min,  3 users,  load average: 0.02, 0.09, 0.11
+最近 dmesg 错误（过滤关键）:
+[    0.113716] x86/cpu: SGX disabled by BIOS.
+=== 中文环境固化确认 ===
+LANG=zh_CN.UTF-8
+会话LANG=zh_CN.UTF-8 IM=fcitx
+fcitx5: 运行中
+=== 网络（EasyTier + 关键 IP）===
+    inet 10.1.0.20/24 brd 10.1.0.255 scope global tun0
+tun0 10.1.0.20 OK
+=== 磁盘 ===
+/dev/mapper/ubuntu--vg-ubuntu--lv   98G   13G   81G   14% /
+=== 内存 ===
+               总计        已用        空闲        共享   缓冲/缓存        可用
+内存：          15Gi       1.5Gi        13Gi        10Mi       1.2Gi        13Gi
+=== DONE ===
+

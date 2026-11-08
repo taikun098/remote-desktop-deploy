@@ -1,0 +1,38 @@
+=== /etc/fstab 全文（带行号）===
+     1	# /etc/fstab: static file system information.
+     2	#
+     3	# Use 'blkid' to print the universally unique identifier for a
+     4	# device; this may be used with UUID= as a more robust way to name devices
+     5	# that works even if disks are added and removed. See fstab(5).
+     6	#
+     7	# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+     8	# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+     9	/dev/disk/by-id/dm-uuid-LVM-04P7y4uz1FzbOdNRp54ymnNavgsJnilWSbL1VPVyet2tXJ3Hn4mPS6ufmqqwq4yV / ext4 defaults 0 1
+    10	# /boot was on /dev/sda2 during curtin installation
+    11	/dev/disk/by-uuid/425fa435-a1d8-423e-9596-a35087e7de0e /boot ext4 defaults 0 1
+    12	# /boot/efi was on /dev/sda1 during curtin installation
+    13	/dev/disk/by-uuid/512C-4556 /boot/efi vfat defaults 0 1
+    14	/swap.img	none	swap	sw	0	0
+    15	UUID=001fe446-4531-411c-aca1-4cb8372bf2d7 /home ext4 defaults 0 2
+    16	UUID=e5236855-cced-4a63-8aff-178743b64d41 /data ext4 defaults 0 2
+    17	1
+=== 逐行校验字段数（正确应为>=3列）===
+行1: 6 字段             
+行2: 1 字段   
+行3: 11 字段                       
+行4: 16 字段                                 
+行5: 12 字段                         
+行6: 1 字段   
+行7: 9 字段                             
+行8: 8 字段                 
+行9: 6 字段             
+行10: 8 字段                 
+行11: 6 字段             
+行12: 8 字段                 
+行13: 6 字段             
+行14: 1 字段   
+行15: 6 字段             
+行16: 6 字段             
+行17: 1 字段   
+=== DONE ===
+

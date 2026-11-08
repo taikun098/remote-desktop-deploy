@@ -1,0 +1,38 @@
+===conf===
+[Seat:*]
+autologin-user=user
+autologin-user-timeout=0
+user-session=xfce
+===sessions===
+xfce.desktop
+===Xorg :1 owner===
+   7982 root     /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+===user desktop procs===
+root        1341 xfce4-session
+root        1345 dbus-launch --exit-with-session xfce4-session
+===lightdm recent log===
+Nov 01 23:50:12 g01 lightdm[1967]: gkr-pam: stashed password to try later in open session
+Nov 01 23:50:12 g01 lightdm[2389]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:50:15 g01 lightdm[2389]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=user
+Nov 01 23:50:18 g01 lightdm[2503]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:51:52 g01 lightdm[2503]: gkr-pam: unable to locate daemon control file
+Nov 01 23:51:52 g01 lightdm[2503]: gkr-pam: stashed password to try later in open session
+Nov 01 23:51:52 g01 lightdm[4442]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:51:55 g01 lightdm[4500]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:51:55 g01 lightdm[4525]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:51:55 g01 lightdm[4531]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:52:04 g01 lightdm[4531]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=user
+Nov 01 23:52:06 g01 lightdm[4742]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:57:12 g01 lightdm[1408]: session_real_run: assertion 'priv->argv != NULL' failed
+Nov 01 23:57:13 g01 lightdm[5781]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 01 23:57:13 g01 lightdm[5781]: gkr-pam: couldn't unlock the login keyring.
+Nov 01 23:57:13 g01 lightdm[5844]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 02 00:00:19 g01 systemd[1]: Stopping lightdm.service - Light Display Manager...
+Nov 02 00:00:19 g01 systemd[1]: lightdm.service: Deactivated successfully.
+Nov 02 00:00:19 g01 systemd[1]: Stopped lightdm.service - Light Display Manager.
+Nov 02 00:00:19 g01 systemd[1]: lightdm.service: Consumed 35.716s CPU time, 115.3M memory peak, 0B memory swap peak.
+Nov 02 00:00:20 g01 systemd[1]: Starting lightdm.service - Light Display Manager...
+Nov 02 00:00:20 g01 systemd[1]: Started lightdm.service - Light Display Manager.
+Nov 02 00:00:20 g01 lightdm[8000]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 02 00:00:20 g01 lightdm[8000]: gkr-pam: couldn't unlock the login keyring.
+Nov 02 00:00:20 g01 lightdm[8074]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"

@@ -1,0 +1,16 @@
+===x11vnc cmd===
+  27606 /usr/bin/x11vnc -display :1 -auth guess -forever -shared -noxdamage -repeat -rfbauth /etc/x11vnc.pass -rfbport 5900 -o /var/log/x11vnc.log
+  27879 bash -c echo '===x11vnc cmd==='; ps -eo pid,cmd | grep '[x]11vnc'; echo '===services==='; echo 1 | sudo -S systemctl is-active vnc rustdesk lightdm ssh; echo '===desktop on :1==='; ps -u user -o pid,cmd | grep -iE 'xfce4-session|xfwm4|xfce4-panel' | grep -v grep | head -3; echo '===orca==='; ls -la /usr/local/bin/orcaslicer /usr/share/applications/orcaslicer.desktop /opt/orcaslicer/OrcaSlicer.AppImage
+===services===
+active
+active
+active
+active
+===desktop on :1===
+  24560 xfce4-session
+  24753 xfwm4
+  24814 xfce4-panel
+===orca===
+-rwxr-xr-x 1 root root 137759224 Nov  2 03:02 /opt/orcaslicer/OrcaSlicer.AppImage
+-rwxr-xr-x 1 root root       119 Nov  2 03:13 /usr/local/bin/orcaslicer
+-rw-r--r-- 1 root root       229 Nov  2 03:16 /usr/share/applications/orcaslicer.desktop

@@ -1,0 +1,18 @@
+I2026-11-01 16:31:39.964780 addonmanager.cpp:298] Unloading addon xim
+I2026-11-01 16:31:39.964819 addonmanager.cpp:298] Unloading addon ibusfrontend
+I2026-11-01 16:31:39.966820 addonmanager.cpp:298] Unloading addon imeapi
+I2026-11-01 16:31:39.966888 addonmanager.cpp:298] Unloading addon fcitx4frontend
+I2026-11-01 16:31:39.966933 addonmanager.cpp:298] Unloading addon dbus
+I2026-11-01 16:31:39.966973 addonmanager.cpp:298] Unloading addon pinyinhelper
+I2026-11-01 16:31:39.966989 addonmanager.cpp:298] Unloading addon luaaddonloader
+I2026-11-01 16:31:39.967003 addonmanager.cpp:298] Unloading addon waylandim
+I2026-11-01 16:31:39.967018 addonmanager.cpp:298] Unloading addon keyboard
+I2026-11-01 16:31:39.967117 addonmanager.cpp:298] Unloading addon imselector
+I2026-11-01 16:31:39.967130 addonmanager.cpp:298] Unloading addon unicode
+I2026-11-01 16:31:39.967143 addonmanager.cpp:298] Unloading addon clipboard
+I2026-11-01 16:31:39.967160 addonmanager.cpp:298] Unloading addon quickphrase
+I2026-11-01 16:31:39.967274 addonmanager.cpp:298] Unloading addon xcb
+I2026-11-01 16:31:39.967391 addonmanager.cpp:298] Unloading addon wayland
+RC=True
+---after---
+NO_FCITX_RUNNING

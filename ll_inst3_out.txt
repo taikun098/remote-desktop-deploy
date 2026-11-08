@@ -1,0 +1,66 @@
+-rw-rw-r-- 1 user user 8.1M 11月  2 13:41 llstore.deb
+=== 安装 deb（自动装玲珑环境 ll-cli 等）===
+需要下载 0 B/8,449 kB 的归档。
+解压缩后会消耗 28.7 MB 的额外空间。
+获取:1 /tmp/llstore.deb linglong-store amd64 3.7.0 [8,449 kB]
+正在选中未选择的软件包 linglong-store。
+
+(正在读取数据库 ... 
+(正在读取数据库 ... 5%
+(正在读取数据库 ... 10%
+(正在读取数据库 ... 15%
+(正在读取数据库 ... 20%
+(正在读取数据库 ... 25%
+(正在读取数据库 ... 30%
+(正在读取数据库 ... 35%
+(正在读取数据库 ... 40%
+(正在读取数据库 ... 45%
+(正在读取数据库 ... 50%
+(正在读取数据库 ... 55%
+(正在读取数据库 ... 60%
+(正在读取数据库 ... 65%
+(正在读取数据库 ... 70%
+(正在读取数据库 ... 75%
+(正在读取数据库 ... 80%
+(正在读取数据库 ... 85%
+(正在读取数据库 ... 90%
+(正在读取数据库 ... 95%
+(正在读取数据库 ... 100%
+(正在读取数据库 ... 系统当前共安装有 150244 个文件和目录。)
+
+准备解压 /tmp/llstore.deb  ...
+
+正在解压 linglong-store (3.7.0) ...
+
+正在设置 linglong-store (3.7.0) ...
+
+正在处理用于 desktop-file-utils (0.27-2build1) 的触发器 ...
+
+正在处理用于 hicolor-icon-theme (0.17-2) 的触发器 ...
+
+正在处理用于 gnome-menus (3.36.0-1.1ubuntu3) 的触发器 ...
+
+正在处理用于 bamfdaemon (0.5.6+22.04.20220217-0ubuntu5) 的触发器 ...
+
+Rebuilding /usr/share/applications/bamf-2.index...
+
+
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+=== 安装结果 ===
+linglong-store 3.7.0
+(无 ll-cli)
+=== 桌面入口 ===
+/usr/share/applications/com.dongpl.linglong-store.v2.desktop
+/usr/share/applications/linglong-store.desktop
+=== DONE ===
+

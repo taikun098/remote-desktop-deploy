@@ -1,0 +1,42 @@
+=== DNS 解析 ===
+yc.445800773.xyz -> 36.102.85.112   STREAM yc.445800773.xyz
+60.31.207.20 -> 60.31.207.20    STREAM 60.31.207.20
+=== 节点 11011 端口可达性 ===
+60.31.207.20:11011 OK
+yc.445800773.xyz:11011 FAIL
+=== 延长运行 easytier 40s，观察连接 ===
+=== 40s 后 peer 状态 ===
+| ipv4         | hostname | cost  | lat(ms) | loss | rx | tx | tunnel | NAT            | version        |
+|--------------|----------|-------|---------|------|----|----|--------|----------------|----------------|
+| 10.1.0.20/24 | g01      | Local | -       | -    | -  | -  | -      | PortRestricted | 2.6.4-8428a89d |
+=== 日志中关键行（连接/错误/auth/secret）===
+2026-11-02T05:34:32.141252895Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.997340111s",
+2026-11-02T05:34:35.141595792Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.997582215s",
+2026-11-02T05:34:38.141233816Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.997538356s",
+2026-11-02T05:34:41.141940662Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.9972334s",
+2026-11-02T05:34:44.141447754Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.99738386s",
+2026-11-02T05:34:47.141255299Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.997580154s",
+2026-11-02T05:34:50.140387978Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.997584325s",
+2026-11-02T05:34:53.15362278Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.996736053s",
+2026-11-02T05:34:56.14209534Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.99743809s",
+2026-11-02T05:34:59.141170256Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.997431113s",
+=== 日志尾部 ===
+    "connect timeout after 1.997431113s",
+)
+2026-11-02T05:34:59.150365787Z  INFO CORE::INSTANCE: [f0873c4d-6493-4167-aef7-65b48c268490] peer removed peer_id=3348015644
+2026-11-02T05:34:59.258170409Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] new peer connection added conn_info=PeerConnInfo { my_peer_id: 1035710343, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:42071" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:34:59.258212166Z  INFO CORE::INSTANCE: [f0873c4d-6493-4167-aef7-65b48c268490] new peer added peer_id=3348015644
+2026-11-02T05:34:59.258435902Z  INFO CORE::INSTANCE::CONNECTION: [f0873c4d-6493-4167-aef7-65b48c268490] peer connection removed conn_info=PeerConnInfo { my_peer_id: 1035710343, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:42071" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+=== 清理 ===
+done
+

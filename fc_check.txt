@@ -1,0 +1,10 @@
+===Edge unit===
+inactive
+EDGE_DONE
+===FreeCAD candidate===
+freecad:
+  Installed: (none)
+  Candidate: 2:0.21.2+dfsg1~202407140123~ubuntu24.04.1
+  Version table:
+     2:0.21.2+dfsg1~202407140123~ubuntu24.04.1 500
+        500 https://ppa.launchpadcontent.net/freecad-maintainers/freecad-stable/ubuntu noble/main amd64 Packages

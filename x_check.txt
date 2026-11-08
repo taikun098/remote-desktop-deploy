@@ -1,0 +1,16 @@
+===X sockets===
+total 8
+drwxrwxrwt  2 root root 4096 Nov  1 23:57 .
+drwxrwxrwt 19 root root 4096 Nov  1 23:57 ..
+srwxrwxrwx  1 root root    0 Nov  1 23:49 X0
+srwxrwxrwx  1 root root    0 Nov  1 23:57 X1
+===X procs===
+   1325 Xvfb :0 -screen 0 1920x1080x24 -ac
+   5750 /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+   7435 bash -c echo '===X sockets==='; echo 1 | sudo -S ls -la /tmp/.X11-unix/ 2>/dev/null; echo '===X procs==='; echo 1 | sudo -S ps -eo pid,cmd | grep -E '[X]org|[X]vfb' | head; echo '===lightdm session==='; echo 1 | sudo -S systemctl status lightdm --no-pager 2>&1 | grep -iE 'Main PID|Active|Xorg|display' | head
+===lightdm session===
+● lightdm.service - Light Display Manager
+     Active: active (running) since Sun 2026-11-01 23:49:37 UTC; 9min ago
+    Process: 1400 ExecStartPre=/bin/sh -c [ "$(basename $(cat /etc/X11/default-display-manager 2>/dev/null))" = "lightdm" ] (code=exited, status=0/SUCCESS)
+   Main PID: 1408 (lightdm)
+             ├─5750 /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch

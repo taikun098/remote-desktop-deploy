@@ -1,0 +1,15 @@
+===rustdesk svc===
+active
+===procs===
+   1402 root     /usr/bin/rustdesk --service
+  25038 user   /usr/share/rustdesk/rustdesk --tray
+  28285 root     sudo -E XDG_RUNTIME_DIR=/run/user/111 -u lightdm /usr/share/rustdesk/rustdesk --server
+  28286 lightdm  /usr/share/rustdesk/rustdesk --server
+  28294 lightdm  /usr/share/rustdesk/rustdesk --tray
+  29315 user   bash -c echo '===rustdesk svc==='; echo 1 | sudo -S systemctl is-active rustdesk; echo '===procs==='; ps -eo pid,user,cmd | grep -iE '[r]ustdesk' ; echo '===ID/version==='; echo 1 | sudo -S rustdesk --get-id 2>/dev/null; echo 1 | sudo -S rustdesk --version 2>/dev/null; echo '===net to rendezvous==='; echo '---outbound test---'; timeout 6 bash -c 'cat < /dev/null > /dev/tcp/rs-ny.rustdesk.com/21118 && echo TCP-OK || echo TCP-FAIL'
+===ID/version===
+1318750665
+1.5.0
+===net to rendezvous===
+---outbound test---
+TCP-OK

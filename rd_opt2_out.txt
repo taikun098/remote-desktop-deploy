@@ -1,0 +1,24 @@
+=== 完整 custom-* 键列表 ===
+custom-error
+custom-fpszoom-cursorswap-left-right-mousetrack
+custom-iv
+custom-nocancel
+custom-nocancel-success
+custom-rendezvous-serverrendezvous-serversrs-ny
+custom-rendezvouure-tls-fallbackallow-insecure-
+=== 现测：向 lightdm 配置加 [options] custom-* 键 ===
+added [options] custom keys
+=== 确认（隐藏 key）===
+[options]
+custom-rendezvous-server = "yc.445800773.xyz"
+custom-relay-server = "yc.445800773.xyz"
+custom-api-server = "http://yc.445800773.xyz:21114"
+custom_key=[REDACTED]
+
+=== 重启 ===
+=== 21116? ===
+(21116 TCP 未监听)
+(21116 UDP 未监听)
+=== 到 yc 的连接 ===
+=== DONE ===
+

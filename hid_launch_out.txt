@@ -1,0 +1,17 @@
+=== 1) 在 :0 桌面启动 Hidamari（后台保持）===
+--- Hidamari 进程 ---
+264789 sudo -S -u user env DISPLAY=:0 XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus nohup flatpak run io.github.jeffshee.Hidamari
+264791 bwrap --args 41 -- hidamari
+=== 2) 运行日志 ===
+   'is_mute_when_maximized': False,
+   'is_pause_when_maximized': True,
+   'is_show_systray': False,
+   'is_static_wallpaper': True,
+   'mode': 'MODE_NULL',
+   'static_wallpaper_blur_radius': 5,
+   'version': 4}
+--------------------------
+=== 3) 配置文件 ===
+--- config.json 内容 ---
+=== DONE ===
+

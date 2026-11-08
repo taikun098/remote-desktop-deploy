@@ -1,0 +1,91 @@
+=== usr/share 完整目录列表 ===
+总计 1560
+drwxr-xr-x  64 root root   4096 11月  2 13:07 .
+drwxr-xr-x  17 root root   4096 11月  2 13:07 ..
+drwxr-xr-x   2 root root   4096 11月  2 13:07 3Dconnexion
+drwxr-xr-x   2 root root   4096 11月  2 13:07 aclocal
+drwxr-xr-x   5 root root   4096 11月  2 13:07 alsa
+drwxr-xr-x   2 root root   4096 11月  2 13:07 applications
+drwxr-xr-x   3 root root   4096 11月  2 13:07 bash-completion
+drwxr-xr-x   4 root root   4096 11月  2 13:07 cmake
+drwxr-xr-x   6 root root   4096 11月  2 13:07 Coin
+drwxr-xr-x   4 root root   4096 11月  2 13:07 cups
+drwxr-xr-x   4 root root   4096 11月  2 13:07 dbus-1
+drwxr-xr-x   3 root root   4096 11月  2 13:07 defaults
+drwxr-xr-x  46 root root   4096 11月  2 13:07 doc
+drwxr-xr-x   3 root root   4096 11月  2 13:07 eigen3
+-rw-rw-r--   1 root root  33392 11月 19  2025 errcodes.txt
+drwxr-xr-x   2 root root   4096 11月  2 13:07 et
+drwxr-xr-x   3 root root   4096 11月  2 13:07 examples
+drwxr-xr-x   2 root root   4096 11月  2 13:07 extension
+drwxr-xr-x   3 root root   4096 11月  2 13:07 ffmpeg
+drwxr-xr-x   3 root root   4096 11月  2 13:07 fontconfig
+drwxr-xr-x   3 root root   4096 11月  2 13:07 gettext
+drwxr-xr-x   2 root root   4096 11月  2 13:07 gir-1.0
+drwxr-xr-x   3 root root   4096 11月  2 13:07 glib-2.0
+drwxr-xr-x   2 root root   4096 11月  2 13:07 gmsh
+drwxr-xr-x   2 root root   4096 11月  2 13:07 graphite2
+drwxr-xr-x   4 root root   4096 11月  2 13:07 graphviz
+drwxr-xr-x   4 root root   4096 11月  2 13:07 gtk-3.0
+drwxr-xr-x   5 root root   4096 11月  2 13:07 Gui
+drwxr-xr-x   6 root root   4096 11月  2 13:07 hdf5_examples
+drwxr-xr-x   3 root root   4096 11月  2 13:07 hwloc
+drwxr-xr-x   4 root root   4096 11月  2 13:07 icons
+drwxr-xr-x   3 root root   4096 11月  2 13:07 icu
+drwxr-xr-x   2 root root   4096 11月  2 13:07 info
+-rw-rw-r--   1 root root 115523 11月 19  2025 information_schema.sql
+drwxr-xr-x   2 root root   4096 11月  2 13:07 keyutils
+drwxr-xr-x   2 root root   4096 11月  2 13:07 libdrm
+drwxr-xr-x   9 root root   4096 11月  2 13:07 licenses
+drwxr-xr-x 125 root root   4096 11月  2 13:07 locale
+drwxr-xr-x   9 root root   4096 11月  2 13:07 man
+drwxr-xr-x   2 root root   4096 11月  2 13:07 metainfo
+drwxr-xr-x   3 root root   4096 11月  2 13:07 mime
+drwxr-xr-x  24 root root   4096 11月  2 13:07 Mod
+drwxr-xr-x  27 root root   4096 11月  2 13:07 mysql
+drwxr-xr-x   3 root root   4096 11月  2 13:07 opencascade
+drwxr-xr-x   3 root root   4096 11月  2 13:07 pcl-1.15
+-rw-rw-r--   1 root root   5625 11月 19  2025 pg_hba.conf.sample
+-rw-rw-r--   1 root root   2640 11月 19  2025 pg_ident.conf.sample
+-rw-rw-r--   1 root root    604 11月 19  2025 pg_service.conf.sample
+drwxr-xr-x   2 root root   4096 11月  2 13:07 pixmaps
+drwxr-xr-x   2 root root   4096 11月  2 13:07 pkgconfig
+-rw-rw-r--   1 root root 953268 11月 19  2025 postgres.bki
+-rw-rw-r--   1 root root  30662 11月 19  2025 postgresql.conf.sample
+drwxr-xr-x   2 root root   4096 11月  2 13:07 proj
+-rw-rw-r--   1 root root    278 11月 19  2025 psqlrc.sample
+drwxr-xr-x   5 root root   4096 11月  2 13:07 PySide6
+drwxr-xr-x   4 root root   4096 11月  2 13:07 qt6
+-rw-rw-r--   1 root root  44176 11月 19  2025 snowball_create.sql
+drwxr-xr-x   3 root root   4096 11月  2 13:07 SoQt
+-rw-rw-r--   1 root root  35733 11月 19  2025 sql_features.txt
+-rw-rw-r--   1 root root   8895 11月 19  2025 system_constraints.sql
+-rw-rw-r--   1 root root  24303 11月 19  2025 system_functions.sql
+-rw-rw-r--   1 root root  51694 11月 19  2025 system_views.sql
+drwxr-xr-x   2 root root   4096 11月  2 13:07 tabset
+drwxr-xr-x  44 root root   4096 11月  2 13:07 terminfo
+drwxr-xr-x   4 root root   4096 11月  2 13:07 themes
+drwxr-xr-x   2 root root   4096 11月  2 13:07 thumbnailers
+drwxr-xr-x   2 root root   4096 11月  2 13:07 timezonesets
+drwxr-xr-x   2 root root   4096 11月  2 13:07 tsearch_data
+drwxr-xr-x   3 root root   4096 11月  2 13:07 vala
+drwxr-xr-x   2 root root   4096 11月  2 13:07 wayland
+drwxr-xr-x   5 root root   4096 11月  2 13:07 wayland-protocols
+drwxr-xr-x   3 root root   4096 11月  2 13:07 WebP
+drwxr-xr-x   3 root root   4096 11月  2 13:07 X11
+drwxr-xr-x   8 root root   4096 11月  2 13:07 xkeyboard-config-2
+drwxr-xr-x   4 root root   4096 11月  2 13:07 xml
+drwxr-xr-x  19 root root   4096 11月  2 13:07 zoneinfo
+drwxr-xr-x   3 root root   4096 11月  2 13:07 zsh
+=== usr/share 下含 freecad 的任何项 ===
+/opt/freecad/squashfs-root/usr/share/pixmaps/freecad.svg
+/opt/freecad/squashfs-root/usr/share/applications/org.freecad.FreeCAD.desktop
+/opt/freecad/squashfs-root/usr/share/metainfo/org.freecad.FreeCAD.metainfo.xml
+/opt/freecad/squashfs-root/usr/share/thumbnailers/FreeCAD.thumbnailer
+/opt/freecad/squashfs-root/usr/share/doc/FreeCAD
+=== 全部 .qm 文件（非 AddonManager / 非 qt6）===
+=== 资源目录里有没有 translations ===
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations
+/opt/freecad/squashfs-root/usr/share/qt6/translations
+=== DONE ===
+

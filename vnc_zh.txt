@@ -1,0 +1,10 @@
+===5900===
+LISTEN 0      32           0.0.0.0:5900      0.0.0.0:*          
+LISTEN 0      32              [::]:5900         [::]:*          
+===x11vnc===
+28403 x11vnc -display :0 -forever -shared -noxdamage -rfbauth /etc/x11vnc.pass -rfbport 5900 -o /var/log/x11vnc.log
+28581 bash -c echo '===5900==='; ss -tln | grep 5900 || echo NO5900; echo '===x11vnc==='; pgrep -fa x11vnc; echo '===locale of session==='; tr '\0' '\n' < /proc/28330/environ 2>/dev/null | grep -E 'LANG|LC_ALL' ; echo '===active==='; systemctl is-active vnc
+bash: line 1: /proc/28330/environ: Permission denied
+===locale of session===
+===active===
+active

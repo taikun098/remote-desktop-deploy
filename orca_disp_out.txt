@@ -1,0 +1,25 @@
+=== 当前物理屏/会话 ===
+user   tty7         2026-11-02 11:55 (:0)
+--- lightdm 会话 ---
+root        8022 /usr/sbin/lightdm
+root        8032 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root        8053 lightdm --session-child 13 16
+=== X socket ===
+总计 8
+drwxrwxrwt  2 root root 4096 11月  2 13:17 .
+drwxrwxrwt 25 root root 4096 11月  2 13:51 ..
+srwxrwxrwx  1 root root    0 11月  2 11:55 X0
+=== 各候选 XAUTHORITY ===
+-rw------- 1 user user 96 11月  2 11:55 /home/user/.Xauthority
+=== xauthority 里有哪些 display ===
+/home/user/.Xauthority:
+g01/unix:1  MIT-MAGIC-COOKIE-1  5d348bae921001e9ce7adf5a45629a5b
+g01/unix:0  MIT-MAGIC-COOKIE-1  b9732210a41b5026549cc9095e4f32a2
+=== 用一个简单 GTK 程序测哪个 auth 能连 :0 ===
+/usr/bin/zenity
+/usr/bin/xclock
+=== orcaslicer 启动方式(直接 AppImage) ===
+-rwxr-xr-x 1 root root 132M 11月  2 03:02 /opt/orcaslicer/OrcaSlicer.AppImage
+/opt/orcaslicer/OrcaSlicer.AppImage: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), static-pie linked, BuildID[sha1]=804289becc7fc6672c279ca50542e32508c1e518, stripped
+=== DONE ===
+

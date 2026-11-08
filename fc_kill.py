@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+import paramiko, time
+HOST="192.168.0.20"; USER="user"
+KEY=r"C:\Users\user\.ssh\id_ed25519"
+c=paramiko.SSHClient(); c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+c.connect(HOST, username=USER, key_filename=KEY, timeout=25)
+def run(cmd, t=120):
+    print("### $ "+cmd, flush=True)
+    _,so,se=c.exec_command(cmd, timeout=t)
+    print(so.read().decode("utf-8","replace").rstrip(), flush=True)
+    e=se.read().decode("utf-8","replace")
+    if e.strip(): print("[e] "+e.rstrip(), flush=True)
+run("echo 1 | sudo -S killall -9 FreeCAD.AppImag 2>/dev/null; sleep 3; echo 1 | sudo -S pgrep -x FreeCAD.AppImag || echo dead")
+run("echo 1 | sudo -S find /root -maxdepth 5 -name 'user.cfg' 2>/dev/null; echo '===fc dirs==='; echo 1 | sudo -S find /root/.config -maxdepth 2 -iname '*freecad*' 2>/dev/null; echo '===home cfg==='; ls -la /root/.config/ 2>/dev/null | grep -i freecad")
+run("echo '===log tail==='; echo 1 | sudo -S tail -c 4000 /tmp/fc_run.log | tr '\\r' '\\n' | tail -30")
+c.close()

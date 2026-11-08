@@ -1,0 +1,42 @@
+=== 显卡硬件（PCI）===
+00:17.0 SATA controller [0106]: Intel Corporation Device [8086:43d2] (rev 11)
+	DeviceName: Onboard - SATA
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+--
+01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Polaris 20 XL [Radeon RX 580 2048SP] [1002:6fdf] (rev e7)
+	Subsystem: Dataland Polaris 20 XL [Radeon RX 580 2048SP] [1e7b:aa07]
+	Kernel driver in use: amdgpu
+	Kernel modules: amdgpu
+=== 内核驱动模块 amdgpu 状态 ===
+amdgpu              17182720  47
+amdxcp                 12288  1 amdgpu
+drm_exec               12288  1 amdgpu
+gpu_sched              61440  1 amdgpu
+drm_buddy              20480  1 amdgpu
+drm_suballoc_helper    16384  1 amdgpu
+drm_ttm_helper         12288  1 amdgpu
+ttm                   110592  2 amdgpu,drm_ttm_helper
+drm_display_helper    237568  1 amdgpu
+i2c_algo_bit           16384  1 amdgpu
+--- 模块信息 ---
+filename:       /lib/modules/6.8.0-147-generic/kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko.zst
+=== amdgpu 固件 ===
+aldebaran_ip_discovery.bin.zst
+aldebaran_mec2.bin.zst
+aldebaran_mec.bin.zst
+aldebaran_rlc.bin.zst
+aldebaran_sdma.bin.zst
+aldebaran_sjt_mec2.bin.zst
+aldebaran_sjt_mec.bin.zst
+aldebaran_smc.bin.zst
+=== Xorg 驱动 ===
+amdgpu_drv.so
+ati_drv.so
+=== 当前渲染/GPU 信息 ===
+总计 0
+drwxr-xr-x  2 root root         80 11月  2 11:33 by-path
+crw-rw----+ 1 root video  226,   1 11月  2 14:45 card1
+crw-rw----+ 1 root render 226, 128 11月  2 14:45 renderD128
+=== DONE ===
+

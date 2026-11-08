@@ -1,0 +1,19 @@
+C:\Users\user\Doubao\chats\2026-11-01\new-chat-2\ll_env3_pll.py:18: SyntaxWarning: invalid escape sequence '\$'
+  _,so,se=c.exec_command("echo '=== ll-cli ==='; which ll-cli && ll-cli --version 2>/dev/null | head -1; echo '=== 包 ==='; dpkg -l 2>/dev/null | grep -iE 'linglong-(bin|installer)' | awk '{print \$2,\$3}'; echo '=== journal ==='; journalctl -u ll-env2 --no-pager 2>/dev/null | grep -iE '无法|Err|DONE|已安装|解压|设置' | tail -6", timeout=40)
+玲珑环境(修正源)安装已提交
+
+轮询00 active
+ll-env2 结束
+=== ll-cli ===
+/usr/bin/ll-cli
+如意玲珑CLI版本 1.14.0
+=== 包 ===
+=== journal ===
+11月 02 13:46:49 g01 systemd[1]: Started ll-env2.service - /usr/bin/bash -c "\n    set -x\n    echo \"deb [trusted=yes] https://ci.deepin.com/repo/obs/linglong:/CI:/release/Ubuntu_24.04/ ./\" | sudo tee /etc/apt/sources.list.d/linglong.list\n    sudo apt-get update 2>&1 | grep -iE \"linglong|Err|错误|无法\" | head -5\n    echo 1 | sudo -S env DEBIAN_FRONTEND=noninteractive apt-get install -y linglong-bin linglong-installer 2>&1 | tail -12\n    echo \"=== LLENV2_DONE ===\"\n  ".
+11月 02 13:46:49 g01 bash[78493]: + grep -iE 'linglong|Err|错误|无法'
+11月 02 13:47:10 g01 bash[78486]: + echo '=== LLENV2_DONE ==='
+11月 02 13:47:10 g01 bash[78486]: === LLENV2_DONE ===
+
+[e]awk: 命令行:1: {print \$2,\$3}
+awk: 命令行:1:        ^ 反斜杠不是行的最后一个字符
+

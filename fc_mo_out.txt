@@ -1,0 +1,33 @@
+=== locale 里是否有 FreeCAD/freecad 的 .mo ===
+/opt/freecad/squashfs-root/usr/share/locale/eo/LC_MESSAGES/glib20.mo
+/opt/freecad/squashfs-root/usr/share/locale/eo/LC_MESSAGES/libiconv.mo
+/opt/freecad/squashfs-root/usr/share/locale/eo/LC_MESSAGES/pulseaudio.mo
+/opt/freecad/squashfs-root/usr/share/locale/eo/LC_MESSAGES/gdk-pixbuf.mo
+/opt/freecad/squashfs-root/usr/share/locale/eo/LC_MESSAGES/atk10.mo
+/opt/freecad/squashfs-root/usr/share/locale/en@shaw/LC_MESSAGES/glib20.mo
+/opt/freecad/squashfs-root/usr/share/locale/en@shaw/LC_MESSAGES/gdk-pixbuf.mo
+/opt/freecad/squashfs-root/usr/share/locale/en@shaw/LC_MESSAGES/atk10.mo
+/opt/freecad/squashfs-root/usr/share/locale/sv/LC_MESSAGES/glib20.mo
+/opt/freecad/squashfs-root/usr/share/locale/sv/LC_MESSAGES/libiconv.mo
+--- 所有 .mo 中带 freecad 的（含路径）数量 ---
+0
+=== zh_CN locale 目录 ===
+atk10.mo
+gdk-pixbuf.mo
+glib20.mo
+libiconv.mo
+pulseaudio.mo
+=== 检查 FreeCAD 1.1 用的是 gettext 还是 qm（看 Gui 资源）===
+/opt/freecad/squashfs-root/usr/share/Gui
+/opt/freecad/squashfs-root/usr/share/Gui/Stylesheets
+/opt/freecad/squashfs-root/usr/share/Gui/Stylesheets/images_classic
+/opt/freecad/squashfs-root/usr/share/Gui/Stylesheets/parameters
+/opt/freecad/squashfs-root/usr/share/Gui/Stylesheets/FreeCAD.qss
+/opt/freecad/squashfs-root/usr/share/Gui/Stylesheets/overlay
+/opt/freecad/squashfs-root/usr/share/Gui/Stylesheets/images_dark-light
+/opt/freecad/squashfs-root/usr/share/Gui/Stylesheets/defaults.qss
+/opt/freecad/squashfs-root/usr/share/Gui/PreferencePacks
+/opt/freecad/squashfs-root/usr/share/Gui/PreferencePacks/FreeCAD Light
+=== 检查是否有 freecad.mo 或 FreeCAD.mo 全局 ===
+=== DONE ===
+

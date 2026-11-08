@@ -1,0 +1,33 @@
+=== ll-cli 已装应用 ===
+[38;5;214mID                                         名称                             版本            渠道            模块        描述[0m
+com.tencent.wechat                         微信                             4.1.13.26       main            binary      微信是一款国内知名的免费即时通讯应用程序,这是其Linux...
+io.msojocs.bilibili                        哔哩哔哩                         1.20.0.1        main            binary      哔哩哔哩是国内出名的弹幕视频网站,这是基于其Windows版...
+org.deepin.base                            deepin-base                      25.2.2.8        main            binary      deepin base environment.
+=== 用户/系统 applications 目录 ===
+mimeapps.list
+steam.desktop
+--- 系统 ---
+xfce4-accessibility-settings.desktop
+=== linglong 应用目录 ===
+--- /var/lib/linglong ---
+总计 44
+drwxr-xr-x  7 deepin-linglong deepin-linglong 4096 11月  2 14:10 .
+drwxr-xr-x 65 root            root            4096 11月  2 14:17 ..
+drwxr-xr-x  4 deepin-linglong deepin-linglong 4096 11月  2 14:12 cache
+-rw-r--r--  1 deepin-linglong deepin-linglong  119 11月  2 13:48 config.yaml
+drwxr-xr-x  4 deepin-linglong deepin-linglong 4096 11月  2 14:04 entries
+drwxr-xr-x  5 deepin-linglong deepin-linglong 4096 11月  2 14:10 layers
+drwxr-xr-x  2 deepin-linglong deepin-linglong 4096 11月  2 14:04 merged
+drwxr-xr-x  7 deepin-linglong deepin-linglong 4096 11月  2 14:10 repo
+-rw-r--r--  1 deepin-linglong deepin-linglong 7062 11月  2 14:10 states.json
+-rw-r--r--  1 deepin-linglong deepin-linglong    6 11月  2 14:10 .version
+=== linglong 应用内 desktop（用户+系统，限深）===
+=== 桌面目录 ===
+总计 32
+drwxr-xr-x  2 user user 4096 11月  2 14:16 .
+drwxr-x--- 22 user user 4096 11月  2 14:10 ..
+-rwxr-xr-x  1 user user  426 11月  2 14:16 bilibili.desktop
+-rwxr-xr-x  1 user user 2530 10月  6 14:55 com.dongpl.linglong-store.v2.desktop
+-rwxr-xr-x  1 user user 1202 11月  2 13:21 freecad_freecad.desktop
+=== DONE ===
+

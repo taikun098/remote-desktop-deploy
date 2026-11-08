@@ -1,0 +1,12 @@
+### $ echo "===session env==="; pid=$(pgrep -u user -f xfce4-session | head -1); echo "pid=$pid"; tr "\0" "\n" < /proc/$pid/environ | grep -E "^(DISPLAY|XAUTHORITY)="
+===session env===
+pid=24560
+DISPLAY=:1
+XAUTHORITY=/home/user/.Xauthority
+### $ echo 1 | sudo -S systemd-run --collect --unit=glx-install apt-get -y install mesa-utils >/dev/null 2>&1; echo launched
+launched
+glx-install done
+### $ echo 1 | sudo -S bash -c 'DISPLAY=:1 XAUTHORITY=/var/run/lightdm/root/:1 glxinfo 2>&1 | grep -iE "OpenGL renderer|OpenGL vendor|direct rendering" | head -4'
+direct rendering: Yes
+OpenGL vendor string: AMD
+OpenGL renderer string: AMD Radeon RX 590 GME (radeonsi, polaris10, ACO, DRM 3.57, 6.8.0-147-generic)

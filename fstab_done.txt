@@ -1,0 +1,37 @@
+APPEND_OK
+===fstab now===
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+/dev/disk/by-id/dm-uuid-LVM-04P7y4uz1FzbOdNRp54ymnNavgsJnilWSbL1VPVyet2tXJ3Hn4mPS6ufmqqwq4yV / ext4 defaults 0 1
+# /boot was on /dev/sda2 during curtin installation
+/dev/disk/by-uuid/425fa435-a1d8-423e-9596-a35087e7de0e /boot ext4 defaults 0 1
+# /boot/efi was on /dev/sda1 during curtin installation
+/dev/disk/by-uuid/512C-4556 /boot/efi vfat defaults 0 1
+/swap.img	none	swap	sw	0	0
+UUID=001fe446-4531-411c-aca1-4cb8372bf2d7 /home ext4 defaults 0 2
+UUID=e5236855-cced-4a63-8aff-178743b64d41 /data ext4 defaults 0 2
+===validate===
+
+0 parse errors, 0 errors, 8 warnings
+/
+   [W] cannot detect on-disk filesystem type (Permission denied)
+/boot
+   [W] cannot detect on-disk filesystem type (Permission denied)
+/boot/efi
+   [W] cannot detect on-disk filesystem type (Permission denied)
+none
+   [W] non-bind mount source /swap.img is a directory or regular file
+   [W] cannot detect on-disk filesystem type (Permission denied)
+/home
+   [W] cannot detect on-disk filesystem type (Permission denied)
+/data
+   [W] cannot detect on-disk filesystem type (Permission denied)
+   [W] your fstab has been modified, but systemd still uses the old version;
+       use 'systemctl daemon-reload' to reload
+[sudo] password for user: 

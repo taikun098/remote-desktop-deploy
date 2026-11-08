@@ -1,0 +1,2 @@
+[sudo] password for user: Running as unit: opt-apt.service; invocation ID: a40d3707823f44f5a4c407e6df55a368
+RC=True

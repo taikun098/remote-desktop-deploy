@@ -1,0 +1,39 @@
+I2026-11-01 16:32:09.344390 instance.cpp:1346] Override Enabled Addons: {}
+I2026-11-01 16:32:09.344423 instance.cpp:1347] Override Disabled Addons: {}
+E2026-11-01 16:32:09.347521 waylandmodule.cpp:230] Failed to open wayland connection
+I2026-11-01 16:32:09.347535 addonmanager.cpp:195] Loaded addon wayland
+I2026-11-01 16:32:09.349384 xcbconnection.cpp:189] Connecting to X11 display, display name::0.
+I2026-11-01 16:32:09.349511 addonmanager.cpp:195] Loaded addon xcb
+I2026-11-01 16:32:09.350732 addonmanager.cpp:195] Loaded addon quickphrase
+I2026-11-01 16:32:09.351027 addonmanager.cpp:195] Loaded addon clipboard
+I2026-11-01 16:32:09.351190 addonmanager.cpp:195] Loaded addon unicode
+I2026-11-01 16:32:09.351317 addonmanager.cpp:195] Loaded addon imselector
+I2026-11-01 16:32:09.356100 addonmanager.cpp:195] Loaded addon keyboard
+I2026-11-01 16:32:09.356290 addonmanager.cpp:195] Loaded addon waylandim
+I2026-11-01 16:32:09.356685 addonmanager.cpp:195] Loaded addon luaaddonloader
+I2026-11-01 16:32:09.357223 addonmanager.cpp:195] Loaded addon pinyinhelper
+I2026-11-01 16:32:09.358020 addonmanager.cpp:195] Loaded addon dbus
+I2026-11-01 16:32:09.359459 addonmanager.cpp:195] Loaded addon fcitx4frontend
+I2026-11-01 16:32:09.360271 addonmanager.cpp:195] Loaded addon imeapi
+I2026-11-01 16:32:09.360989 addonmanager.cpp:195] Loaded addon ibusfrontend
+I2026-11-01 16:32:09.361727 addonmanager.cpp:195] Loaded addon xim
+I2026-11-01 16:32:09.362270 addonmanager.cpp:195] Loaded addon dbusfrontend
+I2026-11-01 16:32:09.390071 inputmethodmanager.cpp:190] Found 737 input method(s) in addon keyboard
+I2026-11-01 16:32:09.404119 addonmanager.cpp:195] Loaded addon kimpanel
+I2026-11-01 16:32:09.404374 addonmanager.cpp:195] Loaded addon virtualkeyboard
+I2026-11-01 16:32:09.425120 classicui.cpp:66] Created classicui for x11 display::0
+I2026-11-01 16:32:09.425220 addonmanager.cpp:195] Loaded addon classicui
+I2026-11-01 16:32:09.425847 addonmanager.cpp:195] Loaded addon notificationitem
+I2026-11-01 16:32:09.426181 addonmanager.cpp:195] Loaded addon notifications
+I2026-11-01 16:32:09.429341 kimpanel.cpp:116] Kimpanel new owner: 
+I2026-11-01 16:32:09.429358 virtualkeyboard.cpp:223] VirtualKeyboard new owner: 
+I2026-11-01 16:32:10.652022 addonmanager.cpp:195] Loaded addon punctuation
+I2026-11-01 16:32:10.880045 addonmanager.cpp:195] Loaded addon pinyin
+I2026-11-01 16:32:10.884018 addonmanager.cpp:195] Loaded addon cloudpinyin
+31603 bash -c export DISPLAY=:0 LANG=zh_CN.UTF-8 GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx; fcitx5 -d; sleep 3; pgrep -fa fcitx5 || echo NO_FCITX
+31606 fcitx5 -d
+E2026-11-01 16:32:14.649205 portalsettingmonitor.cpp:115] DBus call error: org.freedesktop.DBus.Error.NoReply Method call timed out
+E2026-11-01 16:32:19.899201 portalsettingmonitor.cpp:115] DBus call error: org.freedesktop.DBus.Error.NoReply Method call timed out
+E2026-11-01 16:32:25.149217 portalsettingmonitor.cpp:115] DBus call error: org.freedesktop.DBus.Error.NoReply Method call timed out
+E2026-11-01 16:32:30.399266 portalsettingmonitor.cpp:115] DBus call error: org.freedesktop.DBus.Error.NoReply Method call timed out
+E2026-11-01 16:32:30.399306 portalsettingmonitor.cpp:122] Query portal value reaches retry limit.

@@ -1,0 +1,13 @@
+=== vnc unit ===
+active: active
+enabled: enabled
+=== 5900 ===
+LISTEN 0      32           0.0.0.0:5900      0.0.0.0:*          
+LISTEN 0      32              [::]:5900         [::]:*          
+=== procs ===
+30965 Xvfb :0 -screen 0 1920x1080x24 -ac
+31060 x11vnc -display :0 -forever -shared -noxdamage -rfbauth /etc/x11vnc.pass -rfbport 5900 -o /var/log/x11vnc.log
+=== IM env in session (xfce4-session) ===
+pid=30979
+
+[e]bash: line 14: /proc/30979/environ: Permission denied

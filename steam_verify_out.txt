@@ -1,0 +1,10 @@
+=== steam 进程 ===
+93782 /home/user/.steam/debian-installation/ubuntu12_32/steam-runtime/usr/libexec/steam-runtime-tools-0/srt-logger --sh-syntax --rotate=8388608 --log-directory /home/user/.steam/steam/logs --filename console-linux.txt --log-fd=6 --parse-level-prefix
+105233 /home/user/.steam/debian-installation/ubuntu12_32/steam -srt-logger-opened -nominidumps -nobreakpad -nobigpicture
+steam PID=105233
+=== 确认无代理环境变量 ===
+仍含代理: https_proxy=http://192.168.0.6:7897
+http_proxy=http://192.168.0.6:7897
+=== 启动日志尾部 ===
+=== DONE ===
+

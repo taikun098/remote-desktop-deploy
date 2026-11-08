@@ -1,0 +1,52 @@
+Running as unit: novnc-install.service; invocation ID: 2b7df48a150647e481fb1530fcf3641c
+已提交安装任务，稍后轮询
+
+[e] + systemctl reset-failed novnc-install
++ echo 1
++ sudo -S systemd-run --unit=novnc-install --collect --setenv=DEBIAN_FRONTEND=noninteractive bash -c 'apt-get install -y novnc websockify > /tmp/novnc_apt.log 2>&1'
++ echo 已提交安装任务，稍后轮询
+
+
+########## 轮询安装结果 ##########
+
+=== systemd-run 状态 ===
+inactive
+已结束
+=== apt 日志尾部 ===
+update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+
+Processing triggers for man-db (2.12.0-4build2) ...
+
+Processing triggers for sgml-base (1.31) ...
+
+Setting up python3-docutils (0.20.1+dfsg-3) ...
+
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+
+Setting up python3-oslo.config (1:9.4.0-0ubuntu1) ...
+
+Setting up python3-novnc (1:1.3.0-2) ...
+
+Setting up novnc (1:1.3.0-2) ...
+
+
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+=== 验证安装 ===
+ii  novnc                                          1:1.3.0-2                                        all          HTML5 VNC client - daemon and programs
+ii  python3-novnc                                  1:1.3.0-2                                        all          HTML5 VNC client - Python 3.x libraries
+ii  python3-websockify                             0.10.0+dfsg1-5build2                             amd64        WebSockets support for any application/server - Python 3
+ii  websockify                                     0.10.0+dfsg1-5build2                             amd64        WebSockets support for any application/server
+/usr/bin/websockify
+/usr/share/novnc/vnc.html
+=== DONE ===
+

@@ -1,0 +1,7 @@
+===proc===
+41889 sudo -S setsid env DISPLAY=:0 /opt/freecad/FreeCAD.AppImage
+41893 /opt/freecad/FreeCAD.AppImage
+===config===
+===fc dir===
+===log===
+[sudo] password for user: 

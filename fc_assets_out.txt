@@ -1,0 +1,7 @@
+=== 1.1.4 全部 AppImage 资产 ===
+https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Linux-aarch64-py311.AppImage
+https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Linux-x86_64-py311.AppImage
+=== 对比：本机已下载的 py311 是否就是标准唯一版 ===
+已下: FreeCAD_1.1.4-Linux-x86_64-py311.AppImage
+=== DONE ===
+

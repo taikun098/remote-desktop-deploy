@@ -1,0 +1,14 @@
+ii  mesa-va-drivers:amd64                          25.2.8-0ubuntu0.24.04.4                          amd64        Mesa VA-API video acceleration drivers
+ii  vainfo                                         2.12.0+ds1-1                                     amd64        Video Acceleration (VA) API for Linux -- info program
+---
+/usr/bin/vainfo
+---LOCK---
+apt空闲
+---21116---
+未监听
+---LOG---
+[2026-11-02 08:42:21.636386 +00:00] DEBUG [libs/hbb_common/src/udp.rs:36] Receive buf size of udp 0.0.0.0:0: Ok(212992)
+[2026-11-02 08:42:21.642975 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 5.489ms
+[2026-11-02 08:42:24.658159 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+[2026-11-02 08:42:51.625146 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:745] Check hwcodec config, status not ready yet, let's really wait
+

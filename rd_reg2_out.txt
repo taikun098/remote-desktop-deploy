@@ -1,0 +1,41 @@
+=== rustdesk --server 真实 pid ===
+server pid=24985
+=== 该 pid 状态/线程 ===
+State:	S (sleeping)
+Threads:	1
+=== 该 pid 到 yc(36.102.85.112) 的连接（TCP+UDP）===
+ESTAB    0      0             192.168.0.20:37151 36.102.85.112:43865 users:(("easytier-core",pid=1355,fd=45))               
+SYN-SENT 0      1      192.168.0.20%enp2s0:45159 36.102.85.112:11011 users:(("easytier-core",pid=1355,fd=31))               
+--- UDP ---
+=== 该 pid 所有监听端口 ===
+=== 日志是否还在增长 ===
+size=2977 mtime=2026-11-02 10:05:20.143764089 +0000
+=== 日志尾部 15 行 ===
+[2026-11-02 10:03:54.121831 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21116: port=44883
+[2026-11-02 10:03:54.128856 +00:00] INFO [libs/scrap/src/common/codec.rs:1046] skip test av1
+[2026-11-02 10:03:54.128880 +00:00] INFO [src/lan.rs:31] lan discovery listener started
+[2026-11-02 10:03:54.128903 +00:00] INFO [src/rendezvous_mediator.rs:659] start rendezvous mediator of yc.445800773.xyz
+[2026-11-02 10:03:54.129205 +00:00] INFO [src/rendezvous_mediator.rs:369] start udp: yc.445800773.xyz:21116
+[2026-11-02 10:03:54.136909 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21115: port=44883
+[2026-11-02 10:03:54.137139 +00:00] INFO [src/common.rs:760] Tested nat type: ASYMMETRIC in 34.174769ms
+[2026-11-02 10:03:54.137480 +00:00] DEBUG [libs/hbb_common/src/udp.rs:36] Receive buf size of udp 0.0.0.0:0: Ok(212992)
+[2026-11-02 10:03:54.144668 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 6.087ms
+[2026-11-02 10:03:54.319872 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:523] set hwcodec config
+[2026-11-02 10:03:54.319884 +00:00] DEBUG [libs/scrap/src/common/hwcodec.rs:524] HwCodecConfig { signature: 0, ram_encode: [CodecInfo { name: "h264_vaapi", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_NONE }], ram_decode: [CodecInfo { name: "h264", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "h264", mc_name: None, format: H264, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }] }
+[2026-11-02 10:03:54.403010 +00:00] INFO [src/server.rs:893] config updated, sync to root
+[2026-11-02 10:03:55.133106 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:742] Check hwcodec config, exit with: exit status: 0
+[2026-11-02 10:03:57.162211 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+[2026-11-02 10:05:20.144072 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 6.042ms
+=== 全部监听 TCP（有无 21116 或新增）===
+LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*    users:(("sshd",pid=1373,fd=3),("systemd",pid=1,fd=200))
+LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*    users:(("cupsd",pid=1341,fd=7))                        
+LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*    users:(("systemd-resolve",pid=1061,fd=17))             
+LISTEN 0      1024         0.0.0.0:11010      0.0.0.0:*    users:(("easytier-core",pid=1355,fd=16))               
+LISTEN 0      1024         0.0.0.0:11011      0.0.0.0:*    users:(("easytier-core",pid=1355,fd=19))               
+LISTEN 0      1024         0.0.0.0:11012      0.0.0.0:*    users:(("easytier-core",pid=1355,fd=24))               
+LISTEN 0      128          0.0.0.0:11013      0.0.0.0:*    users:(("easytier-core",pid=1355,fd=25))               
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=24551,fd=8))                      
+LISTEN 0      1024         0.0.0.0:15888      0.0.0.0:*    users:(("easytier-core",pid=1355,fd=9))                
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=1061,fd=15))             
+=== DONE ===
+

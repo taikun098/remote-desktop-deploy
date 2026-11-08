@@ -1,0 +1,14 @@
+=== FreeCAD 当前版本 ===
+/usr/local/bin/freecad
+(无 freecadcmd)
+=== Steam 是否已装 ===
+=== 32位架构(i386)是否启用 ===
+=== 磁盘 ===
+/dev/mapper/ubuntu--vg-ubuntu--lv   98G   13G   81G   14% /
+=== 网络可达性（Steam 官方源 / FreeCAD 下载）===
+repo.steampowered.com:443 可达
+=== 显卡/OpenGL（Steam 运行需要）===
+00:17.0 SATA controller: Intel Corporation Device 43d2 (rev 11)
+01:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Polaris 20 XL [Radeon RX 580 2048SP] (rev e7)
+=== DONE ===
+

@@ -1,0 +1,5 @@
+[sudo] password for user: Running as unit: opt-freecad.service; invocation ID: ef7fd50d51a64d879ef487194d6036c8
+===fuse===
+ii  fuse3                                          3.14.0-5build1                                   amd64        Filesystem in Userspace (3.x version)
+ii  libfuse2t64:amd64                              2.9.9-8.1build1                                  amd64        Filesystem in Userspace (library)
+ii  libfuse3-3:amd64                               3.14.0-5build1                                   amd64        Filesystem in Userspace (library) (3.x version)

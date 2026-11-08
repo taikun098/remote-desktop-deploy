@@ -1,0 +1,22 @@
+===状态===
+active
+===21116===
+TCP未监听
+UDP未监听
+===全部监听===
+UNCONN 0      0                                0.0.0.0:37238      0.0.0.0:*    users:(("rustdesk",pid=85382,fd=19))     
+UNCONN 0      0                                0.0.0.0:21119      0.0.0.0:*    users:(("rustdesk",pid=85382,fd=18))     
+===日志尾部===
+[2026-11-02 08:42:21.595300 +00:00] ERROR [src/common.rs:2735] Failed to get public IPv6 address: UDP socket error
+[2026-11-02 08:42:21.608800 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21116: port=44431
+[2026-11-02 08:42:21.622925 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21115: port=44431
+[2026-11-02 08:42:21.622960 +00:00] INFO [src/common.rs:760] Tested nat type: ASYMMETRIC in 29.865082ms
+[2026-11-02 08:42:21.627902 +00:00] INFO [libs/scrap/src/common/codec.rs:1046] skip test av1
+[2026-11-02 08:42:21.627918 +00:00] INFO [src/lan.rs:31] lan discovery listener started
+[2026-11-02 08:42:21.627942 +00:00] INFO [src/rendezvous_mediator.rs:659] start rendezvous mediator of yc.445800773.xyz
+[2026-11-02 08:42:21.628201 +00:00] INFO [src/rendezvous_mediator.rs:369] start udp: yc.445800773.xyz:21116
+[2026-11-02 08:42:21.636386 +00:00] DEBUG [libs/hbb_common/src/udp.rs:36] Receive buf size of udp 0.0.0.0:0: Ok(212992)
+[2026-11-02 08:42:21.642975 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 5.489ms
+[2026-11-02 08:42:24.658159 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+[2026-11-02 08:42:51.625146 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:745] Check hwcodec config, status not ready yet, let's really wait
+

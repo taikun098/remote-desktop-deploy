@@ -1,0 +1,33 @@
+=== 删除损坏行（孤立的 1）===
+=== 用正确方式追加 linglong bind 挂载 ===
+已追加
+=== 修复后 fstab（带行号+字段数）===
+     1	# /etc/fstab: static file system information.
+     2	#
+     3	# Use 'blkid' to print the universally unique identifier for a
+     4	# device; this may be used with UUID= as a more robust way to name devices
+     5	# that works even if disks are added and removed. See fstab(5).
+     6	#
+     7	# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+     8	# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+     9	/dev/disk/by-id/dm-uuid-LVM-04P7y4uz1FzbOdNRp54ymnNavgsJnilWSbL1VPVyet2tXJ3Hn4mPS6ufmqqwq4yV / ext4 defaults 0 1
+    10	# /boot was on /dev/sda2 during curtin installation
+    11	/dev/disk/by-uuid/425fa435-a1d8-423e-9596-a35087e7de0e /boot ext4 defaults 0 1
+    12	# /boot/efi was on /dev/sda1 during curtin installation
+    13	/dev/disk/by-uuid/512C-4556 /boot/efi vfat defaults 0 1
+    14	/swap.img	none	swap	sw	0	0
+    15	UUID=001fe446-4531-411c-aca1-4cb8372bf2d7 /home ext4 defaults 0 2
+    16	UUID=e5236855-cced-4a63-8aff-178743b64d41 /data ext4 defaults 0 2
+    17	/data/linglong /var/lib/linglong none bind 0 0
+--- 字段校验 ---
+行2: 1 字段
+行6: 1 字段
+行14: 1 字段
+=== 验证 linglong 挂载持久化 ===
+/data/linglong /var/lib/linglong none bind 0 0
+TARGET            SOURCE
+/var/lib/linglong /dev/sdd1[/linglong]
+=== snapd 能否解析 fstab（不再报错）===
+fstab 解析正常 ✅
+=== DONE ===
+

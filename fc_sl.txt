@@ -1,0 +1,32 @@
+rc=True
+===out===
+[sudo] password for user: NO_GUI AttributeError("module 'FreeCADGui' has no attribute 'supportedLocales'")
+SET_LANG= Chinese (Simplified)
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+===user.cfg===
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FCParameters>
+  <FCParamGroup Name="Root">
+    <FCParamGroup Name="BaseApp">
+      <FCParamGroup Name="LogLevels">
+        <FCInt Name="Default" Value="2"/>
+      </FCParamGroup>
+      <FCParamGroup Name="Preferences">
+        <FCParamGroup Name="General">
+          <FCText Name="Language">Chinese (Simplified)</FCText>
+        </FCParamGroup>
+        <FCParamGroup Name="Units"/>
+        <FCParamGroup Name="Macro"/>
+        <FCParamGroup Name="Mod">
+          <FCParamGroup Name="OpenSCAD"/>
+          <FCParamGroup Name="CAM"/>
+          <FCParamGroup Name="Path"/>
+        </FCParamGroup>
+      </FCParamGroup>
+    </FCParamGroup>
+  </FCParamGroup>
+
+</FCParameters>

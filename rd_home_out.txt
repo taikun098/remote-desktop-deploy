@@ -1,0 +1,26 @@
+=== 当前 rustdesk 进程 ===
+  43446 lightdm  [rustdesk] <defunct>
+  71858 root     /usr/bin/rustdesk --service
+  71905 root     sudo -E XDG_RUNTIME_DIR=/run/user/111 -u lightdm /usr/share/rustdesk/rustdesk --server
+  71906 lightdm  /usr/share/rustdesk/rustdesk --server
+  71914 lightdm  /usr/share/rustdesk/rustdesk --tray
+=== --server 进程的 HOME / XDG ===
+server pid=71905
+HOME=HOME=/var/lib/lightdm
+XDG_CONFIG_HOME=
+=== lightdm 用户家目录下的 rustdesk 配置 ===
+--- /home/lightdm/.config/rustdesk ---
+(无)
+--- /var/lib/lightdm/.config/rustdesk ---
+total 16
+drwxrwxr-x 2 lightdm lightdm 4096 Nov  1 23:49 .
+drwx------ 7 lightdm lightdm 4096 Nov  1 23:56 ..
+-rw------- 1 lightdm lightdm  520 Nov  1 23:49 RustDesk2.toml
+-rw------- 1 lightdm lightdm 1178 Nov  1 23:49 RustDesk.toml
+--- /var/lib/lightdm-data/lightdm/.config/rustdesk ---
+(无)
+--- /home/lightdm/.rustdesk ---
+(无)
+=== lightdm 用户配置里的网络项 ===
+=== DONE ===
+

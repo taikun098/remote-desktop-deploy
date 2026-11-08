@@ -1,0 +1,13 @@
+=== 解包 OrcaSlicer AppImage 到 /opt/orcaslicer/squashfs-root ===
+exit=1
+=== 找主二进制 ===
+BIN=
+BIN2=
+=== 确认 squashfs-root 里的 AppRun ===
+=== 替换 /usr/local/bin/orcaslicer 为解包启动器 ===
+当前: -rwxr-xr-x 1 root root 119 11月  2 03:13 /usr/local/bin/orcaslicer
+=== 测试启动（:0, 10秒）===
+launch exit=127
+/usr/local/bin/orcaslicer: 行 3: /opt/orcaslicer/squashfs-root/AppRun: 没有那个文件或目录
+=== DONE ===
+

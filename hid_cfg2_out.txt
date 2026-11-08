@@ -1,0 +1,38 @@
+=== flatpak 数据目录 ===
+/home/user/.var/app/io.github.jeffshee.Hidamari/config
+/home/user/.var/app/io.github.jeffshee.Hidamari/config/hidamari/config.json
+/home/user/.var/app/io.github.jeffshee.Hidamari/cache/fontconfig
+--- 目录树 ---
+/home/user/.var/app/io.github.jeffshee.Hidamari
+/home/user/.var/app/io.github.jeffshee.Hidamari/config
+/home/user/.var/app/io.github.jeffshee.Hidamari/config/gtk-3.0
+/home/user/.var/app/io.github.jeffshee.Hidamari/config/hidamari
+/home/user/.var/app/io.github.jeffshee.Hidamari/cache
+/home/user/.var/app/io.github.jeffshee.Hidamari/cache/fontconfig
+/home/user/.var/app/io.github.jeffshee.Hidamari/cache/tmp
+/home/user/.var/app/io.github.jeffshee.Hidamari/.local
+/home/user/.var/app/io.github.jeffshee.Hidamari/.local/state
+/home/user/.var/app/io.github.jeffshee.Hidamari/data
+/home/user/.var/app/io.github.jeffshee.Hidamari/.ld.so
+=== config.json ===
+路径: /home/user/.var/app/io.github.jeffshee.Hidamari/config/hidamari/config.json
+{
+   "version": 4,
+   "mode": "MODE_NULL",
+   "data_source": {
+      "HDMI-A-1": "",
+      "Default": ""
+   },
+   "is_mute": false,
+   "audio_volume": 50,
+   "is_static_wallpaper": true,
+   "static_wallpaper_blur_radius": 5,
+   "is_pause_when_maximized": true,
+   "is_mute_when_maximized": false,
+   "fade_duration_sec": 1.5,
+   "fade_interval": 0.1,
+   "is_show_systray": false,
+   "is_first_time": true
+}
+=== DONE ===
+

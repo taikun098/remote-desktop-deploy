@@ -1,0 +1,7 @@
+=== 28001 状态 ===
+    PID STAT WCHAN                COMMAND
+  28001 Ds+  amdgpu_dm_commit_str /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt8 -novtswitch
+
+=== 触发重启 ===
+
+重启命令已发出，SSH 即将断开。等待机器回来...

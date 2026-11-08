@@ -1,0 +1,25 @@
+=== 二进制中 hwcodec 相关配置键 ===
+hwcodec
+hwcodecwire_main_check_mouse_timewi
+hwcodecwire_main_has_valid_2fa_sync
+hwcodec-74796a7f8f16bbb9/778df1f/src/
+hwcodec_av_log_callbackhwcodec_logd
+hwcodec causing the crash, disable it
+hwcodec::commonFailed to set up paren
+hwcodec-config--check-hwcodec-ninstal
+hwcodec configclear hwcodec config, v
+hwcodec config, error attempting to w
+hwcodec config is nonefailed to get h
+hwcodec-config, scrap::common::hwcode
+hwcodec config:  used to get hwcodec 
+hwcodec config, wait result: Check hw
+hwcodecFailed to create decoder scrap
+hwcodec::ffmpeg_ram::decodeLinu
+hwcodec::ffmpeg_ram::encodeTesting en
+hwcodec::ffmpeg/root/.cargo/git/check
+hwcodecH
+hwcodec:libs/scrap/src/common/hwcodec
+=== 二进制中 display 相关 / 是否支持 DISPLAY env ===
+DISPLAY
+=== DONE ===
+

@@ -1,0 +1,6 @@
+INSTALL_DONE
+---which---
+/usr/bin/Xvfb
+/usr/bin/x11vnc
+/usr/bin/xfce4-session
+---audit---

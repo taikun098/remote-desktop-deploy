@@ -1,0 +1,20 @@
+=== noble 源里 freecad 是否可装 ===
+freecad:
+  已安装：(无)
+  候选： (无)
+  版本列表：
+=== universe 组件是否启用 ===
+=== snap 是否可用 ===
+/usr/bin/snap
+snap          2.77.1+ubuntu24.04
+snapd         2.77.1+ubuntu24.04
+=== freecad.org 可达性 ===
+HTTP/2 200 
+
+=== GitHub releases 可达性（AppImage 托管处）===
+HTTP/2 200 
+
+=== i386 已启用？ ===
+i386
+=== DONE ===
+

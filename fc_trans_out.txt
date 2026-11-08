@@ -1,0 +1,41 @@
+=== 查找 FreeCAD 翻译文件位置 ===
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_uk.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_el.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_be.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_pt-BR.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_pl.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_ja.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_hr.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_fr.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_ka.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_pt-PT.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_es-CO.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_sr-CS.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_sr-SP.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_ca.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_da.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_es-ES.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_zh-CN.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_ru.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_it.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_cs.qm
+--- 按目录看 ---
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations
+/opt/freecad/squashfs-root/usr/share/qt6/translations
+=== 确认 zh 中文翻译是否存在 ===
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_zh-CN.qm
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations/AddonManager_zh-TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/designer_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtbase_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/designer_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/linguist_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/assistant_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtdeclarative_zh_TW.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtmultimedia_zh_CN.qm
+/opt/freecad/squashfs-root/usr/share/qt6/translations/qtwebengine_zh_CN.qm
+=== 建立 freecadcmd 命令链接 ===
+=== 现有 desktop 菜单项 ===
+=== DONE ===
+
+[e] ln: 无法创建符号链接 '/usr/local/bin/freecadcmd': 权限不够
+

@@ -1,0 +1,48 @@
+=== rustdesk 自带 helper/二进制 ===
+total 72
+drwxr-xr-x   5 root root  4096 Nov  2 08:14 .
+drwxr-xr-x 244 root root 12288 Nov  2 08:14 ..
+drwxr-xr-x   3 root root  4096 Nov  2 08:14 data
+drwxr-xr-x   3 root root  4096 Nov  2 08:14 files
+drwxr-xr-x   2 root root  4096 Nov  2 08:14 lib
+-rwxr-xr-x   1 root root 44640 Sep 30 17:12 rustdesk
+=== rustdesk bin 下 hwcodec 相关 ===
+=== 当前 rustdesk 进程 ===
+  43446 [rustdesk] <defunct>
+  88141 /usr/bin/rustdesk --service
+  88192 sudo -E XDG_RUNTIME_DIR=/run/user/111 -u lightdm /usr/share/rustdesk/rustdesk --server
+  88193 /usr/share/rustdesk/rustdesk --server
+  88201 /usr/share/rustdesk/rustdesk --tray
+=== 双 Xorg 来源 ===
+SESSION  UID USER    SEAT  TTY  STATE   IDLE SINCE
+    141 1000 user  -     -    closing no   -
+    150 1000 user  -     -    closing no   -
+    154 1000 user  -     -    closing no   -
+    157 1000 user  -     -    closing no   -
+    159 1000 user  -     -    closing no   -
+    163 1000 user  -     -    active  no   -
+     c5 1000 user  seat0 tty7 online  no   -
+     c6  111 lightdm seat0 -    active  no   -
+
+8 sessions listed.
+● lightdm.service - Light Display Manager
+     Loaded: loaded (/usr/lib/systemd/system/lightdm.service; indirect; preset: enabled)
+     Active: active (running) since Mon 2026-11-02 03:10:15 UTC; 5h 44min ago
+       Docs: man:lightdm(1)
+   Main PID: 24528 (lightdm)
+      Tasks: 35 (limit: 18860)
+     Memory: 123.4M (peak: 124.1M)
+        CPU: 1.811s
+=== DISPLAY :0 上有什么进程 ===
+  24375 user   /usr/lib/systemd/systemd --user
+  24376 user   (sd-pam)
+  24387 user   /usr/bin/pipewire
+  24388 user   /usr/bin/pipewire -c filter-chain.conf
+  24391 user   /usr/bin/wireplumber
+  24394 user   /usr/bin/pipewire-pulse
+  24408 user   /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  24560 user   xfce4-session
+  24640 user   /usr/bin/ibus-daemon --daemonize --xim
+  24653 user   /usr/libexec/gvfsd
+=== DONE ===
+

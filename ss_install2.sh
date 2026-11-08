@@ -1,0 +1,23 @@
+#!/bin/bash
+timeout 90 bash -c '
+echo "=== 1) 安装 deb（apt 自动拉依赖）==="
+echo 1 | sudo -S apt-get install -y /tmp/sunshine.deb >/tmp/apt_sunshine.log 2>&1
+if [ $? -eq 0 ]; then echo "安装完成 ✅"; else echo "安装失败，日志尾部:"; tail -25 /tmp/apt_sunshine.log; fi
+echo "=== 2) 确认安装 ==="
+which sunshine 2>/dev/null
+echo 1 | sudo -S dpkg -l 2>/dev/null | grep -i sunshine | awk "{print \$2,\$3}"
+echo "=== 3) 启用并启动服务 ==="
+echo 1 | sudo -S systemctl enable sunshine 2>&1 | tail -1
+echo 1 | sudo -S systemctl restart sunshine 2>&1 | tail -1
+sleep 3
+echo "--- 服务状态: $(echo 1 | sudo -S systemctl is-active sunshine 2>/dev/null)"
+echo "=== 4) 端口监听（47990 web / 48010 串流）==="
+echo 1 | sudo -S ss -tlnp 2>/dev/null | grep -E "47990|48010" | head
+echo "=== 5) ufw 防火墙 ==="
+ufw status 2>/dev/null | head -3
+echo "=== 6) Sunshine 进程 ==="
+pgrep -af sunshine | head -2
+echo "=== 7) 服务日志（找关键错误）==="
+echo 1 | sudo -S journalctl -u sunshine --no-pager -n 12 2>/dev/null | grep -iE "error|fail|listening|bind|encoder|vaapi|display" | tail -8
+echo "=== DONE ==="
+'

@@ -1,0 +1,25 @@
+=== vnc unit ===
+active: active
+=== procs ===
+32697
+FCITX_OK
+X11VNC_OK
+=== session env (IM vars) ===
+session_pid=32374
+  GTK_IM_MODULE=fcitx
+  XMODIFIERS=@im=fcitx
+  HOME=/root
+  LANG=zh_CN.UTF-8
+  DISPLAY=:0
+  QT_IM_MODULE=fcitx
+=== fcitx5-remote state (0=inactive 1=active 2=active+triggered) ===
+0
+rc=0
+=== pinyin engine present ===
+libcloudpinyin.so
+libpinyinhelper.so
+libpinyin.so
+conf
+profile
+
+[e]

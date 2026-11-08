@@ -1,0 +1,12 @@
+--- status ---
+active
+--- unit ExecStart ---
+ExecStart=/usr/local/bin/easytier-core --network-name lw --network-secret admin.8897802 -i 10.1.0.20 -p tcp://60.31.207.20:11011 tcp://yc.445800773.xyz:11011 --instance-name g01 --multi-thread true --bind-device true
+--- peer 状态 ---
+| ipv4         | hostname | cost  | lat(ms) | loss | rx | tx | tunnel | NAT            | version        |
+|--------------|----------|-------|---------|------|----|----|--------|----------------|----------------|
+| 10.1.0.20/24 | g01      | Local | -       | -    | -  | -  | -      | PortRestricted | 2.6.4-8428a89d |
+--- tun ipv4 ---
+    inet 10.1.0.20/24 brd 10.1.0.255 scope global tun0
+--- DONE ---
+

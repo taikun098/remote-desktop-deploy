@@ -1,0 +1,31 @@
+=== data_source 处理逻辑（video）===
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:378:        curr_data_source = config["data_source"]
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:379:        config["data_source"] = CONFIG_TEMPLATE[CONFIG_KEY_DATA_SOURCE]
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:380:        config["data_source"]["Default"] = curr_data_source
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:390:        old_monitors = old_config.get("data_source", {}).keys()
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:391:        template_monitors = template.get("data_source", {}).keys()
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:403:            config["data_source"][key] = config["data_source"]["Default"]
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:408:        default_source = config["data_source"].get("Default", "")
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:415:            # Get all values from the 'data_source' dictionary
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:416:            values = list(config["data_source"].values())
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:417:            # If there are no values in 'data_source', return early
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:424:                    config["data_source"]["Default"] = value
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:434:                    # migration to version 4 for data_source type change
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:120:    def _setup_player(self, mode, data_source=None, monitor=None):
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:126:        if data_source and monitor:
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:127:            self.config[CONFIG_KEY_DATA_SOURCE][monitor] = data_source
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:128:        self.config[CONFIG_KEY_DATA_SOURCE]["Default"] = data_source  # always update default source
+=== 找 MODE_VIDEO 分支怎么取文件路径 ===
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:26:    MODE_VIDEO,
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py:410:        if mode == MODE_VIDEO and not os.path.isfile(default_source):
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:27:    MODE_VIDEO,
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:143:        if mode in [MODE_VIDEO, MODE_STREAM]:
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:184:        self._setup_player(MODE_VIDEO, video_path, monitor)
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:205:        if self.config[CONFIG_KEY_MODE] == MODE_VIDEO:
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:226:                self.config[CONFIG_KEY_MODE] = MODE_VIDEO
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:310:        if player is not None and player.mode in [MODE_VIDEO, MODE_STREAM]:
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py:317:        if player is not None and player.mode in [MODE_VIDEO, MODE_STREAM]:
+=== file:// 或路径拼接样例 ===
+121:def get_video_paths():
+=== DONE ===
+

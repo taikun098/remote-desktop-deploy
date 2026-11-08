@@ -1,0 +1,39 @@
+=== user 组（是否在 nopasswdlogin）===
+uid=1000(user) gid=1000(user) groups=1000(user),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),101(lxd),113(nopasswdlogin)
+=== lightdm 自动登录配置 ===
+[Seat:*]
+autologin-user=user
+autologin-user-timeout=0
+autologin-session=xfce
+user-session=xfce
+=== lightdm 日志（autologin/nopasswdlogin 相关）===
+Nov 01 23:52:06 g01 lightdm[4742]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 01 23:57:12 g01 lightdm[1408]: session_real_run: assertion 'priv->argv != NULL' failed
+Nov 01 23:57:13 g01 lightdm[5781]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 01 23:57:13 g01 lightdm[5844]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 02 00:00:20 g01 lightdm[8000]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 02 00:00:20 g01 lightdm[8074]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "user"
+Nov 02 00:01:14 g01 lightdm[8723]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 02 00:01:14 g01 lightdm[8792]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" was met by user "user"
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:15 g01 lightdm[24555]: pam_unix(lightdm-autologin:session): session opened for user user(uid=1000) by (uid=0)
+Nov 02 03:20:23 g01 lightdm[28036]: pam_unix(lightdm-greeter:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 02 03:20:24 g01 lightdm[28244]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" was met by user "user"
+=== 当前活动 VT ===
+tty8
+=== Xorg :1 的 auth 权限 ===
+-rw------- 1 root root 48 Nov  2 03:20 /var/run/lightdm/root/:0
+-rw------- 1 root root 48 Nov  2 03:10 /var/run/lightdm/root/:1
+=== rustdesk --server 当前 DISPLAY（进程环境）===
+pid=88192
+DISPLAY=:0
+XAUTHORITY=/var/lib/lightdm/.Xauthority
+=== DONE ===
+

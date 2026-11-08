@@ -1,0 +1,8 @@
+=== 下载（代理 + 跟随重定向 + 重试）===
+代理下载后: 24940796 bytes
+=== 校验 ===
+ Package: rustdesk
+ Version: 1.5.0
+ Architecture: amd64
+=== DONE ===
+

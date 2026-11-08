@@ -1,0 +1,48 @@
+=== /etc/environment ===
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+LANG=zh_CN.UTF-8
+LANGUAGE=zh_CN:zh:en
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+SDL_IM_MODULE=fcitx
+=== xinputrc ===
+# im-config(8) generated on Mon, 02 Nov 2026 11:54:28 +0000
+run_im fcitx5
+# im-config signature: d2f59eef3a0550c6aa74814de6b17f32  -
+=== 自启入口 ===
+-rw-r--r-- 1 root   root   134 11月  2 11:54 /etc/xdg/autostart/fcitx5.desktop
+-rw-r--r-- 1 user user 134 11月  2 11:54 /home/user/.config/autostart/fcitx5.desktop
+=== fcitx5 命令存在？ ===
+/usr/bin/fcitx5
+=== DONE ===
+
+[e] + add_env GTK_IM_MODULE=fcitx
++ grep -q GTK_IM_MODULE=fcitx /etc/environment
++ echo GTK_IM_MODULE=fcitx
++ add_env QT_IM_MODULE=fcitx
++ grep -q QT_IM_MODULE=fcitx /etc/environment
++ echo QT_IM_MODULE=fcitx
++ add_env XMODIFIERS=@im=fcitx
++ grep -q XMODIFIERS=@im=fcitx /etc/environment
++ echo XMODIFIERS=@im=fcitx
++ add_env SDL_IM_MODULE=fcitx
++ grep -q SDL_IM_MODULE=fcitx /etc/environment
++ echo SDL_IM_MODULE=fcitx
++ echo '=== /etc/environment ==='
++ cat /etc/environment
++ im-config -n fcitx5
++ tail -3
++ echo '=== xinputrc ==='
++ cat /etc/X11/xinit/xinputrc
++ mkdir -p /home/user/.config/autostart
++ cat
++ chown user:user /home/user/.config/autostart/fcitx5.desktop
++ mkdir -p /etc/xdg/autostart
++ cat
++ echo '=== 自启入口 ==='
++ ls -l /home/user/.config/autostart/fcitx5.desktop /etc/xdg/autostart/fcitx5.desktop
++ echo '=== fcitx5 命令存在？ ==='
++ which fcitx5
++ echo '=== DONE ==='
+

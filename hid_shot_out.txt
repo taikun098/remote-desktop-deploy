@@ -1,0 +1,11 @@
+=== 截图工具 ===
+/usr/bin/import
+/usr/bin/xwd
+=== 截取 :0 桌面 ===
+import OK
+1.4M
+=== hidamari-server 状态（看是否在播）===
+264814 hidamari-server
+=== DONE ===
+
+[screenshot fetched]

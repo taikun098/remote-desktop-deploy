@@ -1,0 +1,66 @@
+=== 两个 Xorg 的父进程/启动时间 ===
+  24538   24528 Mon Nov  2 03:10:15 2026 /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+  28001   24528 Mon Nov  2 03:20:23 2026 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt8 -novtswitch
+=== lightdm 会话详情 ===
+c5 - user (1000)
+  Since: Mon 2026-11-02 03:10:15 UTC; 4h 57min ago
+  State: online
+ Leader: 24555 (lightdm)
+   Seat: seat0; vc7
+    TTY: tty7
+ Remote: no
+Service: lightdm-autologin
+---
+c6 - lightdm (111)
+  Since: Mon 2026-11-02 03:20:23 UTC; 4h 47min ago
+  State: active
+ Leader: 28036 (lightdm)
+   Seat: seat0; vc8
+Display: :0
+ Remote: no
+Service: lightdm-greeter
+=== 残留 closing 会话的 leader ===
+-- 141 --
+141 - user (1000)
+  Since: Mon 2026-11-02 08:29:02 UTC; 27min ago
+  State: closing
+ Leader: 82407
+-- 150 --
+150 - user (1000)
+  Since: Mon 2026-11-02 08:39:36 UTC; 16min ago
+  State: closing
+ Leader: 84509
+-- 154 --
+154 - user (1000)
+  Since: Mon 2026-11-02 08:44:55 UTC; 11min ago
+  State: closing
+ Leader: 86026
+-- 157 --
+157 - user (1000)
+  Since: Mon 2026-11-02 08:48:27 UTC; 7min ago
+  State: closing
+ Leader: 87061
+-- 159 --
+159 - user (1000)
+  Since: Mon 2026-11-02 08:51:23 UTC; 4min 50s ago
+  State: closing
+ Leader: 87764
+-- 163 --
+=== DISPLAY :0 的 XAUTHORITY 拥有者 / 谁在 :0 ===
+  24538 root     /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+  28001 root     /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt8 -novtswitch
+  89170 root     grep -E Xorg
+=== Xorg :0 打开的文件（哪个 tty/display）===
+Xorg :0 pid=28001
+lr-x------ 1 root root 64 Nov  2 03:28 0 -> /dev/null
+lrwx------ 1 root root 64 Nov  2 03:28 14 -> /dev/tty8
+lrwx------ 1 root root 64 Nov  2 03:20 15 -> /dev/dri/card1
+lrwx------ 1 root root 64 Nov  2 03:28 16 -> /dev/dri/card1
+lrwx------ 1 root root 64 Nov  2 03:20 17 -> /dev/vga_arbiter
+lrwx------ 1 root root 64 Nov  2 03:20 18 -> /dev/dri/card1
+lrwx------ 1 root root 64 Nov  2 03:28 19 -> /dev/dri/card1
+lrwx------ 1 root root 64 Nov  2 03:28 20 -> /dev/dri/card1
+lrwx------ 1 root root 64 Nov  2 03:28 29 -> /dev/input/event2
+lrwx------ 1 root root 64 Nov  2 03:20 30 -> /dev/input/event1
+=== DONE ===
+

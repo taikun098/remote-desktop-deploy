@@ -1,0 +1,14 @@
+### $ echo '===menu==='; sudo -n cat /usr/share/applications/orcaslicer.desktop
+===menu===
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=OrcaSlicer
+Name[zh_CN]=OrcaSlicer 切片
+Comment=3D Printing Slicer
+Exec=/usr/local/bin/orcaslicer %F
+Icon=applications-development
+Categories=Graphics;3DPrinting;
+Terminal=false
+### $ echo '===kill test instance==='; sudo -n pkill -f 'orca-slicer'; sleep 2; pgrep -f 'orca-slicer' | wc -l
+===kill test instance===

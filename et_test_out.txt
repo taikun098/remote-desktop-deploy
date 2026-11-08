@@ -1,0 +1,39 @@
+=== 启动 easytier-core（后台，日志到 /tmp/et_test.log）===
+easytier pid=45272
+=== 进程存活? ===
+  45272 /usr/local/bin/easytier-core --network-name lw --network-secret admin@8897802 -i 10.1.0.20 -p tcp://60.31.207.20:11011 tcp://yc.445800773.xyz:11011 --instance-name g01 --multi-thread true --bind-device true
+=== 日志尾部 ===
+2026-11-02T05:33:09.132091719Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] new peer connection added conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:35541" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:09.132333717Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] peer connection removed conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:35541" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:10.016201163Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] connecting to peer dst=tcp://60.31.207.20:11011
+2026-11-02T05:33:10.136807995Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] new peer connection added conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:44237" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:10.137027882Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] peer connection removed conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:44237" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:11.016672186Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] connecting to peer dst=tcp://60.31.207.20:11011
+2026-11-02T05:33:11.019893393Z  INFO CORE::INSTANCE: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] peer removed peer_id=3348015644
+2026-11-02T05:33:11.019900675Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] connect to peer error dst="tcp://yc.445800773.xyz:11011" ip_version="V4" error=AnyhowError(
+    "connect timeout after 1.996673125s",
+)
+2026-11-02T05:33:11.137103427Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] new peer connection added conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:33049" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:11.137155485Z  INFO CORE::INSTANCE: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] new peer added peer_id=3348015644
+2026-11-02T05:33:11.137262205Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] peer connection removed conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:33049" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:12.016777681Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] connecting to peer dst=tcp://60.31.207.20:11011
+2026-11-02T05:33:12.022433091Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] connecting to peer dst=tcp://yc.445800773.xyz:11011
+2026-11-02T05:33:12.13931114Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] new peer connection added conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:39423" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:12.139439977Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] peer connection removed conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:39423" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:13.015885973Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] connecting to peer dst=tcp://60.31.207.20:11011
+2026-11-02T05:33:13.136938875Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] new peer connection added conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:44893" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+2026-11-02T05:33:13.137186464Z  INFO CORE::INSTANCE::CONNECTION: [fa421f6b-1366-40f9-95b6-d36e23cbb6f7] peer connection removed conn_info=PeerConnInfo { my_peer_id: 928803264, dst_peer_id: 3348015644, tunnel_info: Some(TunnelInfo { tunnel_type: "tcp", local_addr: Some(Url { url: "tcp://192.168.0.20:44893" }), remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }), resolved_remote_addr: Some(Url { url: "tcp://60.31.207.20:11011" }) }) }
+=== tun 接口 ===
+3: tun0: <POINTOPOINT,UP,LOWER_UP> mtu 1360 qdisc fq_codel state UNKNOWN group default qlen 500
+    link/none 
+    inet 10.1.0.20/24 brd 10.1.0.255 scope global tun0
+       valid_lft forever preferred_lft forever
+=== 虚拟网络地址 ===
+    inet 10.1.0.20/24 brd 10.1.0.255 scope global tun0
+=== peer 状态 ===
+| ipv4         | hostname | cost  | lat(ms) | loss | rx | tx | tunnel | NAT            | version        |
+|--------------|----------|-------|---------|------|----|----|--------|----------------|----------------|
+| 10.1.0.20/24 | g01      | Local | -       | -    | -  | -  | -      | PortRestricted | 2.6.4-8428a89d |
+=== 清理测试进程 ===
+=== done ===
+

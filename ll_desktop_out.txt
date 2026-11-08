@@ -1,0 +1,10 @@
+=== 在 :0 桌面启动玲珑商店（保持运行）===
+=== 进程状态 ===
+92118 /opt/linglong-store/linglong_store
+=== unit 状态 ===
+active
+=== 日志（确认连上显示）===
+11月 02 13:59:10 g01 systemd[1]: Started linglong-store-gui.service - /usr/bin/linglong-store.
+11月 02 13:59:11 g01 linglong_store[92118]: 系统强调色：ReadAll 调用失败: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.freedesktop.portal.Settings 的对象上没有“/org/freedesktop/portal/desktop”接口
+=== DONE ===
+

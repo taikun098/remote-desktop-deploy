@@ -1,0 +1,13 @@
+=== deb 提供的文件 ===
+/usr/lib/systemd
+/usr/lib/systemd/user
+/usr/lib/systemd/user/sunshine.service
+/usr/share/sunshine
+/usr/bin/sunshine
+=== 查找 service 单元 ===
+/lib/systemd/user/sunshine.service
+/usr/lib/systemd/user/sunshine.service
+=== systemd 里 sunshine 单元 ===
+=== daemon-reload 后再查 ===
+=== DONE ===
+

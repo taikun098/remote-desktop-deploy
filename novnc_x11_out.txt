@@ -1,0 +1,20 @@
+=== 是否有 x11vnc 相关 systemd 单元 ===
+novnc.service                                enabled         enabled
+vnc.service                                  enabled         enabled
+-rw-r--r-- 1 root root 246 Nov  2 10:36 /etc/systemd/system/novnc.service
+-rw-r--r-- 1 root root 239 Nov  2 03:19 /etc/systemd/system/vnc.service
+=== x11vnc.service 内容（若有）===
+(无 x11vnc.service)
+=== 密码文件 ===
+-rw------- 1 root root 8 Nov  1 16:00 /etc/x11vnc.pass
+=****** 是否有 autostart / rc.local 启动 x11vnc ===
+=== 手动起一次 x11vnc 看报错 ===
+PORT=5900
+--- log ---
+One can also add -ncache_cr for smooth 'copyrect' window motion.
+More info: http://www.karlrunge.com/x11vnc/faq.html#faq-client-caching
+
+caught signal: 15
+02/11/2026 10:50:09 deleted 120 tile_row polling images.
+=== DONE ===
+

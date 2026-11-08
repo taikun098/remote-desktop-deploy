@@ -1,0 +1,10 @@
+===service===
+active
+===id===
+1318750665
+===password=******
+
+(rustdesk:149938): Gtk-WARNING **: 23:20:04.140: cannot open display: 
+===config===
+password = ''
+[sudo] password for user: 

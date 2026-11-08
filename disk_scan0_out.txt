@@ -1,0 +1,28 @@
+=== 磁盘概览（型号/大小/格式/挂载点）===
+NAME                        SIZE FSTYPE      MOUNTPOINT                    MODEL
+loop0                         4K squashfs    /snap/bare/5                  
+loop1                      66.8M squashfs    /snap/core24/2124             
+loop2                     283.4M squashfs    /snap/firefox/9137            
+loop3                       616M squashfs    /snap/gnome-46-2404/177       
+loop4                      91.7M squashfs    /snap/gtk-common-themes/1535  
+loop5                       402M squashfs    /snap/mesa-2404/1839          
+loop6                      44.7M squashfs    /snap/snapd/28254             
+loop7                      60.6M squashfs    /snap/core26/646              
+loop8                       4.3M squashfs    /snap/lxqt-support-core24/19  
+loop9                      50.7M squashfs    /snap/cups/1277               
+loop11                      1.6G squashfs    /snap/kf6-core24/69           
+sda                       238.5G                                           MG BGM.2 NGFF SS
+├─sda1                        1G vfat        /boot/efi                     
+├─sda2                        2G ext4        /boot                         
+└─sda3                    235.4G LVM2_member                               
+  └─ubuntu--vg-ubuntu--lv   100G ext4        /                             
+sdb                         1.8T                                           ST2000DM001-1CH1
+└─sdb1                      1.8T ntfs        /media/user/完成_50cc_09346 
+sdc                       476.9G                                           WXC-R1 512GB
+└─sdc1                    476.9G ext4        /home                         
+sdd                       465.8G                                           WDC WD5000AAKX-0
+└─sdd1                    465.8G ext4        /data                         
+=== 按大小找 1.8T 级 NTFS 分区（blkid）===
+/dev/sdb1: LABEL="M-eM-.M-^LM-fM-^HM-^P_50cc_09346" BLOCK_SIZE="512" UUID="F646327646323827" TYPE="ntfs" PARTLABEL="Basic data partition" PARTUUID="da3d86d3-9624-4614-8c59-9d7c6d4b6c78"
+=== DONE ===
+

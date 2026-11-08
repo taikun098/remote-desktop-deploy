@@ -1,0 +1,13 @@
+=== 安装日志尾部 ===
+正在安装 runtime/org.freedesktop.Platform.GL.default/x86_64/25.08
+正在安装 runtime/org.freedesktop.Platform.GL.default/x86_64/25.08-extra
+正在安装 runtime/org.freedesktop.Platform.codecs-extra/x86_64/25.08-extra
+正在安装 runtime/org.gnome.Platform.Locale/x86_64/50
+正在安装 runtime/org.gnome.Platform/x86_64/50
+正在安装 app/io.github.jeffshee.Hidamari/x86_64/stable
+=== 已装应用 ===
+Hidamari	io.github.jeffshee.Hidamari	3.7	stable	system
+--- 安装进程 ---
+264583 timeout 30 bash -c  echo "=== 安装日志尾部 ===" tail -6 /tmp/hid_install.log 2>/dev/null echo "=== 已装应用 ===" flatpak list --app 2>/dev/null | grep -i hidamari echo "--- 安装进程 ---" pgrep -af "flatpak.*Hidamari" | head -1 || echo "(安装已结束)" echo "=== DONE ===" 
+=== DONE ===
+

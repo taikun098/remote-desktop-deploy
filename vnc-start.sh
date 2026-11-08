@@ -1,0 +1,31 @@
+#!/bin/bash
+# VNC 远程桌面启动脚本：Xvfb + xfce4 + x11vnc
+# 开机由 systemd 调用；DISPLAY 使用虚拟屏 :0
+export HOME=/root
+export DISPLAY=:0
+# 中文界面环境（需 language-pack-zh-hans 已装）
+export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+# 中文输入法（Fcitx5）
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+# 1) 虚拟显示器
+Xvfb :0 -screen 0 1920x1080x24 -ac &
+sleep 2
+
+# 2) DBus + xfce4 桌面会话
+dbus-launch --exit-with-session xfce4-session &
+sleep 4
+
+# 3) 中文输入法（用后台任务方式，避免 -d 守护在 systemd 下静默退出）
+fcitx5 &
+sleep 1
+
+# 4) x11vnc 共享 :0，端口 5900（Xvfb 已用 -ac 关闭访问控制，无需 -auth）
+x11vnc -display :0 -forever -shared -noxdamage \
+    -rfbauth /etc/x11vnc.pass -rfbport 5900 -o /var/log/x11vnc.log &
+
+# 保持服务存活（任一进程退出则返回，由 systemd 自动重启）
+wait

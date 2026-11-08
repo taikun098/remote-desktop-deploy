@@ -1,0 +1,52 @@
+=== 1) 进程是否存活 ===
+164550 /usr/bin/sunshine
+--- 端口 ---
+LISTEN 0      4096         0.0.0.0:48010      0.0.0.0:*    users:(("sunshine",pid=164550,fd=17))                  
+LISTEN 0      4096         0.0.0.0:47990      0.0.0.0:*    users:(("sunshine",pid=164550,fd=32))                  
+=== 2) sunshine.log 全文（找编码器/显示/错误）===
+[2026-11-02 16:17:11.103]: Info: Using default rate control
+[2026-11-02 16:17:11.229]: Info: Creating encoder [hevc_vaapi]
+[2026-11-02 16:17:11.229]: Info: Color coding: SDR (Rec. 601)
+[2026-11-02 16:17:11.229]: Info: Color depth: 8-bit
+[2026-11-02 16:17:11.229]: Info: Color range: JPEG
+[2026-11-02 16:17:11.241]: Info: vaapi vendor: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.4 for AMD Radeon RX 590 GME (radeonsi, polaris10, ACO, DRM 3.57, 6.8.0-147-generic)
+[2026-11-02 16:17:11.243]: Info: Streaming bitrate is 1000000
+[2026-11-02 16:17:11.243]: Info: Using normal encoding mode
+[2026-11-02 16:17:11.243]: Info: Using default rate control
+[2026-11-02 16:17:11.293]: Info: Creating encoder [av1_vaapi]
+[2026-11-02 16:17:11.293]: Info: Color coding: SDR (Rec. 601)
+[2026-11-02 16:17:11.293]: Info: Color depth: 8-bit
+[2026-11-02 16:17:11.293]: Info: Color range: JPEG
+[2026-11-02 16:17:11.305]: Info: vaapi vendor: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.4 for AMD Radeon RX 590 GME (radeonsi, polaris10, ACO, DRM 3.57, 6.8.0-147-generic)
+[2026-11-02 16:17:11.306]: Info: Streaming bitrate is 1000000
+[2026-11-02 16:17:11.306]: Error: [av1_vaapi @ 0x609340ff2800] No usable encoding profile found.
+[2026-11-02 16:17:11.306]: Error: Could not open codec [av1_vaapi]: 函数未实现
+[2026-11-02 16:17:11.308]: Info: Screencasting with KMS
+[2026-11-02 16:17:11.308]: Info: /dev/dri/card1 -> amdgpu
+[2026-11-02 16:17:11.308]: Info: Found monitor for DRM screencasting
+[2026-11-02 16:17:11.308]: Info: Found connector ID [94]
+[2026-11-02 16:17:11.309]: Info: Found cursor plane [58]
+[2026-11-02 16:17:11.313]: Info: Creating encoder [hevc_vaapi]
+[2026-11-02 16:17:11.313]: Info: Color coding: SDR (Rec. 709)
+[2026-11-02 16:17:11.313]: Info: Color depth: 10-bit
+[2026-11-02 16:17:11.313]: Info: Color range: JPEG
+[2026-11-02 16:17:11.324]: Info: vaapi vendor: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.4 for AMD Radeon RX 590 GME (radeonsi, polaris10, ACO, DRM 3.57, 6.8.0-147-generic)
+[2026-11-02 16:17:11.326]: Info: Streaming bitrate is 1000000
+[2026-11-02 16:17:11.326]: Error: [hevc_vaapi @ 0x609341d536c0] No usable encoding entrypoint found for profile VAProfileHEVCMain10 (18).
+[2026-11-02 16:17:11.326]: Error: Could not open codec [hevc_vaapi]: 函数未实现
+[2026-11-02 16:17:11.328]: Info: 
+[2026-11-02 16:17:11.328]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2026-11-02 16:17:11.328]: Info: 
+[2026-11-02 16:17:11.328]: Info: Found H.264 encoder: h264_vaapi [vaapi]
+[2026-11-02 16:17:11.328]: Info: Found HEVC encoder: hevc_vaapi [vaapi]
+[2026-11-02 16:17:11.418]: Info: Open the Web UI to set your new username and password and getting started
+[2026-11-02 16:17:11.418]: Info: File /home/user/.config/sunshine/sunshine_state.json doesn't exist
+[2026-11-02 16:17:11.420]: Info: Adding avahi service g01
+[2026-11-02 16:17:11.420]: Info: Configuration UI available at [https://localhost:47990]
+[2026-11-02 16:17:12.296]: Info: Avahi service g01 successfully established.
+=== 3) 详细连接测试 ===
+* Connected to 127.0.0.1 (127.0.0.1) port 47990
+> GET / HTTP/1.1
+
+=== DONE ===
+

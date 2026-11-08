@@ -1,0 +1,18 @@
+===unit enabled/active===
+enabled
+active
+===port 5900===
+(5900 未监听)
+===procs===
+23187 Xvfb :0 -screen 0 1920x1080x24 -ac
+23200 xfce4-session
+23377 xfce4-panel
+23421 /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+===x11vnc log===
+/tmp/fd.gXixiJ: 1: netstat: not found
+01/11/2026 16:01:18 -auth guess: failed for display=':0'
+01/11/2026 16:01:18 -auth guess: since we are root, retrying with FD_XDM=1
+/tmp/fd.3Ur8HP: 1: netstat: not found
+01/11/2026 16:01:18 -auth guess: failed for display=':0'
+===ufw===
+Status: inactive

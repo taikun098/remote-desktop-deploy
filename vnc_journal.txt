@@ -1,0 +1,16 @@
+===last 15 vnc journal===
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86NextElement
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86PreviousElement
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86AutopilotEngageToggle
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86MarkWaypoint
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86Sos
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86NavChart
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86FishingChart
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86SingleRangeRadar
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86DualRangeRadar
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86RadarOverlay
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86TraditionalSonar
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86ClearvuSonar
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86SidevuSonar
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: > Warning:          Could not resolve keysym XF86NavInfo
+Nov 01 16:32:09 g01 vnc-start.sh[31610]: Errors from xkbcomp are not fatal to the X server

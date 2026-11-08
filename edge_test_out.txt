@@ -1,0 +1,15 @@
+=== Edge 版本 ===
+Microsoft Edge 156.0.4314.58 
+=== Edge 无头冒烟测试（渲染一个简单页面）===
+Hello Edge
+(上行为渲染结果)
+=== 中文渲染能力（检查是否输出中文）===
+中文测试
+=== Edge 能否在 :0 启动（GUI）===
+GUI 进程未检测到
+--- 错误日志尾 ---
+[9585:9585:1102/115638.124357:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:257] Missing X server or $DISPLAY
+[9585:9585:1102/115638.124388:ERROR:ui/aura/env.cc:253] The platform failed to initialize.  Exiting.
+[9585:9609:1102/115638.124942:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+=== DONE ===
+

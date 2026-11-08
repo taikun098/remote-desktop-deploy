@@ -1,0 +1,8 @@
+
+[e] bash: line 18: tun0 || echo "(no tun0 yet)"
+echo "--- service unit ---"
+cat /etc/systemd/system/easytier.service
+echo "--- process ---"
+ps -eo pid,args | grep [e]asytier-core || echo "(no process)"
+: No such file or directory
+

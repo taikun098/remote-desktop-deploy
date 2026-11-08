@@ -1,0 +1,41 @@
+=== 1. 开机时间（确认是否真重启）===
+up 1 minute
+2026-11-02 11:25:22
+=== 2. 桌面自动登录 ===
+活动终端: tty7
+--- X 会话 ---
+user   tty7         2026-11-02 11:25 (:0)
+--- lightdm 会话 ---
+SESSION  UID USER   SEAT  TTY  STATE  IDLE SINCE
+      3 1000 user -     -    active no   -
+     c1 1000 user seat0 tty7 active no   -
+
+2 sessions listed.
+=== 3. rustdesk 服务 ===
+active
+enabled
+--- 运行用户 ---
+   1885 root     sudo -E XDG_RUNTIME_DIR=/run/user/1000 -u user /usr/share/rustdesk/rustdesk --server
+   1886 user   /usr/share/rustdesk/rustdesk --server
+=== 4. 21118 直连监听 ===
+LISTEN 0      128                *:21118            *:*    users:(("rustdesk",pid=1886,fd=20))                    
+--- 21118 握手测试 ---
+00000000: b04a 2a0a 206b 3736 7237 726b            .J*. k76r7rk
+=== 5. noVNC / x11vnc 自启 ===
+active
+inactive
+LISTEN 0      100          0.0.0.0:6080       0.0.0.0:*    users:(("websockify",pid=1323,fd=3))                   
+=== 6. rustdesk 到 yc 注册/心跳（日志）===
+[2026-11-02 11:25:36.053850 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:523] set hwcodec config
+[2026-11-02 11:25:36.053867 +00:00] DEBUG [libs/scrap/src/common/hwcodec.rs:524] HwCodecConfig { signature: 0, ram_encode: [CodecInfo { name: "h264_vaapi", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_NONE }], ram_decode: [CodecInfo { name: "h264", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "h264", mc_name: None, format: H264, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }] }
+[2026-11-02 11:25:36.829038 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:742] Check hwcodec config, exit with: exit status: 0
+[2026-11-02 11:25:38.862018 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+[2026-11-02 11:26:33.530991 +00:00] INFO [src/rendezvous_mediator.rs:1396] direct access from [::ffff:127.0.0.1]:56460
+[2026-11-02 11:26:33.532559 +00:00] DEBUG [src/server/connection.rs:1498] #1989 Connection opened from 127.0.0.1:56460.
+[2026-11-02 11:26:33.542098 +00:00] INFO [src/server/connection.rs:5249] #1989 Connection closed: Connection reset by peer (os error 104)
+[2026-11-02 11:26:33.542184 +00:00] INFO [src/server/connection.rs:1237] #1989 connection loop exited
+=== 7. EasyTier 自启 ===
+active
+    inet 10.1.0.20/24 brd 10.1.0.255 scope global tun0
+=== DONE ===
+

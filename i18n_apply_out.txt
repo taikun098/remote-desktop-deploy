@@ -1,0 +1,42 @@
+=== 桌面是否回来 ===
+活动终端: tty7
+user   tty7         2026-11-02 11:55 (:0)
+=== fcitx5 进程是否在跑 ===
+   8188 user   /usr/bin/fcitx5
+=== 会话 locale ===
+LANG=zh_CN.UTF-8
+LANGUAGE=zh_CN:zh:en
+LC_CTYPE="zh_CN.UTF-8"
+LC_NUMERIC=zh_CN.UTF-8
+=== 服务状态 ===
+rustdesk:active novnc:active vnc:active 
+=== DONE ===
+
+[e] + systemctl restart lightdm
++ sleep 18
++ echo '=== 桌面是否回来 ==='
+++ cat /sys/class/tty/tty0/active
++ echo '活动终端: tty7'
++ ps -eo pid,user,args
++ grep '[X]org :0'
++ head -1
++ who
++ echo '=== fcitx5 进程是否在跑 ==='
++ ps -eo pid,user,args
++ grep '[f]citx5'
++ head -3
++ echo '=== 会话 locale ==='
++ sudo -u user bash -lc 'locale | head -4'
++ echo '=== 服务状态 ==='
++ for s in rustdesk novnc vnc
+++ systemctl is-active rustdesk
++ printf '%s:%s ' rustdesk active
++ for s in rustdesk novnc vnc
+++ systemctl is-active novnc
++ printf '%s:%s ' novnc active
++ for s in rustdesk novnc vnc
+++ systemctl is-active vnc
++ printf '%s:%s ' vnc active
++ echo
++ echo '=== DONE ==='
+

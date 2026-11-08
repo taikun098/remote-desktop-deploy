@@ -1,0 +1,9 @@
+=== steam 进程 ===
+132454 /home/user/.steam/debian-installation/ubuntu12_32/steam -srt-logger-opened -nominidumps -nobreakpad -nobigpicture
+steam PID=132454
+=== 环境变量中的代理 ===
+无任何代理环境变量 ✅（走正常网络）
+=== 对照：系统中残留 proxy env（/etc/environment）===
+(/etc/environment 无 proxy)
+=== DONE ===
+

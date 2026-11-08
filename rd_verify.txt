@@ -1,0 +1,6 @@
+===binary===
+/usr/bin/rustdesk
+===version===
+1.5.0
+===dpkg===
+ii  rustdesk                                       1.5.0                                            amd64        A remote control software.

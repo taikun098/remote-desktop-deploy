@@ -1,0 +1,55 @@
+=== 挂载点与挂载方式 ===
+挂载点: /media/user/完成_50cc_09346
+TARGET                        OPTIONS
+/media/user/完成_50cc_09346 rw,nosuid,nodev,relatime,uid=1000,gid=1000,iocharset=utf8
+=== 根目录内容（只读查看，一层）===
+总计 829272
+drwxrwxrwx  1 user user      8192 10月 30 03:22 .
+drwxr-x---+ 3 root   root        4096 11月  2 13:17 ..
+drwxr-xr-x  1 user user      4096  9月 15  2025 $RECYCLE.BIN
+-rwxr-xr-x  1 user user 168922643  7月 17  2025 开始游戏.exe
+-rwxr-xr-x  1 user user       922  9月 15  2025 酷玩.lnk
+drwxr-xr-x  1 user user      4096  9月 13 04:54 迅雷下载
+-rwxr-xr-x  1 user user 676057350  8月 16  2025 游戏运行库一键安装(1).exe
+drwxr-xr-x  1 user user         0  3月  9  2026 BaiduNetdiskDownload
+-rwxr-xr-x  1 user user     17734 11月  7  2007 eula.1028.txt
+-rwxr-xr-x  1 user user     17734 11月  7  2007 eula.1031.txt
+-rwxr-xr-x  1 user user     10134 11月  7  2007 eula.1033.txt
+-rwxr-xr-x  1 user user     17734 11月  7  2007 eula.1036.txt
+-rwxr-xr-x  1 user user     17734 11月  7  2007 eula.1040.txt
+-rwxr-xr-x  1 user user       118 11月  7  2007 eula.1041.txt
+-rwxr-xr-x  1 user user     17734 11月  7  2007 eula.1042.txt
+-rwxr-xr-x  1 user user     17734 11月  7  2007 eula.2052.txt
+-rwxr-xr-x  1 user user     17734 11月  7  2007 eula.3082.txt
+-rwxr-xr-x  1 user user      1110 11月  7  2007 globdata.ini
+-rwxr-xr-x  1 user user    562688 11月  7  2007 install.exe
+-rwxr-xr-x  1 user user       843 11月  7  2007 install.ini
+-rwxr-xr-x  1 user user     76304 11月  7  2007 install.res.1028.dll
+-rwxr-xr-x  1 user user     96272 11月  7  2007 install.res.1031.dll
+-rwxr-xr-x  1 user user     91152 11月  7  2007 install.res.1033.dll
+-rwxr-xr-x  1 user user     97296 11月  7  2007 install.res.1036.dll
+-rwxr-xr-x  1 user user     95248 11月  7  2007 install.res.1040.dll
+-rwxr-xr-x  1 user user     81424 11月  7  2007 install.res.1041.dll
+-rwxr-xr-x  1 user user     79888 11月  7  2007 install.res.1042.dll
+-rwxr-xr-x  1 user user     75792 11月  7  2007 install.res.2052.dll
+-rwxr-xr-x  1 user user     96272 11月  7  2007 install.res.3082.dll
+drwxr-xr-x  1 user user      4096  9月 12  2025 kuwan
+-rwxr-xr-x  1 user user    904704 12月  1  2006 msdia80.dll
+drwxr-xr-x  1 user user     28672 11月  1 05:12 Playnite
+drwxr-xr-x  1 user user         0  5月 19 06:44 ProgramData
+drwxr-xr-x  1 user user      4096  3月 10  2026 System Volume Information
+drwxr-xr-x  1 user user         0  3月 10  2026 tmpe
+-rwxr-xr-x  1 user user   1442522 11月  7  2007 VC_RED.cab
+-rwxr-xr-x  1 user user      5686 11月  7  2007 vcredist.bmp
+-rwxr-xr-x  1 user user    232960 11月  7  2007 VC_RED.MSI
+=== 根目录第一层里是否有 exe（maxdepth=1）===
+/media/user/完成_50cc_09346/install.exe
+/media/user/完成_50cc_09346/开始游戏.exe
+/media/user/完成_50cc_09346/游戏运行库一键安装(1).exe
+=== 根目录第一层的目录/文件统计 ===
+顶层目录数: 9
+顶层文件数: 28
+=== 盘使用情况 ===
+/dev/sdb1       1.9T  1.6T  277G   86% /media/user/完成_50cc_09346
+=== DONE ===
+

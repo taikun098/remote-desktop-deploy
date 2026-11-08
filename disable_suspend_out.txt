@@ -1,0 +1,25 @@
+=== 1) 屏蔽 sleep/suspend/hibernate 目标 ===
+masked:
+masked
+masked
+masked
+masked
+=== 2) logind 忽略电源/合盖/空闲动作 ===
+logind done
+=== 3) xfce4 电源管理器：空闲不休眠 ===
+(set inactivity-sleep-mode=0, or already)
+=== 4) 验证：挂起目标已不可用 ===
+hibernate.target                    masked enabled
+hybrid-sleep.target                 masked enabled
+sleep.target                        masked enabled
+suspend.target                      masked enabled
+=== 5) 当前挂起目标状态 ===
+○ suspend.target
+     Loaded: masked (Reason: Unit suspend.target is masked.)
+=== done ===
+
+[e] Created symlink /etc/systemd/system/sleep.target → /dev/null.
+Created symlink /etc/systemd/system/suspend.target → /dev/null.
+Created symlink /etc/systemd/system/hibernate.target → /dev/null.
+Created symlink /etc/systemd/system/hybrid-sleep.target → /dev/null.
+

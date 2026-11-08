@@ -1,0 +1,12 @@
+=== 找 rustdesk 日志 ===
+=== 日志目录 ===
+total 24
+drwxrwxr-x 2 lightdm lightdm 4096 Nov  2 07:58 .
+drwx------ 7 lightdm lightdm 4096 Nov  1 23:56 ..
+-rw------- 1 lightdm lightdm  520 Nov  1 23:49 RustDesk2.toml
+-rw------- 1 lightdm lightdm 1560 Nov  2 07:58 RustDesk.toml
+-rw------- 1 root    root    1178 Nov  2 07:47 RustDesk.toml.bak.1793605673
+-rw------- 1 root    root    1350 Nov  2 07:58 RustDesk.toml.bak2.1793606288
+=== 日志尾部（rendezvous/connect/server/key/error）===
+=== DONE ===
+

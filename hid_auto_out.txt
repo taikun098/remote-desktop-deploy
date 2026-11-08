@@ -1,0 +1,11 @@
+=== 配 XFCE 开机自启 ===
+已写入自启条目 ✅
+=== 确认壁纸目录 ===
+总计 49M
+-rwxrwxr-x 1 user user 49M 11月  3 00:26 world_of_warcraft.mp4
+=== DONE ===
+
+[e] bash: 行 4: /home/user/.config/autostart/hidamari.desktop: 权限不够
+chown: 无法访问 '/home/user/.config/autostart/hidamari.desktop': 没有那个文件或目录
+ls: 无法访问 '/home/user/.config/autostart/hidamari.desktop': 没有那个文件或目录
+

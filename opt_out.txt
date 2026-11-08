@@ -1,0 +1,30 @@
+=== 优化前磁盘 ===
+文件系统                           大小  已用  可用 已用% 挂载点
+/dev/mapper/ubuntu--vg-ubuntu--lv   98G   13G   81G   14% /
+/dev/sdc1                          469G   27M  445G    1% /home
+/dev/sdd1                          458G   28K  435G    1% /data
+=== apt 清理（autoremove 旧依赖 + 清缓存）===
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 0 个软件包未被升级。
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+=== 清理临时文件/日志（保守）===
+Vacuuming done, freed 0B of archived journals from /var/log/journal.
+Vacuuming done, freed 0B of archived journals from /run/log/journal.
+=== 确认核心服务健康 ===
+rustdesk:active novnc:active vnc:active easytier:active 
+=== 中文会话确认 ===
+LANG=zh_CN.UTF-8
+IM=fcitx
+=== fcitx5 在跑 ===
+1
+fcitx5 运行中
+=== Edge 可用 ===
+Microsoft Edge 156.0.4314.58 
+=== 磁盘空间（优化后）===
+/dev/mapper/ubuntu--vg-ubuntu--lv   98G   13G   81G   14% /
+/dev/sdc1                          469G   27M  445G    1% /home
+/dev/sdd1                          458G   28K  435G    1% /data
+=== DONE ===
+

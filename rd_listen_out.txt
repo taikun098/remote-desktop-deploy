@@ -1,0 +1,10 @@
+=== rustdesk listening ports ===
+LISTEN 0      128                *:21118            *:*    users:(("rustdesk",pid=28286,fd=19))                   
+=== all listen (any proc) top ===
+LISTEN 0      128                *:21118            *:*    users:(("rustdesk",pid=28286,fd=19))                   
+=== password field in config (root service) ===
+enc_id = <set>
+password = ******
+=== rustdesk svc ===
+active
+

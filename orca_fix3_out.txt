@@ -1,0 +1,12 @@
+=== 写正确启动器（指向 AppRun）===
+#!/bin/bash
+# OrcaSlicer 解包启动器（绕过 FUSE）
+export APPDIR=/opt/orcaslicer/squashfs-root
+exec /opt/orcaslicer/squashfs-root/AppRun "$@"
+=== 测试启动（:0, 15秒）===
+launch_exit=124
+--- 日志尾部 ---
+
+(orca-slicer:89125): Gtk-CRITICAL **: 13:56:19.429: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+=== DONE ===
+

@@ -1,0 +1,25 @@
+玲珑环境安装已提交
+
+轮询00 active
+ll-env 结束
+=== ll-env 状态 ===
+inactive
+inactive(已完成)
+=== journal ===
+11月 02 13:44:20 g01 sudo[75553]:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/env DEBIAN_FRONTEND=noninteractive apt-get install -y linglong-bin linglong-installer
+11月 02 13:44:20 g01 sudo[75553]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+11月 02 13:44:21 g01 sudo[75553]: pam_unix(sudo:session): session closed for user root
+11月 02 13:44:21 g01 bash[75554]: 正在读取软件包列表...
+11月 02 13:44:21 g01 bash[75554]: 正在分析软件包的依赖关系树...
+11月 02 13:44:21 g01 bash[75554]: 正在读取状态信息...
+11月 02 13:44:21 g01 bash[75554]: E: 无法定位软件包 linglong-bin
+11月 02 13:44:21 g01 bash[75554]: E: 无法定位软件包 linglong-installer
+11月 02 13:44:21 g01 bash[75099]: + echo '=== LLENV_DONE ==='
+11月 02 13:44:21 g01 bash[75099]: === LLENV_DONE ===
+11月 02 13:44:21 g01 systemd[1]: ll-env.service: Deactivated successfully.
+11月 02 13:44:21 g01 systemd[1]: ll-env.service: Consumed 3.026s CPU time.
+=== 校验点 ===
+=== ll-cli ===
+=== 已装玲珑包 ===
+=== DONE ===
+

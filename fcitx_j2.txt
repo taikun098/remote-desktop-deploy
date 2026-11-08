@@ -1,0 +1,28 @@
+Nov 01 16:36:01 g01 systemd[1]: Stopping vnc.service - VNC Remote Desktop (Xvfb + xfce4 + x11vnc)...
+Nov 01 16:36:01 g01 xfce4-power-man[31204]: Error: 连接已关闭
+Nov 01 16:36:01 g01 xfce4-power-man[31204]: Error: 连接已关闭
+Nov 01 16:36:01 g01 systemd[1]: vnc.service: Deactivated successfully.
+Nov 01 16:36:01 g01 systemd[1]: Stopped vnc.service - VNC Remote Desktop (Xvfb + xfce4 + x11vnc).
+--
+Nov 01 16:36:02 g01 vnc-start.sh[31864]: > Warning:          Could not resolve keysym XF86NavInfo
+Nov 01 16:36:02 g01 vnc-start.sh[31864]: Errors from xkbcomp are not fatal to the X server
+Nov 01 16:36:04 g01 dbus-daemon[31870]: [session uid=0 pid=31868] AppArmor D-Bus mediation is enabled
+Nov 01 16:36:04 g01 dbus-daemon[31870]: [session uid=0 pid=31868] Activating service name='org.a11y.Bus' requested by ':1.0' (uid=0 pid=31865 comm="xfce4-session" label="unconfined")
+--
+Nov 01 16:36:04 g01 vnc-start.sh[31894]: /usr/bin/iceauth:  unable to generate an authority file name
+Nov 01 16:36:04 g01 xfce4-session[31865]: Failed to setup the ICE authentication data, session management might not work properly.
+Nov 01 16:36:04 g01 dbus-daemon[31870]: [session uid=0 pid=31868] Activating service name='org.gtk.vfs.Daemon' requested by ':1.6' (uid=0 pid=31903 comm="xfwm4" label="unconfined")
+Nov 01 16:36:04 g01 dbus-daemon[31870]: [session uid=0 pid=31868] Successfully activated service 'org.gtk.vfs.Daemon'
+--
+Nov 01 16:36:04 g01 xfce4-session[31865]: ICE connection 0x6527a886e1a0 rejected
+Nov 01 16:36:04 g01 xfwm4[31903]: Failed to connect to session manager: 无法与会话管理器连接：Authentication Rejected, reason : None of the authentication protocols specified are supported and host-based authentication failed
+Nov 01 16:36:08 g01 vnc-start.sh[31933]: terminate called after throwing an instance of 'std::runtime_error'
+Nov 01 16:36:08 g01 vnc-start.sh[31933]:   what():  Home is not set
+Nov 01 16:36:09 g01 vnc-start.sh[31851]: /usr/local/bin/vnc-start.sh: 第 23 行： 31933 已中止               （核心已转储） fcitx5
+Nov 01 16:36:09 g01 vnc-start.sh[31936]: PORT=5900
+Nov 01 16:36:12 g01 xfce4-session[31865]: ICE connection 0x6527a88b2a50 rejected
+Nov 01 16:36:12 g01 vnc-start.sh[31943]: Failed to connect to session manager: 无法与会话管理器连接：Authentication Rejected, reason : None of the authentication protocols specified are supported and host-based authentication failed
+Nov 01 16:36:20 g01 xfce4-session[31865]: ICE connection 0x6527a88b2a50 rejected
+Nov 01 16:36:20 g01 vnc-start.sh[31947]: xfce4-panel: Failed to connect to session manager: 无法与会话管理器连接：Authentication Rejected, reason : None of the authentication protocols specified are supported and host-based authentication failed
+Nov 01 16:36:20 g01 dbus-daemon[31870]: [session uid=0 pid=31868] Activating service name='org.freedesktop.Notifications' requested by ':1.12' (uid=0 pid=31953 comm="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0" label="unconfined")
+Nov 01 16:36:20 g01 dbus-daemon[31870]: [session uid=0 pid=31868] Successfully activated service 'org.freedesktop.Notifications'

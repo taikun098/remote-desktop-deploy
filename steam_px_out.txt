@@ -1,0 +1,30 @@
+=== 建 Steam 代理启动器 /usr/local/bin/steam-px ===
+#!/bin/bash
+# Steam 走局域网代理（HTTP 192.168.0.6:7897）以加速更新
+export http_proxy=http://192.168.0.6:7897
+export https_proxy=http://192.168.0.6:7897
+export no_proxy=localhost,127.0.0.1,192.168.0.0/16,10.1.0.0/16
+exec /usr/games/steam "$@"
+=== 更新 steam.desktop Exec 指向代理启动器 ===
+Exec=/usr/local/bin/steam-px %U
+=== 停止当前 Steam ===
+90295 bash /tmp/steam_px.sh
+=== 用代理重启 Steam（:0, user）===
+--- steam 进程 ---
+90362 sudo -S -u user env DISPLAY=:0 XAUTHORITY=/home/user/.Xauthority /usr/local/bin/steam-px -nobigpicture
+90483 /home/user/.steam/debian-installation/ubuntu12_32/steam -nominidumps -nobreakpad -nobigpicture
+--- 验证代理环境是否注入 ---
+no_proxy=localhost,127.0.0.1,192.168.0.0/16,10.1.0.0/16
+https_proxy=http://192.168.0.6:7897
+http_proxy=http://192.168.0.6:7897
+steam PID=90483
+--- 启动日志 ---
+[2026-11-02 13:57:35] Downloading update (14,107 of 400,955 KB)...
+[2026-11-02 13:57:35] Downloading update (15,307 of 400,955 KB)...
+[2026-11-02 13:57:35] Downloading update (16,363 of 400,955 KB)...
+[2026-11-02 13:57:36] Downloading update (17,307 of 400,955 KB)...
+[2026-11-02 13:57:36] Downloading update (18,475 of 400,955 KB)...
+[2026-11-02 13:57:36] Downloading update (19,691 of 400,955 KB)...
+[2026-11-02 13:57:36] Downloading update (20,347 of 400,955 KB)...
+[2026-11-02 13:57:37] === DONE ===
+

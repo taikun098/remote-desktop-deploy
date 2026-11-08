@@ -1,0 +1,74 @@
+Steam 安装已提交
+FreeCAD 下载已提交
+
+轮询00 steam=True fc=True
+轮询01 steam=True fc=True
+轮询02 steam=True fc=True
+轮询03 steam=True fc=True
+轮询04 steam=True fc=True
+轮询05 steam=True fc=True
+轮询06 steam=True fc=True
+轮询07 steam=True fc=True
+轮询08 steam=True fc=True
+轮询09 steam=True fc=True
+轮询10 steam=True fc=True
+轮询11 steam=True fc=True
+轮询12 steam=True fc=True
+轮询13 steam=True fc=True
+轮询14 steam=True fc=True
+轮询15 steam=True fc=True
+轮询16 steam=True fc=True
+轮询17 steam=True fc=True
+轮询18 steam=False fc=True
+轮询19 steam=False fc=True
+轮询20 steam=False fc=True
+轮询21 steam=False fc=True
+轮询22 steam=False fc=True
+轮询23 steam=False fc=True
+轮询24 steam=False fc=True
+轮询25 steam=False fc=True
+轮询26 steam=False fc=True
+轮询27 steam=False fc=True
+轮询28 steam=False fc=True
+轮询29 steam=False fc=True
+轮询30 steam=False fc=True
+轮询31 steam=False fc=True
+轮询32 steam=False fc=True
+轮询33 steam=False fc=True
+轮询34 steam=False fc=True
+轮询35 steam=False fc=True
+轮询36 steam=False fc=True
+轮询37 steam=False fc=True
+轮询38 steam=False fc=True
+轮询39 steam=False fc=True
+轮询40 steam=False fc=True
+轮询41 steam=False fc=True
+轮询42 steam=False fc=True
+轮询43 steam=False fc=True
+轮询44 steam=False fc=True
+轮询45 steam=False fc=True
+轮询46 steam=False fc=True
+轮询47 steam=False fc=True
+轮询48 steam=False fc=True
+轮询49 steam=False fc=True
+轮询50 steam=False fc=True
+轮询51 steam=False fc=True
+轮询52 steam=False fc=True
+轮询53 steam=False fc=True
+轮询54 steam=False fc=True
+轮询55 steam=False fc=True
+轮询56 steam=False fc=True
+轮询57 steam=False fc=True
+轮询58 steam=False fc=True
+轮询59 steam=False fc=True
+=== Steam 单元 ===
+inactive
+--- steam.log 尾 ---
+Running as unit: steam-install.service; invocation ID: 426a988eacd14321a5c2ca2e9f55684c
+=== FreeCAD 单元 ===
+active
+--- fc_dl.log 尾 ---
+Running as unit: fc-dl.service; invocation ID: 96dfe7579c7745edb6bc72a9b339df84
+=== 校验点 ===
+=== DONE ===
+

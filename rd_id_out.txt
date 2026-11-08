@@ -1,0 +1,8 @@
+=== 当前设备 ID (enc_id) ===
+enc_id = '00AQP15IjchYodsmPNOLLl5UtYSbAcfVzKBmNxeai5eQW+Le+WLUQlGqUtmC5dudjZ8HAI'
+enc_id = '00AQP15IjchYodsmPNOLLl5UtYSbAcfVzKBmNxeai5eQW+Le+WLUQlGqUtmC5dudjZ8HAI'
+=== key 字段来源确认（RustDesk.toml 是否有 key_pair 无关）===
+=== 21116 最终确认 ===
+TCP未监听
+=== DONE ===
+

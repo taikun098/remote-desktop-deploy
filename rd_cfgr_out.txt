@@ -1,0 +1,23 @@
+=== 检查显示情况 ===
+DISPLAY 环境: 
+X0
+  24538 /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+  28001 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt8 -novtswitch
+=== 写 root 配置（顶层+[options] custom-* 双写）===
+已写入 root 配置
+=== 确认（隐藏 key）===
+rendezvous_server = "yc.445800773.xyz:21116"
+relay_server = "yc.445800773.xyz:21116"
+api_server = "http://yc.445800773.xyz:21114"
+key=[REDACTED]
+custom-rendezvous-server = "yc.445800773.xyz:21116"
+custom-relay-server = "yc.445800773.xyz:21116"
+custom-api-server = "http://yc.445800773.xyz:21114"
+custom_key=[REDACTED]
+=== 重启 ===
+=== 21116? ===
+(21116 TCP 未监听)
+(21116 UDP 未监听)
+=== rustdesk 到 yc 的连接 ===
+=== 所有 rustdesk 监听 ===
+

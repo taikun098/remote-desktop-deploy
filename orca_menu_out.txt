@@ -1,0 +1,21 @@
+### $ echo 1 | sudo -S bash -c "printf \"[Desktop Entry]
+Version=1.0
+Type=Application
+Name=OrcaSlicer
+Name[zh_CN]=OrcaSlicer 切片
+Comment=3D Printing Slicer
+Exec=/usr/local/bin/orcaslicer %F
+Icon=applications-development
+Categories=Graphics;3DPrinting;
+Terminal=false
+\" > /usr/share/applications/orcaslicer.desktop && cat /usr/share/applications/orcaslicer.desktop"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=OrcaSlicer
+Name[zh_CN]=OrcaSlicer 切片
+Comment=3D Printing Slicer
+Exec=/usr/local/bin/orcaslicer 0.000000
+Icon=applications-development
+Categories=Graphics;3DPrinting;
+Terminal=false

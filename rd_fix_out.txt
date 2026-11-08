@@ -1,0 +1,68 @@
+=== 1. rustdesk 服务状态 ===
+active
+enabled
+=== 2. 运行用户 + 显示 ===
+  50313 root     sudo -E XDG_RUNTIME_DIR=/run/user/1000 -u user /usr/share/rustdesk/rustdesk --server
+  50314 user   /usr/share/rustdesk/rustdesk --server
+  17394 root     /usr/bin/rustdesk --service
+=== 3. 当前 RustDesk2.toml 配置（user）===
+rendezvous_server = 'yc.445800773.xyz:21116'
+nat_type = 1
+serial = 0
+unlock_pin = ''
+trusted_devices = '00AYRD51WnhUhYpPUXu2TvXmtbBilOkZ6AYJfltZLnSF6mD48J2wZ604qorg=='
+
+[options]
+relay-server = 'yc.445800773.xyz'
+direct-access-port = '21118'
+allow-linux-headless = 'Y'
+direct-server = 'Y'
+verification-method = 'use-permanent-password'
+key = 'Or36bSikmefnl+vTHhlXeuPcZq8VaxRLJJdzSlMlI9M='
+access-mode = 'full'
+api-server = 'http://yc.445800773.xyz:21114'
+av1-test = 'Y'
+local-ip-addr = '192.168.0.20'
+custom-rendezvous-server = 'yc.445800773.xyz'
+--- root ---
+rendezvous_server = 'yc.445800773.xyz:21116'
+nat_type = 1
+serial = 0
+unlock_pin = ''
+trusted_devices = '00AYRD51WnhUhYpPUXu2TvXmtbBilOkZ6AYJfltZLnSF6mD48J2wZ604qorg=='
+
+[options]
+direct-access-port = '21118'
+allow-linux-headless = 'Y'
+api-server = 'http://yc.445800773.xyz:21114'
+key = 'Or36bSikmefnl+vTHhlXeuPcZq8VaxRLJJdzSlMlI9M='
+direct-server = 'Y'
+access-mode = 'full'
+local-ip-addr = '192.168.0.20'
+custom-rendezvous-server = 'yc.445800773.xyz'
+av1-test = 'Y'
+verification-method = 'use-permanent-password'
+relay-server = 'yc.445800773.xyz'
+=== 4. 设备 ID (enc_id) ===
+enc_id = '00AQP15IjchYodsmPNOLLl5UtYSbAcfVzKBmNxeai5eQW+Le+WLUQlGqUtmC5dudjZ8HAI'
+=== 5. 21116 是否监听（TCP/UDP）===
+TCP 21116 未监听
+UDP 21116 未监听
+=== 6. rustdesk 到 yc 的连接 ===
+ESTAB    0      0             192.168.0.20:37151 36.102.85.112:43865 users:(("easytier-core",pid=1355,fd=45))
+SYN-SENT 0      1      192.168.0.20%enp2s0:36997 36.102.85.112:11011 users:(("easytier-core",pid=1355,fd=31))
+=== 7. --server 日志尾部 12 行 ===
+[2026-11-02 11:21:43.024588 +00:00] INFO [src/rendezvous_mediator.rs:1367] Direct server listening on: Some(Ok([::]:21118))
+[2026-11-02 11:21:43.024595 +00:00] INFO [src/lan.rs:31] lan discovery listener started
+[2026-11-02 11:21:43.024623 +00:00] INFO [src/rendezvous_mediator.rs:659] start rendezvous mediator of yc.445800773.xyz
+[2026-11-02 11:21:43.024894 +00:00] INFO [src/rendezvous_mediator.rs:369] start udp: yc.445800773.xyz:21116
+[2026-11-02 11:21:43.030712 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21115: port=37755
+[2026-11-02 11:21:43.030741 +00:00] INFO [src/common.rs:760] Tested nat type: ASYMMETRIC in 31.69263ms
+[2026-11-02 11:21:43.032981 +00:00] DEBUG [libs/hbb_common/src/udp.rs:36] Receive buf size of udp 0.0.0.0:0: Ok(212992)
+[2026-11-02 11:21:43.039746 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 5.651ms
+[2026-11-02 11:21:43.114279 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:523] set hwcodec config
+[2026-11-02 11:21:43.114289 +00:00] DEBUG [libs/scrap/src/common/hwcodec.rs:524] HwCodecConfig { signature: 0, ram_encode: [CodecInfo { name: "h264_vaapi", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_NONE }], ram_decode: [CodecInfo { name: "h264", mc_name: None, format: H264, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 1, hwdevice: AV_HWDEVICE_TYPE_VAAPI }, CodecInfo { name: "h264", mc_name: None, format: H264, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }, CodecInfo { name: "hevc", mc_name: None, format: H265, priority: 3, hwdevice: AV_HWDEVICE_TYPE_NONE }] }
+[2026-11-02 11:21:44.029047 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:742] Check hwcodec config, exit with: exit status: 0
+[2026-11-02 11:21:46.060257 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+=== DONE ===
+

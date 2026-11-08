@@ -1,0 +1,4 @@
+=== 查 GitHub 最新 release 的 amd64 deb 资产 ===
+=== 也查 OpenAtom sig 仓库 ===
+=== DONE ===
+

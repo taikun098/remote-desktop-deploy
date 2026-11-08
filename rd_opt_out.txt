@@ -1,0 +1,47 @@
+=== custom-* 选项键名 ===
+custom-error
+custom-f
+custom-fpszoom-cursorswap-left-right-mousetrackpad-speededge-scroll-edge-thickness
+custom-iv
+custom-nocancel
+custom-nocancel-success
+custom-rendezvous-serverrendezvous-serversrs-ny
+custom-rendezvouure-tls-fallbackallow-insecure-t
+=== options 段 / 相关键 ===
+api_server
+custom-rendezvous-server
+relay_server
+rendezvous_server
+=== key 相关完整键 ===
+ableKey
+acs_llcornerkey_siccursor_leftstart_char_set_defparm_left_microreset_
+add_key_share
+aes_ccm_init_key
+aes_gcm_init_key
+aes_init_key
+aesni_ccm_init_key
+aesni_gcm_init_key
+aesni_init_key
+aesni_ocb_init_key
+aesni_xts_init_key
+aes_ocb_init_key
+aes_wrap_init_key
+aes_xts_check_keys_differ
+aes_xts_init_key
+ailureKey
+akeKey
+aKey
+ameKey
+andidatesession_key
+anonicalKey
+anyKey
+aria_ccm_init_key
+aria_gcm_init_key
+aria_init_key
+arseKey
+asterKey
+ataKey
+ataKeyboard
+ataKeyboardvariant
+=== DONE ===
+

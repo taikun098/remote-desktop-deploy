@@ -1,0 +1,20 @@
+=== 杀孤儿 Xorg :0 ===
+=== 等 20 秒让 lightdm 稳定 ===
+=== Xorg 进程 ===
+  24538 [Xorg] <defunct>
+  28001 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt8 -novtswitch
+=== 活动 VT ===
+tty8
+=== 会话（只看 active/online）===
+    176 1000 user -    -   active  no   -
+=== lightdm 最近日志 ===
+Nov 02 09:23:39 g01 systemd[1]: lightdm.service: Main process exited, code=killed, status=9/KILL
+Nov 02 09:25:10 g01 systemd[1]: lightdm.service: State 'final-sigterm' timed out. Killing.
+Nov 02 09:25:10 g01 systemd[1]: lightdm.service: Killing process 28001 (Xorg) with signal SIGKILL.
+Nov 02 09:25:10 g01 systemd[1]: lightdm.service: Failed to kill control group /system.slice/lightdm.service, ignoring: Invalid argument
+Nov 02 09:25:10 g01 systemd[1]: lightdm.service: Failed with result 'timeout'.
+Nov 02 09:25:10 g01 systemd[1]: lightdm.service: Unit process 28001 (Xorg) remains running after unit stopped.
+Nov 02 09:25:10 g01 systemd[1]: Stopped lightdm.service - Light Display Manager.
+Nov 02 09:25:10 g01 systemd[1]: lightdm.service: Consumed 1.827s CPU time, 124.1M memory peak, 0B memory swap peak.
+=== DONE ===
+

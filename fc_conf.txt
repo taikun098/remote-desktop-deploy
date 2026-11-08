@@ -1,0 +1,10 @@
+===dir===
+total 16
+drwxr-xr-x  3 root root 4096 Nov  1 17:06 .
+drwx------ 12 root root 4096 Nov  1 17:06 ..
+-rw-r--r--  1 root root   56 Nov  1 17:06 FreeCAD.conf
+drwxr-xr-x  2 root root 4096 Nov  1 17:06 v1-1
+===FreeCAD.conf===
+[General]
+LastCacheCheck=@Variant(\0\0\0\xe\0%\x8e\xa2)
+[sudo] password for user: 

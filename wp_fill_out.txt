@@ -1,0 +1,31 @@
+=== 候选视频（含大小）===
+候选总数: 62
+=== 随机挑 8 个（种子固定可复现）===
+0M  /home/user/.steam/debian-installation/steamapps/workshop/content/431960/785216588/Fez_files/butterfly2b.gif
+64M  /home/user/.steam/debian-installation/steamapps/workshop/content/431960/2216519976/HorizonsNobox.mp4
+1M  /home/user/.steam/debian-installation/steamapps/workshop/content/431960/2274813813/preview.gif
+8M  /home/user/.steam/debian-installation/steamapps/workshop/content/431960/2603546130/1080P_4000K_323692521.mp4
+0M  /home/user/.steam/debian-installation/steamapps/workshop/content/431960/2380882572/preview.gif
+100M  /home/user/.steam/debian-installation/steamapps/workshop/content/431960/2624215601/About MC.mp4
+1M  /home/user/.steam/debian-installation/steamapps/workshop/content/431960/1677256185/preview.gif
+0M  /home/user/.steam/debian-installation/steamapps/workshop/content/431960/785216588/Fez_files/blueFlower.gif
+=== 复制到壁纸目录 ===
+✓ butterfly2b.gif
+✓ HorizonsNobox.mp4
+✓ preview.gif
+✓ 1080P_4000K_323692521.mp4
+✓ preview.gif
+✓ About MC.mp4
+✓ preview.gif
+✓ blueFlower.gif
+=== 壁纸目录现有内容 ===
+ 
+7.9M 1080P_4000K_323692521.mp4
+100M About
+415 blueFlower.gif
+2.9K butterfly2b.gif
+65M HorizonsNobox.mp4
+942K preview.gif
+49M world_of_warcraft.mp4
+=== DONE ===
+

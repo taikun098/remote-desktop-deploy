@@ -1,0 +1,26 @@
+Created symlink /etc/systemd/system/multi-user.target.wants/novnc.service → /etc/systemd/system/novnc.service.
+active
+=== 6080 监听 ===
+LISTEN 0      100          0.0.0.0:6080       0.0.0.0:*    users:(("websockify",pid=32147,fd=3))                  
+=== websockify 进程 ===
+  32147 /usr/bin/python3 /usr/bin/websockify --web=/usr/share/novnc 6080 localhost:5900
+=== 本地回环测 6080 HTTP ===
+HTTP 200
+=== DONE ===
+
+[e] + cat
++ systemctl daemon-reload
++ systemctl enable novnc.service
++ systemctl restart novnc.service
++ sleep 2
++ systemctl is-active novnc.service
++ echo '=== 6080 监听 ==='
++ ss -tlnp
++ grep 6080
++ echo '=== websockify 进程 ==='
++ ps -eo pid,args
++ grep '[w]ebsockify'
++ echo '=== 本地回环测 6080 HTTP ==='
++ curl -s -o /dev/null -w 'HTTP %{http_code}\n' http://127.0.0.1:6080/vnc.html
++ echo '=== DONE ==='
+

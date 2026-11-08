@@ -1,0 +1,15 @@
+===DM===
+● lightdm.service - Light Display Manager
+     Loaded: loaded (/usr/lib/systemd/system/lightdm.service; indirect; preset: enabled)
+     Active: active (running) since Sun 2026-11-01 23:49:37 UTC; 9min ago
+       Docs: man:lightdm(1)
+    Process: 1400 ExecStartPre=/bin/sh -c [ "$(basename $(cat /etc/X11/default-display-manager 2>/dev/null))" = "lightdm" ] (code=exited, status=0/SUCCESS)
+===get-default===
+graphical.target
+===dm pkgs===
+awk: cmd. line:1: {print \}
+awk: cmd. line:1:        ^ backslash not last character on line
+===svc===
+Invalid unit name " 2" escaped as "\x202" (maybe you should use systemd-escape?).
+Invalid unit name " 2" escaped as "\x202" (maybe you should use systemd-escape?).
+Invalid unit name " 2" escaped as "\x202" (maybe you should use systemd-escape?).

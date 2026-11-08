@@ -1,0 +1,24 @@
+=== 停止服务 ===
+=== 写 RustDesk2.toml (root + lightdm) via heredoc ===
+=== 确认（含引号）===
+rendezvous_server = 'yc.445800773.xyz:21116'
+relay_server = 'yc.445800773.xyz:21116'
+api_server = 'http://yc.445800773.xyz:21114'
+custom-rendezvous-server = 'yc.445800773.xyz'
+key=[REDACTED]
+verification-method = 'use-permanent-password'
+allow-linux-headless = 'Y'
+=== TOML 校验 ===
+TOML 合法
+=== 启动 ===
+=== 状态 ===
+active
+=== 21116? ===
+(21116 TCP 未监听)
+(21116 UDP 未监听)
+=== rustdesk 到 yc 连接 ===
+=== rustdesk 所有监听 ===
+(无 rustdesk tcp)
+=== 日志网络/错误 ===
+=== DONE ===
+

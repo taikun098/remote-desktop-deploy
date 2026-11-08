@@ -1,0 +1,16 @@
+=== fc-snap 单元状态 ===
+active
+=== journal 进度 ===
+11月 02 13:17:00 g01 systemd[1]: Started fc-snap.service - /usr/bin/bash -c "\n    set -x\n    snap install freecad\n    echo \"=== SNAP_DONE ===\"\n  ".
+11月 02 13:17:00 g01 bash[39242]: + snap install freecad
+=== snap 本身状态 ===
+名称       版本             修订版本  追踪             发布者                            注记
+freecad  1.1-g0108fd4b  2741  latest/stable  freecad-project-association**  -
+5    Doing  今天 13:17 UTC  -             Install "freecad" snap
+=== snapd 服务 ===
+active
+=== snap 是否在下载/卡住 ===
+  39242       11:56 /usr/bin/bash -c      set -x     snap install freecad     echo "=== SNAP_DONE ==="   
+  39243       11:56 snap install freecad
+=== DONE ===
+

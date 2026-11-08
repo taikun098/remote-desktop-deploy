@@ -1,0 +1,28 @@
+=== Steam 是否真装上 ===
+/usr/games/steam
+steam-devices 1:1.0.0.79~ds-2
+steam-installer 1:1.0.0.79~ds-2
+steam-libs:amd64 1:1.0.0.79~ds-2
+steam-libs:i386 1:1.0.0.79~ds-2
+steam-libs-i386:i386 1:1.0.0.79~ds-2
+-rwxr-xr-x 1 root root 8107  2月 13  2024 /usr/games/steam
+--- steam 安装日志(journal) ---
+11月 02 13:00:20 g01 systemd[1]: steam-install.service: Failed to open /run/systemd/transient/steam-install.service: No such file or directory
+11月 02 13:00:20 g01 systemd[1]: steam-install.service: Failed to open /run/systemd/transient/steam-install.service: No such file or directory
+11月 02 13:00:35 g01 systemd[1]: steam-install.service: Failed to open /run/systemd/transient/steam-install.service: No such file or directory
+11月 02 13:00:35 g01 systemd[1]: steam-install.service: Failed to open /run/systemd/transient/steam-install.service: No such file or directory
+11月 02 13:00:51 g01 systemd[1]: steam-install.service: Failed to open /run/systemd/transient/steam-install.service: No such file or directory
+11月 02 13:00:51 g01 systemd[1]: steam-install.service: Failed to open /run/systemd/transient/steam-install.service: No such file or directory
+11月 02 13:01:06 g01 systemd[1]: steam-install.service: Failed to open /run/systemd/transient/steam-install.service: No such file or directory
+11月 02 13:01:06 g01 systemd[1]: steam-install.service: Failed to open /run/systemd/transient/steam-install.service: No such file or directory
+=== FreeCAD 下载进度 ===
+-rwxr-xr-x 1 root root 9.0M 11月  2 13:01 /opt/freecad/FreeCAD.AppImage
+--- fc 日志 ---
+11月 02 12:45:34 g01 bash[21131]: + SHAURL=https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Linux-x86_64-py311.AppImage-SHA256.txt
+11月 02 12:45:34 g01 bash[21131]: + curl -fL --retry 3 -o FreeCAD.AppImage https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Linux-x86_64-py311.AppImage
+11月 02 12:45:34 g01 bash[21135]:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+11月 02 12:45:34 g01 bash[21135]:                                  Dload  Upload   Total   Spent    Left  Speed
+11月 02 12:45:38 g01 bash[21135]: [474B blob data]
+11月 02 12:56:01 g01 bash[21135]: [47.9K blob data]
+=== DONE ===
+

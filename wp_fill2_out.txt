@@ -1,0 +1,24 @@
+=== 清理刚才误拷的预览/小图 ===
+=== 挑真正壁纸视频（mp4/webm, >=8M, 排除 preview/icon/thumb）===
+真正壁纸候选数: 16
+=== 随机挑 6 个并复制（去重、防同名覆盖）===
+✓ 4K60帧wallpaper小姐姐壁纸来了，需要的可以留下啦.Mp4 221M
+✓ One Piece- Luffy gear 5 Cybust - PC.mp4                      10M
+✓ TeddyLoid - ME!ME!ME! (feat. daoko) - REAL 1080p!!!.mp4      121M
+✓ Glitch-windows-1.mp4                                         10M
+✓ About MC.mp4                                                 99M
+✓ original character volkor-flou.mp4                           61M
+=== 壁纸目录最终内容 ===
+ 
+222M 4K60帧wallpaper小姐姐壁纸来了，需要的可以留下啦.Mp4
+122M TeddyLoid
+100M About
+100M About
+65M HorizonsNobox.mp4
+62M original
+49M world_of_warcraft.mp4
+11M Glitch-windows-1.mp4
+11M One
+7.9M 1080P_4000K_323692521.mp4
+=== DONE ===
+

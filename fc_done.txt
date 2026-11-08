@@ -1,0 +1,7 @@
+downloading
+===unit===
+active
+total 719496
+drwxr-xr-x 2 root root      4096 Nov  1 16:57 .
+drwxr-xr-x 4 root root      4096 Nov  1 16:57 ..
+-rw-r--r-- 1 root root 736751616 Nov  1 17:02 FreeCAD.AppImage

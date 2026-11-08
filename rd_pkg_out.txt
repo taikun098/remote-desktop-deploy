@@ -1,0 +1,15 @@
+=== rustdesk 包信息 ===
+ii  rustdesk                                       1.5.0                                            amd64        A remote control software.
+=== 版本 ===
+1.5.0
+=== 是否缓存了 deb ===
+(无缓存 deb)
+=== 二进制位置 ===
+lrwxrwxrwx 1 root root    28 Nov  1 16:40 /usr/bin/rustdesk -> /usr/share/rustdesk/rustdesk
+-rwxr-xr-x 1 root root 44640 Sep 30 17:12 /usr/share/rustdesk/rustdesk
+=== 服务 unit 文件 ===
+-rw-r--r-- 1 root root 566 Nov  1 16:40 /usr/lib/systemd/system/rustdesk.service
+=== 用 grep -a 从二进制找配置键名 ===
+=== 找 key 相关键 ===
+=== DONE ===
+

@@ -1,0 +1,6 @@
+已写入应用菜单目录 ✅
+-rwxr-xr-x 1 user user 279 11月  3 01:13 /home/user/.local/share/applications/Hidamari.desktop
+=== 刷新桌面菜单缓存 ===
+update-desktop-database OK
+=== DONE ===
+

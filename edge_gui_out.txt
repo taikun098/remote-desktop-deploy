@@ -1,0 +1,14 @@
+=== 以 user 在物理桌面 :0 启动 Edge ===
+=== Edge GUI 进程 ===
+9821 sudo -S -u user env DISPLAY=:0 XAUTHORITY=/home/user/.Xauthority /usr/bin/microsoft-edge --no-sandbox --new-window about:blank
+9823 /usr/bin/microsoft-edge --no-sandbox --new-window about:blank
+9830 /opt/microsoft/msedge/msedge_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --user-stream-region=4,65568 --database=/home/user/.config/microsoft-edge/Crash Reports --annotation=IsOfficialBuild=1 --annotation=exe=msedge --annotation=lsb-release=Ubuntu 24.04.5 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=156.0.4314.58 --initial-client-fd=7 --shared-client-connection
+9832 /opt/microsoft/msedge/msedge_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/user/.config/microsoft-edge/Crash Reports --annotation=IsOfficialBuild=1 --annotation=exe=msedge --annotation=lsb-release=Ubuntu 24.04.5 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=156.0.4314.58 --initial-client-fd=4 --shared-client-connection
+新窗口进程数: 0
+=== 关闭测试窗口 ===
+=== 错误日志（若有）===
+[9823:9846:1102/115730.952705:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[9823:9823:1102/115730.973149:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[9823:9823:1102/115731.096568:ERROR:CONSOLE:51] "Uncaught TypeError: Cannot read properties of undefined (reading 'importerType')", source: edge://welcome-edge/bundle.js (51)
+=== DONE ===
+

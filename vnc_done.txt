@@ -1,0 +1,20 @@
+===which binaries===
+===dpkg total ii===
+690
+===key pkgs===
+dbus-x11/noble-updates,now 1.14.10-4ubuntu4.1 amd64 [installed]
+libxfce4ui-2-0/noble,now 4.18.4-1build4 amd64 [installed,auto-removable]
+libxfce4ui-common/noble,now 4.18.4-1build4 all [installed,auto-removable]
+libxfce4util-common/noble,now 4.18.1-2build3 all [installed,auto-removable]
+libxfce4util7/noble,now 4.18.1-2build3 amd64 [installed,auto-removable]
+===dpkg errors?===
+[sudo] password for user: Another process has locked the database for writing, and might currently be
+modifying it, some of the following problems might just be due to that.
+
+The following packages are in a mess due to serious problems during
+installation.  They must be reinstalled for them (and any packages
+that depend on them) to function properly:
+ ipp-usb              (no description available)
+
+The following packages have been unpacked but not yet configured.
+They must be configured using dpkg --configure or the configure

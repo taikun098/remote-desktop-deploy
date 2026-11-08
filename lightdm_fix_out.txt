@@ -1,0 +1,41 @@
+### $ echo 1 | sudo -S cp /tmp/50-autologin.conf /etc/lightdm/lightdm.conf.d/50-autologin.conf && cat /etc/lightdm/lightdm.conf.d/50-autologin.conf
+[Seat:*]
+autologin-user=user
+autologin-user-timeout=0
+autologin-session=xfce
+user-session=xfce
+### $ echo 1 | sudo -S systemctl stop lightdm; sleep 2; echo 1 | sudo -S rm -rf /var/run/lightdm/root; echo 'stopped+cleaned'
+stopped+cleaned
+### $ echo 1 | sudo -S systemctl start lightdm; echo started
+started
+### $ echo 1 | sudo -S bash -c 'echo '\''===auth file==='\''; ls -la /var/run/lightdm/root/ 2>/dev/null || echo '\''NO AUTH FILE'\'''
+===auth file===
+total 4
+drwx------ 2 root root 60 Nov  2 03:10 .
+drwx--x--x 3 root root 60 Nov  2 03:10 ..
+-rw------- 1 root root 48 Nov  2 03:10 :1
+### $ echo '===Xorg :1==='; ps -eo pid,user,cmd | grep -E '[X]org -core :1' | grep -v grep
+===Xorg :1===
+  24538 root     /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+### $ echo '===user desktop session==='; ps -u user -o pid,cmd | grep -iE 'xfce4-session|xfwm4|xfce4-panel' | grep -v grep || echo 'NO user session'
+===user desktop session===
+  24560 xfce4-session
+  24753 xfwm4
+  24814 xfce4-panel
+### $ echo 1 | sudo -S bash -c 'echo '\''===lightdm recent==='\''; journalctl -u lightdm --no-pager -n 15 2>&1 | tail -15'
+===lightdm recent===
+Nov 02 03:10:09 g01 systemd[1]: Stopping lightdm.service - Light Display Manager...
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:09 g01 lightdm[8687]: Session pid=8792: Error writing to session: Broken pipe
+Nov 02 03:10:10 g01 systemd[1]: lightdm.service: Deactivated successfully.
+Nov 02 03:10:10 g01 systemd[1]: Stopped lightdm.service - Light Display Manager.
+Nov 02 03:10:10 g01 systemd[1]: lightdm.service: Consumed 4.199s CPU time.
+Nov 02 03:10:15 g01 systemd[1]: Starting lightdm.service - Light Display Manager...
+Nov 02 03:10:15 g01 systemd[1]: Started lightdm.service - Light Display Manager.
+Nov 02 03:10:15 g01 lightdm[24555]: pam_unix(lightdm-autologin:session): session opened for user user(uid=1000) by (uid=0)

@@ -1,0 +1,15 @@
+=== 残留 desktop 内容 ===
+Name=FreeCAD
+Name[zh_CN]=FreeCAD
+Exec=/usr/local/bin/freecad
+Icon=freecad
+=== 删除残留 ===
+已删除 freecad.desktop ✅
+=== 清理可能残留的图标 ===
+=== 全盘再扫一遍 freecad 残留 ===
+/home/user/.local/share/FreeCAD
+/home/user/.local/share/Trash/info/freecad.desktop.trashinfo
+/home/user/.local/share/Trash/files/freecad.desktop
+(以上无输出即无残留)
+=== DONE ===
+

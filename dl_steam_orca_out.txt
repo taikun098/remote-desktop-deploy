@@ -1,0 +1,44 @@
+########## OrcaSlicer 诊断 ##########
+=== 安装位置 ===
+/usr/local/bin/orcaslicer
+/opt/orcaslicer
+/opt/orcaslicer/OrcaSlicer.AppImage
+/usr/share/applications/orcaslicer.desktop
+/usr/local/bin/orcaslicer
+/home/user/.config/OrcaSlicer
+/home/user/.local/share/Trash/info/orcaslicer.desktop.trashinfo
+/home/user/.local/share/Trash/files/orcaslicer.desktop
+=== desktop 入口 ===
+desktop: /usr/share/applications/orcaslicer.desktop
+Name=OrcaSlicer
+Name[zh_CN]=OrcaSlicer 切片
+Exec=/usr/local/bin/orcaslicer %F
+=== libfuse 检查 ===
+libfuse2t64:amd64 2.9.9-8.1build1
+/dev/fuse
+fuse设备存在
+=== 试启动（:0, user）===
+exit=133
+83117 bash /tmp/dl_steam_orca.sh
+--- 启动日志 ---
+
+(orca-slicer:83147): Gtk-CRITICAL **: 13:50:34.769: _gtk_css_lookup_resolve: assertion '(((__extension__ ({ GTypeInstance *__inst = (GTypeInstance*) ((provider)); GType __t = ((_gtk_style_provider_private_get_type ())); gboolean __r; if (!__inst) __r = (0); else if (__inst->g_class && __inst->g_class->g_type == __t) __r = (!(0)); else __r = g_type_check_instance_is_a (__inst, __t); __r; }))))' failed
+
+(orca-slicer:83147): GLib-GObject-CRITICAL **: 13:50:34.769: g_object_set_data_full: assertion 'G_IS_OBJECT (object)' failed
+
+(orca-slicer:83147): Gtk-ERROR **: 13:50:34.769: Can't create a GtkStyleContext without a display connection
+timeout: 被监视的命令已核心转储
+
+########## Steam 代理 ##########
+=== steam 客户端状态 ===
+47695 bash /home/user/.steam/debian-installation/steam.sh -nominidumps -nobreakpad
+54010 /home/user/.steam/debian-installation/ubuntu12_32/steam -nominidumps -nobreakpad
+83117 bash /tmp/dl_steam_orca.sh
+=== 现有代理环境 ===
+=== steam desktop 入口 ===
+Exec=/usr/games/steam %U
+=== DONE ===
+
+[e] /tmp/dl_steam_orca.sh: 第 16 行： 83144 已完成               echo 1
+     83145 追踪或断点陷阱   | sudo -S -u user env DISPLAY=:0 XAUTHORITY=/home/user/.Xauthority timeout 15 orcaslicer 2> /tmp/orca_run.log
+

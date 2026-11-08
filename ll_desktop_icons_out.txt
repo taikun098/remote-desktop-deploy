@@ -1,0 +1,20 @@
+=== linglong entries/applications 内容 ===
+=== 找 wechat desktop ===
+wechat desktop: /var/lib/linglong/entries/apps/share/applications/wechat.desktop
+=== 现有 ~/Desktop ===
+总计 28
+drwxr-xr-x  2 user user 4096 11月  2 14:20 .
+drwxr-x--- 22 user user 4096 11月  2 14:10 ..
+-rwxr-xr-x  1 user user 2530 10月  6 14:55 com.dongpl.linglong-store.v2.desktop
+-rwxr-xr-x  1 user user 1202 11月  2 13:21 freecad_freecad.desktop
+-rwxr-xr-x  1 user user 8187 10月 30 00:04 microsoft-edge.desktop
+-rwxrwxr-x  1 user user  193 11月  2 14:20 Wallpaper Engine.desktop
+=== 把 linglong 各应用 desktop 同步到桌面 ===
+共新增 0 个
+=== 最终桌面 desktop ===
+-rwxr-xr-x 1 user user 2530 10月  6 14:55 /home/user/Desktop/com.dongpl.linglong-store.v2.desktop
+-rwxr-xr-x 1 user user 1202 11月  2 13:21 /home/user/Desktop/freecad_freecad.desktop
+-rwxr-xr-x 1 user user 8187 10月 30 00:04 /home/user/Desktop/microsoft-edge.desktop
+-rwxrwxr-x 1 user user  193 11月  2 14:20 /home/user/Desktop/Wallpaper Engine.desktop
+=== DONE ===
+

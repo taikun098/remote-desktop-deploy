@@ -1,0 +1,36 @@
+===lsblk===
+NAME                        SIZE FSTYPE      MOUNTPOINT MODEL
+sdc                       476.9G                        WXC-R1 512GB
+└─sdc1                    476.9G ext4        /home      
+sdd                       465.8G                        WDC WD5000AAKX-0
+└─sdd1                    465.8G ext4        /data      
+===df===
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/sdc1      ext4  469G   56K  445G   1% /home
+/dev/sdd1      ext4  458G   28K  435G   1% /data
+===/home content===
+total 28
+drwxr-xr-x  4 root   root    4096 Nov  1 13:58 .
+drwxr-xr-x 24 root   root    4096 Nov  1 15:29 ..
+drwx------  2 root   root   16384 Nov  1 15:29 lost+found
+drwxr-x---  4 user user  4096 Nov  1 15:10 user
+===/data content===
+total 24
+drwxr-xr-x  3 root root  4096 Nov  1 15:29 .
+drwxr-xr-x 24 root root  4096 Nov  1 15:29 ..
+drwx------  2 root root 16384 Nov  1 15:29 lost+found
+===fstab now===
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+/dev/disk/by-id/dm-uuid-LVM-04P7y4uz1FzbOdNRp54ymnNavgsJnilWSbL1VPVyet2tXJ3Hn4mPS6ufmqqwq4yV / ext4 defaults 0 1
+# /boot was on /dev/sda2 during curtin installation
+/dev/disk/by-uuid/425fa435-a1d8-423e-9596-a35087e7de0e /boot ext4 defaults 0 1
+# /boot/efi was on /dev/sda1 during curtin installation
+/dev/disk/by-uuid/512C-4556 /boot/efi vfat defaults 0 1
+/swap.img	none	swap	sw	0	0

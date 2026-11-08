@@ -1,0 +1,17 @@
+=== 1) flatpak kill 停应用 ===
+错误： io.github.jeffshee.Hidamari 未在运行
+=== 2) 启动 ===
+--- 进程 ---
+264813 bwrap --args 41 -- hidamari
+264814 hidamari-server
+264826 /usr/bin/python3 -c import sys; from multiprocessing.forkserver import main; main(12, 14, ['__main__'], sys_argv=sys.argv[1:], **{'sys_path': ['/app/bin', '/app/share/hidamari', '/usr/lib/python313.zip', '/usr/lib/python3.13', '/usr/lib/python3.13/lib-dynload', '/app/lib/python3.13/site-packages', '/usr/lib/python3.13/site-packages'], 'main_path': '/app/bin/hidamari'}) /app/bin/hidamari
+=== 3) 日志关键行 ===
+--- 日志尾 ---
+   'is_show_systray': False,
+   'is_static_wallpaper': False,
+   'mode': 'MODE_VIDEO',
+   'static_wallpaper_blur_radius': 5,
+   'version': 4}
+--------------------------
+=== DONE ===
+

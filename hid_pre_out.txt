@@ -1,0 +1,14 @@
+=== 1) flatpak 是否已装 ===
+flatpak 未安装
+--- flathub remote ---
+=== 2) XFCE 合成器（动态壁纸需要）===
+true
+--- xfwm4 进程 ---
+8146 xfwm4
+=== 3) 挑一个壁纸视频（workshop 里第一个 mp4）===
+候选: /home/user/.steam/debian-installation/steamapps/workshop/content/431960/2522553111/world of warcraft.mp4
+49M /home/user/.steam/debian-installation/steamapps/workshop/content/431960/2522553111/world
+=== 4) mpv（Hidamari 播放后端）===
+mpv 未装（flatpak 版自带，不装也行）
+=== DONE ===
+

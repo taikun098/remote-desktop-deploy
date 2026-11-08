@@ -1,0 +1,49 @@
+=== 1. x11vnc 是否还活着 + 5900 监听 ===
+=== 2. 本地直连 5900 拿 VNC 握手（RFB banner）===
+bash: connect: Connection refused
+bash: line 1: /dev/tcp/127.0.0.1/5900: Connection refused
+bash: line 1: 3: Bad file descriptor
+=== 3. novnc.service 状态 + websockify 最近日志 ===
+active
+Nov 02 10:47:00 g01 websockify[34027]: handler exception: [Errno 107] Transport endpoint is not connected
+Nov 02 10:47:02 g01 websockify[34259]: 10.1.0.3 - - [02/Nov/2026 10:47:02] 10.1.0.3: Plain non-SSL (ws://) WebSocket connection
+Nov 02 10:47:02 g01 websockify[34259]: 10.1.0.3 - - [02/Nov/2026 10:47:02] 10.1.0.3: Path: '/websockify'
+Nov 02 10:47:02 g01 websockify[34259]: 10.1.0.3 - - [02/Nov/2026 10:47:02] connecting to: localhost:5900
+Nov 02 10:47:02 g01 websockify[34259]: 10.1.0.3 - - [02/Nov/2026 10:47:02] Failed to connect to localhost:5900: [Errno 111] Connection refused
+Nov 02 10:47:03 g01 websockify[34262]: 10.1.0.3 - - [02/Nov/2026 10:47:03] 10.1.0.3: Plain non-SSL (ws://) WebSocket connection
+Nov 02 10:47:03 g01 websockify[34262]: 10.1.0.3 - - [02/Nov/2026 10:47:03] 10.1.0.3: Path: '/websockify'
+Nov 02 10:47:03 g01 websockify[34262]: 10.1.0.3 - - [02/Nov/2026 10:47:03] connecting to: localhost:5900
+Nov 02 10:47:03 g01 websockify[34262]: 10.1.0.3 - - [02/Nov/2026 10:47:03] Failed to connect to localhost:5900: [Errno 111] Connection refused
+Nov 02 10:47:03 g01 websockify[34265]: 10.1.0.3 - - [02/Nov/2026 10:47:03] 10.1.0.3: Plain non-SSL (ws://) WebSocket connection
+Nov 02 10:47:03 g01 websockify[34265]: 10.1.0.3 - - [02/Nov/2026 10:47:03] 10.1.0.3: Path: '/websockify'
+Nov 02 10:47:03 g01 websockify[34265]: 10.1.0.3 - - [02/Nov/2026 10:47:03] connecting to: localhost:5900
+Nov 02 10:47:03 g01 websockify[34265]: 10.1.0.3 - - [02/Nov/2026 10:47:03] Failed to connect to localhost:5900: [Errno 111] Connection refused
+Nov 02 10:47:48 g01 websockify[35963]: 10.1.0.3 - - [02/Nov/2026 10:47:48] 10.1.0.3: Plain non-SSL (ws://) WebSocket connection
+Nov 02 10:47:48 g01 websockify[35963]: 10.1.0.3 - - [02/Nov/2026 10:47:48] 10.1.0.3: Path: '/websockify'
+Nov 02 10:47:48 g01 websockify[35963]: 10.1.0.3 - - [02/Nov/2026 10:47:48] connecting to: localhost:5900
+Nov 02 10:47:48 g01 websockify[35963]: 10.1.0.3 - - [02/Nov/2026 10:47:48] Failed to connect to localhost:5900: [Errno 111] Connection refused
+Nov 02 10:47:49 g01 websockify[35965]: 10.1.0.3 - - [02/Nov/2026 10:47:49] 10.1.0.3: Plain non-SSL (ws://) WebSocket connection
+Nov 02 10:47:49 g01 websockify[35965]: 10.1.0.3 - - [02/Nov/2026 10:47:49] 10.1.0.3: Path: '/websockify'
+Nov 02 10:47:49 g01 websockify[35965]: 10.1.0.3 - - [02/Nov/2026 10:47:49] connecting to: localhost:5900
+Nov 02 10:47:49 g01 websockify[35965]: 10.1.0.3 - - [02/Nov/2026 10:47:49] Failed to connect to localhost:5900: [Errno 111] Connection refused
+Nov 02 10:48:43 g01 websockify[37814]: 10.1.0.3 - - [02/Nov/2026 10:48:43] 10.1.0.3: Plain non-SSL (ws://) WebSocket connection
+Nov 02 10:48:43 g01 websockify[37814]: 10.1.0.3 - - [02/Nov/2026 10:48:43] 10.1.0.3: Path: '/websockify'
+Nov 02 10:48:43 g01 websockify[37814]: 10.1.0.3 - - [02/Nov/2026 10:48:43] connecting to: localhost:5900
+Nov 02 10:48:43 g01 websockify[37814]: 10.1.0.3 - - [02/Nov/2026 10:48:43] Failed to connect to localhost:5900: [Errno 111] Connection refused
+=== 4. websockify 进程 + 6080 监听 ===
+  32147 /usr/bin/python3 /usr/bin/websockify --web=/usr/share/novnc 6080 localhost:5900
+  33983 /usr/bin/python3 /usr/bin/websockify --web=/usr/share/novnc 6080 localhost:5900
+  33984 /usr/bin/python3 /usr/bin/websockify --web=/usr/share/novnc 6080 localhost:5900
+  33986 /usr/bin/python3 /usr/bin/websockify --web=/usr/share/novnc 6080 localhost:5900
+  33995 /usr/bin/python3 /usr/bin/websockify --web=/usr/share/novnc 6080 localhost:5900
+  33996 /usr/bin/python3 /usr/bin/websockify --web=/usr/share/novnc 6080 localhost:5900
+LISTEN 0      100          0.0.0.0:6080       0.0.0.0:*    users:(("websockify",pid=33996,fd=3),("websockify",pid=33995,fd=3),("websockify",pid=33986,fd=3),("websockify",pid=33984,fd=3),("websockify",pid=33983,fd=3),("websockify",pid=32147,fd=3))
+=== 5. 物理桌面 / 显示情况 ===
+活动终端: tty7
+   1370 /usr/sbin/lightdm
+   1384 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   1830 lightdm --session-child 13 16
+--- 有哪些 X 会话 ---
+X0
+=== DONE ===
+

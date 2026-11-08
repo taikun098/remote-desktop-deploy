@@ -1,0 +1,10 @@
+===apt proc===
+    PID     ELAPSED STAT CMD
+  11629       10:43 S    apt install -y xfce4 xfce4-goodies x11vnc xvfb dbus-x11
+===apt child===
+11668 /usr/lib/apt/methods/http
+===downloaded debs count===
+632
+===cpu/mem===
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       677Mi        13Gi       1.5Mi       1.3Gi        14Gi

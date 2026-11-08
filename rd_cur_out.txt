@@ -1,0 +1,19 @@
+=== 当前 root RustDesk.toml 完整（隐藏密钥/键对）===
+enc_id = '00AQP15IjchYodsmPNOLLl5UtYSbAcfVzKBmNxeai5eQW+Le+WLUQlGqUtmC5dudjZ8HAI'
+password =******
+salt =[REDACTED]
+key_pair=[REDACTED]
+key_confirmed = true
+
+[keys_confirmed]
+rs-ny = true
+
+=== 服务是否 active ===
+active
+  43446 [rustdesk] <defunct>
+  79579 /usr/bin/rustdesk --service
+  79627 sudo -E XDG_RUNTIME_DIR=/run/user/111 -u lightdm /usr/share/rustdesk/rustdesk --server
+  79628 /usr/share/rustdesk/rustdesk --server
+  79636 /usr/share/rustdesk/rustdesk --tray
+=== DONE ===
+

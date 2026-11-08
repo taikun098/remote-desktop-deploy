@@ -1,0 +1,6 @@
+    PID     ELAPSED STAT CMD
+INSTALL_FINISHED
+---key bins---
+/usr/bin/Xvfb
+/usr/bin/x11vnc
+/usr/bin/xfce4-session

@@ -1,0 +1,57 @@
+=== --server 日志目录 ===
+total 156
+drwxrwxr-x 2 lightdm lightdm  4096 Nov  2 08:33 .
+drwxrwxr-x 5 lightdm lightdm  4096 Nov  1 23:49 ..
+-rw-rw-r-- 1 lightdm lightdm 17880 Nov  1 23:57 rustdesk_r2026-11-01_23-49-45.log
+-rw-rw-r-- 1 lightdm lightdm 17559 Nov  1 23:59 rustdesk_r2026-11-01_23-57-20.log
+-rw-rw-r-- 1 lightdm lightdm   985 Nov  2 00:00 rustdesk_r2026-11-02_00-00-05.log
+-rw-rw-r-- 1 lightdm lightdm  2897 Nov  2 00:00 rustdesk_r2026-11-02_00-00-33.log
+-rw-rw-r-- 1 lightdm lightdm 23166 Nov  2 03:10 rustdesk_r2026-11-02_00-01-27.log
+-rw-rw-r-- 1 lightdm lightdm  8924 Nov  2 03:35 rustdesk_r2026-11-02_03-20-30.log
+-rw-rw-r-- 1 lightdm lightdm  6112 Nov  2 04:56 rustdesk_r2026-11-02_03-35-49.log
+-rw-rw-r-- 1 lightdm lightdm  2149 Nov  2 05:24 rustdesk_r2026-11-02_05-24-10.log
+-rw-rw-r-- 1 lightdm lightdm  2149 Nov  2 06:24 rustdesk_r2026-11-02_06-24-12.log
+-rw-rw-r-- 1 lightdm lightdm  6137 Nov  2 07:24 rustdesk_r2026-11-02_07-24-13.log
+-rw-rw-r-- 1 lightdm lightdm  2149 Nov  2 07:46 rustdesk_r2026-11-02_07-45-55.log
+-rw-rw-r-- 1 lightdm lightdm  2149 Nov  2 07:48 rustdesk_r2026-11-02_07-48-00.log
+-rw-rw-r-- 1 lightdm lightdm  2149 Nov  2 07:58 rustdesk_r2026-11-02_07-58-15.log
+-rw-rw-r-- 1 lightdm lightdm  3644 Nov  2 08:14 rustdesk_r2026-11-02_08-14-09.log
+-rw-rw-r-- 1 lightdm lightdm  2247 Nov  2 08:17 rustdesk_r2026-11-02_08-16-34.log
+-rw-rw-r-- 1 lightdm lightdm  1953 Nov  2 08:20 rustdesk_r2026-11-02_08-19-30.log
+-rw-rw-r-- 1 lightdm lightdm  1953 Nov  2 08:22 rustdesk_r2026-11-02_08-22-10.log
+-rw-rw-r-- 1 lightdm lightdm  2942 Nov  2 08:26 rustdesk_r2026-11-02_08-25-51.log
+-rw-rw-r-- 1 lightdm lightdm  2234 Nov  2 08:28 rustdesk_r2026-11-02_08-27-30.log
+-rw-rw-r-- 1 lightdm lightdm  2025 Nov  2 08:33 rustdesk_rCURRENT.log
+=== --server 日志全文尾部 50 ===
+[2026-11-02 08:33:04.697525 +00:00] INFO [src/core_main.rs:398] start --server with user lightdm
+[2026-11-02 08:33:04.711594 +00:00] INFO [src/server.rs:665] DISPLAY=Ok(":0")
+[2026-11-02 08:33:04.711621 +00:00] INFO [src/server.rs:666] XAUTHORITY=Ok("/var/lib/lightdm/.Xauthority")
+[2026-11-02 08:33:04.711889 +00:00] DEBUG [src/server.rs:832] #tries of ipc service connection: 30
+[2026-11-02 08:33:04.765319 +00:00] INFO [src/ipc.rs:725] Started ipc server at path: /tmp/RustDesk-111/ipc
+[2026-11-02 08:33:05.014507 +00:00] WARN [src/common.rs:2683] Failed to bind IPv6 socket: Network is unreachable (os error 101)
+[2026-11-02 08:33:05.014728 +00:00] INFO [src/common.rs:706] Testing nat ...
+[2026-11-02 08:33:05.018973 +00:00] ERROR [src/common.rs:2735] Failed to get public IPv6 address: UDP socket error
+[2026-11-02 08:33:05.033165 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21116: port=41815
+[2026-11-02 08:33:05.047251 +00:00] INFO [libs/scrap/src/common/codec.rs:1046] skip test av1
+[2026-11-02 08:33:05.047272 +00:00] INFO [src/lan.rs:31] lan discovery listener started
+[2026-11-02 08:33:05.047307 +00:00] INFO [src/rendezvous_mediator.rs:659] start rendezvous mediator of yc.445800773.xyz
+[2026-11-02 08:33:05.047599 +00:00] INFO [src/rendezvous_mediator.rs:369] start udp: yc.445800773.xyz:21116
+[2026-11-02 08:33:05.047664 +00:00] DEBUG [src/common.rs:734] Got nat response from yc.445800773.xyz:21115: port=41815
+[2026-11-02 08:33:05.047681 +00:00] INFO [src/common.rs:760] Tested nat type: ASYMMETRIC in 32.922406ms
+[2026-11-02 08:33:05.055866 +00:00] DEBUG [libs/hbb_common/src/udp.rs:36] Receive buf size of udp 0.0.0.0:0: Ok(212992)
+[2026-11-02 08:33:05.063319 +00:00] DEBUG [src/rendezvous_mediator.rs:415] Latency of yc.445800773.xyz:21116: 6.354ms
+[2026-11-02 08:33:08.074692 +00:00] INFO [src/hbbs_http/sync.rs:215] sysinfo updated
+[2026-11-02 08:33:35.046774 +00:00] INFO [libs/scrap/src/common/hwcodec.rs:745] Check hwcodec config, status not ready yet, let's really wait
+=== 若为空找其他 log ===
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-02_03-20-30.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-02_08-19-30.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-02_07-45-55.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-02_00-01-27.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-02_07-24-13.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-01_23-57-20.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-02_00-00-05.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-02_08-16-34.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-02_08-22-10.log
+/var/lib/lightdm/.local/share/logs/RustDesk/server/rustdesk_r2026-11-01_23-49-45.log
+=== DONE ===
+

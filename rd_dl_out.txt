@@ -1,0 +1,6 @@
+=== 下载 rustdesk 1.5.0 deb（GitHub 走代理）===
+代理下载失败，试直连
+=== deb 信息 ===
+/tmp/rustdesk-1.5.0-x86_64.deb: Debian binary package (format 2.0), with control.tar.xz , data compression xz
+=== DONE ===
+

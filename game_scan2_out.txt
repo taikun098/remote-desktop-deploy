@@ -1,0 +1,112 @@
+======== /media/user/完成_50cc_09346/kuwan/0000 ========
+总计 4
+drwxr-xr-x 1 user user    0  8月 10  2025 .
+drwxr-xr-x 1 user user 4096  9月 12  2025 ..
+
+======== /media/user/完成_50cc_09346/Playnite/0000 ========
+总计 136
+drwxr-xr-x 1 user user 20480  9月 11  2025 .
+drwxr-xr-x 1 user user 28672 11月  1 05:12 ..
+drwxr-xr-x 1 user user     0  2月 27  2024 7 Days to Die
+drwxr-xr-x 1 user user  4096  5月 13  2025 A2590
+drwxr-xr-x 1 user user     0  2月 27  2024 Alien Shooter 2  New Era
+drwxr-xr-x 1 user user     0 11月  7  2024 Astroneer
+drwxr-xr-x 1 user user     0  4月 10  2024 Atelier Sophie The Alchemist of the Mysterious Book DX
+drwxr-xr-x 1 user user  4096 11月 19  2023 ATOM RPG Post-apocalyptic indie game
+drwxr-xr-x 1 user user     0  2月 28  2024 Battlefield 2
+drwxr-xr-x 1 user user     0  3月  7  2024 Battlefield 4
+drwxr-xr-x 1 user user     0  2月 27  2024 Battlefield Bad Company 2
+drwxr-xr-x 1 user user     0  2月 27  2024 BorderlandsThe Pre-Sequel
+drwxr-xr-x 1 user user     0  4月  2  2024 Burnout Paradise The Ultimate Box
+drwxr-xr-x 1 user user     0  5月  7  2025 Call of Duty 4 Modern Warfare Remastered
+drwxr-xr-x 1 user user     0  5月  7  2025 Call of Duty Advanced Warfare
+drwxr-xr-x 1 user user     0  5月  7  2025 Call of Duty Black Ops II
+drwxr-xr-x 1 user user     0  5月  7  2025 Call of Duty Ghosts
+drwxr-xr-x 1 user user     0 11月  9  2024 Chicken Game
+drwxr-xr-x 1 user user  8192  5月 25  2025 Chinese Paladin 4
+drwxr-xr-x 1 user user 12288  5月 25  2025 Chinese Paladin 5
+drwxr-xr-x 1 user user     0  3月  5  2024 COD2
+drwxr-xr-x 1 user user     0  3月  5  2024 COD5
+drwxr-xr-x 1 user user     0  5月  7  2025 COD7
+drwxr-xr-x 1 user user     0  5月  7  2025 COD8
+drwxr-xr-x 1 user user     0  4月  7  2024 Command & Conquer3
+drwxr-xr-x 1 user user     0  4月  2  2024 Command & Conquer Remastered
+drwxr-xr-x 1 user user     0  3月  9  2024 Cult of the Lamb
+drwxr-xr-x 1 user user     0 11月 13  2024 Dating Simulator
+drwxr-xr-x 1 user user     0  3月 14  2024 DAVE THE DIVER
+drwxr-xr-x 1 user user  4096 12月 13  2023 Dead Rising 2
+drwxr-xr-x 1 user user     0  4月  7  2024 Diablo II Resurrectedyh
+drwxr-xr-x 1 user user     0  3月 21  2024 Dungeon Siege III
+drwxr-xr-x 1 user user  4096 12月 16  2024 Endzone 2
+drwxr-xr-x 1 user user     0  4月  1  2024 Factorio
+drwxr-xr-x 1 user user     0  4月 23  2024 gat41
+drwxr-xr-x 1 user user     0  3月 29  2024 GigaBash
+drwxr-xr-x 1 user user  4096 11月  4  2024 Grand Theft Auto San Andreas
+drwxr-xr-x 1 user user     0 10月 30  2024 GTA china 223G
+drwxr-xr-x 1 user user     0  3月 17  2024 GuiGuBaHuan
+drwxr-xr-x 1 user user     0  3月 21  2024 GuJian
+drwxr-xr-x 1 user user     0  3月 21  2024 gu jian qi tan 2
+drwxr-xr-x 1 user user     0  3月 17  2024 GuJianQiTan3
+drwxr-xr-x 1 user user     0 11月 13  2024 In Search Of You
+drwxr-xr-x 1 user user     0  2月 24  2024 It Takes Two
+drwxr-xr-x 1 user user     0  3月 29  2024 LEGO Brawls
+drwxr-xr-x 1 user user  8192  4月  1  2024 Mario Kart 8 Deluxe
+drwxr-xr-x 1 user user     0  3月 29  2024 Microsoft Flight Simulator
+drwxr-xr-x 1 user user     0  4月 12  2024 Minecraft Dungeons
+drwxr-xr-x 1 user user     0  3月 29  2024 Minecraft Legends
+drwxr-xr-x 1 user user     0  3月 14  2024 Monster Hunter World Iceborne
+drwxr-xr-x 1 user user     0 10月 31  2024 Moving Out
+drwxr-xr-x 1 user user     0  3月 24  2024 Need For Speed Hot Pursuit
+drwxr-xr-x 1 user user  4096  3月 31  2024 Overcooked! 2
+drwxr-xr-x 1 user user  4096 10月  9  2023 Overcooked! All You Can Eat
+drwxr-xr-x 1 user user  4096 12月 20  2023 Prison Architect
+drwxr-xr-x 1 user user  4096 12月 11  2024 PRXD
+drwxr-xr-x 1 user user     0  4月  7  2024 Resident Evil 5
+drwxr-xr-x 1 user user  4096 10月 20  2023 Resident Evil 6 Complete
+drwxr-xr-x 1 user user     0  4月  3  2024 RichMan 10
+
+=== Playnite/0000 内游戏目录名（前 40 个，只看名字）===
+7 Days to Die
+A2590
+Alien Shooter 2  New Era
+Astroneer
+Atelier Sophie The Alchemist of the Mysterious Book DX
+ATOM RPG Post-apocalyptic indie game
+Battlefield 2
+Battlefield 4
+Battlefield Bad Company 2
+BorderlandsThe Pre-Sequel
+Burnout Paradise The Ultimate Box
+Call of Duty 4 Modern Warfare Remastered
+Call of Duty Advanced Warfare
+Call of Duty Black Ops II
+Call of Duty Ghosts
+Chicken Game
+Chinese Paladin 4
+Chinese Paladin 5
+COD2
+COD5
+COD7
+COD8
+Command & Conquer3
+Command & Conquer Remastered
+Cult of the Lamb
+Dating Simulator
+DAVE THE DIVER
+Dead Rising 2
+Diablo II Resurrectedyh
+Dungeon Siege III
+Endzone 2
+Factorio
+gat41
+GigaBash
+Grand Theft Auto San Andreas
+GTA china 223G
+GuiGuBaHuan
+GuJian
+gu jian qi tan 2
+GuJianQiTan3
+
+=== kuwan/0000 内目录名（前 40 个）===
+=== DONE ===
+

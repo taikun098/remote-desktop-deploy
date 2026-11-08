@@ -1,0 +1,30 @@
+=== journal -u fc-dl ===
+11月 02 13:07:26 g01 bash[35412]: + GOT=f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434
+11月 02 13:07:26 g01 bash[35412]: + echo '本地sha: f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434'
+11月 02 13:07:26 g01 bash[35412]: 本地sha: f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434
+11月 02 13:07:26 g01 bash[35412]: + '[' f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434 '!=' f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434 ']'
+11月 02 13:07:26 g01 bash[35412]: + echo SHA_OK
+11月 02 13:07:26 g01 bash[35412]: SHA_OK
+11月 02 13:07:26 g01 bash[35412]: + chmod +x FreeCAD.AppImage
+11月 02 13:07:26 g01 bash[35412]: + ./FreeCAD.AppImage --appimage-extract
+11月 02 13:07:32 g01 bash[35412]: + ls -d squashfs-root
+11月 02 13:07:32 g01 bash[36142]: squashfs-root
+11月 02 13:07:32 g01 bash[35412]: + echo EXTRACT_OK
+11月 02 13:07:32 g01 bash[35412]: EXTRACT_OK
+11月 02 13:07:32 g01 bash[35412]: + echo '=== FC_DONE ==='
+11月 02 13:07:32 g01 bash[35412]: === FC_DONE ===
+11月 02 13:07:32 g01 systemd[1]: fc-dl.service: Deactivated successfully.
+11月 02 13:07:32 g01 systemd[1]: fc-dl.service: Consumed 21.980s CPU time.
+11月 02 13:07:44 g01 systemd[1]: fc-dl.service: Failed to open /run/systemd/transient/fc-dl.service: No such file or directory
+11月 02 13:07:44 g01 systemd[1]: fc-dl.service: Failed to open /run/systemd/transient/fc-dl.service: No such file or directory
+11月 02 13:07:44 g01 systemd[1]: fc-dl.service: Failed to open /run/systemd/transient/fc-dl.service: No such file or directory
+11月 02 13:07:44 g01 systemd[1]: fc-dl.service: Failed to open /run/systemd/transient/fc-dl.service: No such file or directory
+=== 实际文件 ===
+-rwxr-xr-x 1 root root 783M 11月  2 13:07 /opt/freecad/FreeCAD.AppImage
+/opt/freecad/squashfs-root
+已解包
+=== sha 校验 ===
+本地: f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434
+官方: f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434
+=== DONE ===
+

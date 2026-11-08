@@ -1,0 +1,42 @@
+=== RustDesk2.toml (root) ===
+rendezvous_server = 'rs-ny.rustdesk.com:21116'
+nat_type = 1
+serial = 0
+unlock_pin = ''
+trusted_devices = ''
+
+[options]
+av1-test = 'Y'
+local-ip-addr = '192.168.0.20'
+=== RustDesk2.toml (lightdm) ===
+rendezvous_server = 'rs-ny.rustdesk.com:21116'
+nat_type = 1
+serial = 0
+unlock_pin = ''
+trusted_devices = ''
+
+[options]
+av1-test = 'Y'
+local-ip-addr = '192.168.0.20'
+=== lightdm RustDesk.toml 重启后是否保留 rendezvous ===
+1
+=== root RustDesk.toml 重启后是否保留 ===
+1
+=== 服务日志最后 60 行全文 ===
+[2026-11-02 08:22:03.429011 +00:00] INFO [src/core_main.rs:394] start --service
+[2026-11-02 08:22:03.441457 +00:00] INFO [src/server/uinput.rs:1005] start uinput mouse service
+[2026-11-02 08:22:03.441460 +00:00] INFO [src/server/uinput.rs:1012] start uinput control service
+[2026-11-02 08:22:03.441459 +00:00] INFO [src/server/uinput.rs:998] start uinput keyboard service
+[2026-11-02 08:22:03.510961 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_control server at path: /tmp/RustDesk-service/ipc_uinput_control
+[2026-11-02 08:22:03.511320 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_keyboard server at path: /tmp/RustDesk-service/ipc_uinput_keyboard
+[2026-11-02 08:22:03.511737 +00:00] INFO [src/ipc.rs:725] Started ipc_uinput_mouse server at path: /tmp/RustDesk-service/ipc_uinput_mouse
+[2026-11-02 08:22:03.512064 +00:00] INFO [src/ipc.rs:723] Started protected ipc service server: postfix=_service
+[2026-11-02 08:22:09.682865 +00:00] INFO [src/platform/linux.rs:981] DISPLAY: :0
+[2026-11-02 08:22:09.682890 +00:00] INFO [src/platform/linux.rs:982] XAUTHORITY: /var/lib/lightdm/.Xauthority
+=== 是否有 rustdesk 进程在 /root/.local/share/logs 下的 GUI 日志 ===
+total 12
+drwxr-xr-x 3 root root 4096 Nov  2 08:14 .
+drwxr-xr-x 3 root root 4096 Nov  2 08:14 ..
+drwxr-xr-x 2 root root 4096 Nov  2 08:22 service
+=== DONE ===
+

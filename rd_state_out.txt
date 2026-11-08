@@ -1,0 +1,24 @@
+=== rustdesk procs now ===
+  31143 root     /usr/bin/rustdesk --service
+  31205 root     sudo -E XDG_RUNTIME_DIR=/run/user/111 -u lightdm /usr/share/rustdesk/rustdesk --server
+  31206 lightdm  /usr/share/rustdesk/rustdesk --server
+  31214 lightdm  /usr/share/rustdesk/rustdesk --tray
+=== listening now ===
+LISTEN 0      128                *:21118            *:*    users:(("rustdesk",pid=31206,fd=18))                   
+=== journal tail (errors/connect) ===
+Nov 01 23:57:20 g01 sudo[5895]:     root : PWD=/ ; USER=lightdm ; ENV=XDG_RUNTIME_DIR=/run/user/111 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 00:00:19 g01 rustdesk[5896]: X connection to :1 broken (explicit kill or server shutdown).
+Nov 02 00:00:26 g01 sudo[8121]:     root : PWD=/ ; USER=user ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 00:00:33 g01 sudo[8221]:     root : PWD=/ ; USER=lightdm ; ENV=XDG_RUNTIME_DIR=/run/user/111 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 00:01:20 g01 sudo[8853]:     root : PWD=/ ; USER=user ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 00:01:27 g01 sudo[8953]:     root : PWD=/ ; USER=lightdm ; ENV=XDG_RUNTIME_DIR=/run/user/111 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 03:10:09 g01 rustdesk[8954]: X connection to :1 broken (explicit kill or server shutdown).
+Nov 02 03:10:16 g01 sudo[24782]:     root : PWD=/ ; USER=user ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 03:10:16 g01 rustdesk[24790]: Couldn't connect to accessibility bus: Failed to connect to socket /root/.cache/at-spi/bus_0: Permission denied
+Nov 02 03:10:17 g01 sudo[25008]:     root : PWD=/ ; USER=user ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 03:20:30 g01 sudo[28285]:     root : PWD=/ ; USER=lightdm ; ENV=XDG_RUNTIME_DIR=/run/user/111 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 03:20:30 g01 rustdesk[28293]: pkill: killing pid 25038 failed: Operation not permitted
+Nov 02 03:35:42 g01 systemd[1]: rustdesk.service: Failed to kill control group /system.slice/rustdesk.service, ignoring: Invalid argument
+Nov 02 03:35:49 g01 sudo[31205]:     root : PWD=/ ; USER=lightdm ; ENV=XDG_RUNTIME_DIR=/run/user/111 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+=== config options section ===
+

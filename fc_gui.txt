@@ -1,0 +1,7 @@
+lrwxrwxrwx 1 root root 29 Nov  1 17:16 /usr/local/bin/freecad -> /opt/freecad/FreeCAD.AppImage
+launched
+===proc===
+45882
+45887
+===log===
+[sudo] password for user: 

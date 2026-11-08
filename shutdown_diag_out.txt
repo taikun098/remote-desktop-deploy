@@ -1,0 +1,88 @@
+=== 当前开机时长 ===
+up 4 hours, 44 minutes
+=== 最近几次重启/关机记录 (last) ===
+reboot   system boot  6.8.0-147-generi Sun Nov  1 23:49   still running
+shutdown system down  6.8.0-147-generi Sun Nov  1 23:49 - 23:49  (00:00)
+reboot   system boot  6.8.0-147-generi Sun Nov  1 14:05 - 23:49  (09:43)
+reboot   system boot  6.8.0-147-generi Sun Nov  1 14:02 - 23:49  (09:47)
+
+wtmp begins Sun Nov  1 14:02:03 2026
+=== 上次关机的日志（休眠/关机/过热/panic 关键词）===
+Nov 01 16:01:53 g01 systemd-logind[946]: Watching system buttons on /dev/input/event0 (Sleep Button)
+Nov 01 16:02:17 g01 vnc-start.sh[24031]: X connection to :0.0 broken (explicit kill or server shutdown).
+Nov 01 16:30:08 g01 org.a11y.Bus[28355]: X connection to :0 broken (explicit kill or server shutdown).
+Nov 01 16:37:03 g01 vnc-start.sh[32145]: X connection to :0.0 broken (explicit kill or server shutdown).
+Nov 01 23:49:10 g01 systemd-logind[946]: The system will reboot now!
+Nov 01 23:49:10 g01 systemd-logind[946]: System is rebooting.
+Nov 01 23:49:10 g01 systemd[1]: Stopped unattended-upgrades.service - Unattended Upgrades Shutdown.
+Nov 01 23:49:10 g01 systemd[1]: Stopping finalrd.service - Create final runtime dir for shutdown pivot root...
+Nov 01 23:49:10 g01 systemd[1]: snapd.system-shutdown.service - Ubuntu core (all-snaps) system shutdown helper setup service was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/finalrd).
+Nov 01 23:49:10 g01 systemd[1]: Stopping thermald.service - Thermal Daemon Service...
+Nov 01 23:49:10 g01 thermald[10582]: Terminating ...
+Nov 01 23:49:10 g01 vnc-start.sh[32488]: X connection to :0.0 broken (explicit kill or server shutdown).
+Nov 01 23:49:10 g01 rustdesk[184371]: X connection to :0 broken (explicit kill or server shutdown).
+Nov 01 23:49:10 g01 rustdesk[184371]: X connection to :0 broken (explicit kill or server shutdown).
+Nov 01 23:49:10 g01 systemd[1]: plymouth-reboot.service - Show Plymouth Reboot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+Nov 01 23:49:10 g01 systemd[1188]: Reached target shutdown.target - Shutdown.
+Nov 01 23:49:10 g01 systemd[1]: Stopped finalrd.service - Create final runtime dir for shutdown pivot root.
+Nov 01 23:49:11 g01 thermald[10582]: terminating on user request ..
+Nov 01 23:49:12 g01 systemd[1]: thermald.service: Deactivated successfully.
+Nov 01 23:49:12 g01 systemd[1]: Stopped thermald.service - Thermal Daemon Service.
+Nov 01 23:49:12 g01 systemd[1]: thermald.service: Consumed 23.500s CPU time, 2.4M memory peak, 0B memory swap peak.
+Nov 01 23:49:13 g01 systemd[1]: Stopping systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Nov 01 23:49:13 g01 systemd[1]: Stopped systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Nov 01 23:49:13 g01 systemd[1]: Reached target shutdown.target - System Shutdown.
+Nov 01 23:49:13 g01 systemd[1]: Reached target final.target - Late Shutdown Services.
+Nov 01 23:49:13 g01 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Nov 01 23:49:13 g01 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Nov 01 23:49:13 g01 systemd[1]: Reached target reboot.target - System Reboot.
+Nov 01 23:49:13 g01 systemd-shutdown[1]: Syncing filesystems and block devices.
+Nov 01 23:49:13 g01 systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+=== systemd logind 电源管理配置 ===
+/etc/systemd/logind.conf:#HandlePowerKey=poweroff
+/etc/systemd/logind.conf:#HandlePowerKeyLongPress=ignore
+/etc/systemd/logind.conf:#HandleSuspendKey=suspend
+/etc/systemd/logind.conf:#HandleSuspendKeyLongPress=hibernate
+/etc/systemd/logind.conf:#HandleLidSwitch=suspend
+/etc/systemd/logind.conf:#HandleLidSwitchExternalPower=suspend
+/etc/systemd/logind.conf:#HandleLidSwitchDocked=ignore
+/etc/systemd/logind.conf:#SuspendKeyIgnoreInhibited=no
+/etc/systemd/logind.conf:#IdleAction=ignore
+/etc/systemd/logind.conf:#IdleActionSec=30min
+(默认配置)
+=== 当前 logind 生效设置 ===
+WHO                 UID  USER    PID   COMM            WHAT                                                                       WHY                                      MODE
+lightdm             111  lightdm 28134 unity-settings- handle-lid-switch                                                          Multiple displays attached               block
+lightdm             111  lightdm 28096 unity-greeter   handle-power-key                                                           Unity Greeter handling keypresses        block
+xfce4-power-manager 1000 user  24880 xfce4-power-man handle-power-key:handle-suspend-key:handle-hibernate-key:handle-lid-switch xfce4-power-manager handles these events block
+
+3 inhibitors listed.
+=== xfce 电源管理器设置（空闲休眠相关）===
+=== 定时任务（可能导致关机/休眠）===
+NEXT                                 LEFT LAST                              PASSED UNIT                           ACTIVATES
+Mon 2026-11-02 04:40:00 UTC          5min Mon 2026-11-02 04:30:09 UTC 3min 57s ago sysstat-collect.timer          sysstat-collect.service
+Mon 2026-11-02 05:10:45 UTC         36min Sun 2026-11-01 14:02:15 UTC            - man-db.timer                   man-db.service
+Mon 2026-11-02 05:45:01 UTC      1h 10min Mon 2026-11-02 04:29:05 UTC     5min ago fwupd-refresh.timer            fwupd-refresh.service
+Mon 2026-11-02 06:02:11 UTC      1h 28min Sun 2026-11-01 14:02:15 UTC            - apt-daily-upgrade.timer        apt-daily-upgrade.service
+Mon 2026-11-02 06:31:21 UTC      1h 57min Sun 2026-11-01 14:02:15 UTC            - motd-news.timer                motd-news.service
+Mon 2026-11-02 10:46:01 UTC            6h Sun 2026-11-01 14:02:15 UTC            - apt-daily.timer                apt-daily.service
+Tue 2026-11-03 00:00:00 UTC           19h Mon 2026-11-02 00:00:15 UTC 1h 13min ago dpkg-db-backup.timer           dpkg-db-backup.service
+Tue 2026-11-03 00:00:00 UTC           19h Mon 2026-11-02 00:00:15 UTC 1h 13min ago logrotate.timer                logrotate.service
+Tue 2026-11-03 00:07:00 UTC           19h Mon 2026-11-02 00:07:06 UTC  1h 6min ago sysstat-summary.timer          sysstat-summary.service
+Tue 2026-11-03 03:19:17 UTC           22h Sun 2026-11-01 23:58:52 UTC 1h 14min ago update-notifier-download.timer update-notifier-download.service
+Tue 2026-11-03 03:29:12 UTC           22h Mon 2026-11-02 00:08:47 UTC  1h 4min ago systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
+=== 温度 ===
+thermal_zone0: 27°C  type=acpitz
+thermal_zone1: 35°C  type=x86_pkg_temp
+=== 内核电源/CPU 相关 dmesg 尾部 ===
+[ 4480.027972] ACPI: PM: Saving platform NVS memory
+[ 4480.044638] ACPI: PM: Low-level resume complete
+[ 4480.044728] ACPI: PM: Restoring platform NVS memory
+[ 4480.057191] ACPI: PM: Waking up from system sleep state S3
+[ 4493.880541] Modules linked in: nf_tables tcp_diag inet_diag snd_seq_dummy snd_hrtimer snd_seq snd_seq_device qrtr cfg80211 binfmt_misc nls_iso8859_1 amdgpu intel_rapl_msr intel_rapl_common intel_uncore_frequency intel_uncore_frequency_common amdxcp drm_exec x86_pkg_temp_thermal gpu_sched intel_powerclamp snd_hda_codec_realtek drm_buddy drm_suballoc_helper snd_hda_codec_generic drm_ttm_helper coretemp ttm snd_hda_codec_hdmi snd_hda_intel drm_display_helper kvm_intel snd_intel_dspcfg cec snd_intel_sdw_acpi snd_hda_codec rc_core snd_hda_core i2c_algo_bit cmdlinepart snd_hwdep kvm snd_pcm spi_nor snd_timer ee1004 mtd irqbypass mei_pxp mei_hdcp snd soundcore i2c_i801 rapl mei_me spi_intel_pci intel_cstate mei serio_raw i2c_smbus spi_intel wmi_bmof intel_pmc_core intel_vsec pmt_telemetry pmt_class acpi_pad acpi_tad mac_hid sch_fq_codel msr dm_multipath parport_pc ppdev lp parport efi_pstore nfnetlink dmi_sysfs ip_tables x_tables autofs4 btrfs blake2b_generic raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor
+[ 4504.484238] Modules linked in: nf_tables tcp_diag inet_diag snd_seq_dummy snd_hrtimer snd_seq snd_seq_device qrtr cfg80211 binfmt_misc nls_iso8859_1 amdgpu intel_rapl_msr intel_rapl_common intel_uncore_frequency intel_uncore_frequency_common amdxcp drm_exec x86_pkg_temp_thermal gpu_sched intel_powerclamp snd_hda_codec_realtek drm_buddy drm_suballoc_helper snd_hda_codec_generic drm_ttm_helper coretemp ttm snd_hda_codec_hdmi snd_hda_intel drm_display_helper kvm_intel snd_intel_dspcfg cec snd_intel_sdw_acpi snd_hda_codec rc_core snd_hda_core i2c_algo_bit cmdlinepart snd_hwdep kvm snd_pcm spi_nor snd_timer ee1004 mtd irqbypass mei_pxp mei_hdcp snd soundcore i2c_i801 rapl mei_me spi_intel_pci intel_cstate mei serio_raw i2c_smbus spi_intel wmi_bmof intel_pmc_core intel_vsec pmt_telemetry pmt_class acpi_pad acpi_tad mac_hid sch_fq_codel msr dm_multipath parport_pc ppdev lp parport efi_pstore nfnetlink dmi_sysfs ip_tables x_tables autofs4 btrfs blake2b_generic raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor
+[ 4504.486202] Modules linked in: nf_tables tcp_diag inet_diag snd_seq_dummy snd_hrtimer snd_seq snd_seq_device qrtr cfg80211 binfmt_misc nls_iso8859_1 amdgpu intel_rapl_msr intel_rapl_common intel_uncore_frequency intel_uncore_frequency_common amdxcp drm_exec x86_pkg_temp_thermal gpu_sched intel_powerclamp snd_hda_codec_realtek drm_buddy drm_suballoc_helper snd_hda_codec_generic drm_ttm_helper coretemp ttm snd_hda_codec_hdmi snd_hda_intel drm_display_helper kvm_intel snd_intel_dspcfg cec snd_intel_sdw_acpi snd_hda_codec rc_core snd_hda_core i2c_algo_bit cmdlinepart snd_hwdep kvm snd_pcm spi_nor snd_timer ee1004 mtd irqbypass mei_pxp mei_hdcp snd soundcore i2c_i801 rapl mei_me spi_intel_pci intel_cstate mei serio_raw i2c_smbus spi_intel wmi_bmof intel_pmc_core intel_vsec pmt_telemetry pmt_class acpi_pad acpi_tad mac_hid sch_fq_codel msr dm_multipath parport_pc ppdev lp parport efi_pstore nfnetlink dmi_sysfs ip_tables x_tables autofs4 btrfs blake2b_generic raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor
+[ 4504.488134] Modules linked in: nf_tables tcp_diag inet_diag snd_seq_dummy snd_hrtimer snd_seq snd_seq_device qrtr cfg80211 binfmt_misc nls_iso8859_1 amdgpu intel_rapl_msr intel_rapl_common intel_uncore_frequency intel_uncore_frequency_common amdxcp drm_exec x86_pkg_temp_thermal gpu_sched intel_powerclamp snd_hda_codec_realtek drm_buddy drm_suballoc_helper snd_hda_codec_generic drm_ttm_helper coretemp ttm snd_hda_codec_hdmi snd_hda_intel drm_display_helper kvm_intel snd_intel_dspcfg cec snd_intel_sdw_acpi snd_hda_codec rc_core snd_hda_core i2c_algo_bit cmdlinepart snd_hwdep kvm snd_pcm spi_nor snd_timer ee1004 mtd irqbypass mei_pxp mei_hdcp snd soundcore i2c_i801 rapl mei_me spi_intel_pci intel_cstate mei serio_raw i2c_smbus spi_intel wmi_bmof intel_pmc_core intel_vsec pmt_telemetry pmt_class acpi_pad acpi_tad mac_hid sch_fq_codel msr dm_multipath parport_pc ppdev lp parport efi_pstore nfnetlink dmi_sysfs ip_tables x_tables autofs4 btrfs blake2b_generic raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor
+[ 4504.490060] Modules linked in: nf_tables tcp_diag inet_diag snd_seq_dummy snd_hrtimer snd_seq snd_seq_device qrtr cfg80211 binfmt_misc nls_iso8859_1 amdgpu intel_rapl_msr intel_rapl_common intel_uncore_frequency intel_uncore_frequency_common amdxcp drm_exec x86_pkg_temp_thermal gpu_sched intel_powerclamp snd_hda_codec_realtek drm_buddy drm_suballoc_helper snd_hda_codec_generic drm_ttm_helper coretemp ttm snd_hda_codec_hdmi snd_hda_intel drm_display_helper kvm_intel snd_intel_dspcfg cec snd_intel_sdw_acpi snd_hda_codec rc_core snd_hda_core i2c_algo_bit cmdlinepart snd_hwdep kvm snd_pcm spi_nor snd_timer ee1004 mtd irqbypass mei_pxp mei_hdcp snd soundcore i2c_i801 rapl mei_me spi_intel_pci intel_cstate mei serio_raw i2c_smbus spi_intel wmi_bmof intel_pmc_core intel_vsec pmt_telemetry pmt_class acpi_pad acpi_tad mac_hid sch_fq_codel msr dm_multipath parport_pc ppdev lp parport efi_pstore nfnetlink dmi_sysfs ip_tables x_tables autofs4 btrfs blake2b_generic raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor
+[ 4505.047386] Modules linked in: nf_tables tcp_diag inet_diag snd_seq_dummy snd_hrtimer snd_seq snd_seq_device qrtr cfg80211 binfmt_misc nls_iso8859_1 amdgpu intel_rapl_msr intel_rapl_common intel_uncore_frequency intel_uncore_frequency_common amdxcp drm_exec x86_pkg_temp_thermal gpu_sched intel_powerclamp snd_hda_codec_realtek drm_buddy drm_suballoc_helper snd_hda_codec_generic drm_ttm_helper coretemp ttm snd_hda_codec_hdmi snd_hda_intel drm_display_helper kvm_intel snd_intel_dspcfg cec snd_intel_sdw_acpi snd_hda_codec rc_core snd_hda_core i2c_algo_bit cmdlinepart snd_hwdep kvm snd_pcm spi_nor snd_timer ee1004 mtd irqbypass mei_pxp mei_hdcp snd soundcore i2c_i801 rapl mei_me spi_intel_pci intel_cstate mei serio_raw i2c_smbus spi_intel wmi_bmof intel_pmc_core intel_vsec pmt_telemetry pmt_class acpi_pad acpi_tad mac_hid sch_fq_codel msr dm_multipath parport_pc ppdev lp parport efi_pstore nfnetlink dmi_sysfs ip_tables x_tables autofs4 btrfs blake2b_generic raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor
+

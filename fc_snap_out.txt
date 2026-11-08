@@ -1,0 +1,33 @@
+=== snap 里 FreeCAD 信息 ===
+name:      freecad
+summary:   An open source parametric 3D CAD modeler
+publisher: FreeCAD (freecad-project-association**)
+store-url: https://snapcraft.io/freecad
+contact:   https://forum.freecad.org/viewtopic.php?f=42&t=68714
+license:   LGPL-2.0-or-later
+description: |
+  FreeCAD is a parametric 3D modeler. Parametric modeling allows you to
+  easily modify your design by going back into your model history and
+  changing its parameters. FreeCAD is open source (LGPL license) and
+  completely modular, allowing for very advanced extension and customization.
+  
+  FreeCAD is multiplatfom, and reads and writes many open file formats such
+  as STEP, IGES, STL and others.
+  
+  Visit the upstream project: https://www.freecad.org/ and
+  https://github.com/FreeCAD/FreeCAD/
+  
+  **Channels**
+  
+  There are multiple maintained channels for this snap:
+  
+  - `stable` stable contains the latest upstream release, i.e. the most
+  recent tagged commit. Use this if you don't know what you're doing.
+  - `edge` contains automated (daily) builds from the latest master commit.
+  Use this to test new features. Might be unstable.
+  - `candidate` contains release candidate (RC) builds. Use this if you want
+  to test release candidates before a major release.
+  
+  
+=== DONE ===
+

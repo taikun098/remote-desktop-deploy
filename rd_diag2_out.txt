@@ -1,0 +1,24 @@
+=== 全部 rustdesk 进程 ===
+   1363       1 root     /usr/bin/rustdesk --service
+   2082    1363 root     sudo -E XDG_RUNTIME_DIR=/run/user/1000 -u user /usr/share/rustdesk/rustdesk --server
+   2083    2082 user   /usr/share/rustdesk/rustdesk --server
+   2101    2083 user   /usr/share/rustdesk/rustdesk --tray
+=== --server 真实进程(2083) socket ===
+UNCONN 0      0                                0.0.0.0:21119      0.0.0.0:*    users:(("rustdesk",pid=2083,fd=31))       
+UNCONN 0      0                                0.0.0.0:55543      0.0.0.0:*    users:(("rustdesk",pid=2083,fd=18))       
+=== --server(2083) 状态 ===
+State:	S (sleeping)
+Threads:	31
+=== journal 中 rustdesk 相关报错 ===
+Nov 02 09:56:59 g01 systemd[1]: Started rustdesk.service - RustDesk.
+Nov 02 09:57:02 g01 sudo[2080]:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/env
+Nov 02 09:57:02 g01 sudo[2080]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 02 09:57:02 g01 sudo[2080]: pam_unix(sudo:session): session closed for user root
+Nov 02 09:57:02 g01 sudo[2082]:     root : PWD=/ ; USER=user ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 09:57:02 g01 sudo[2082]: pam_unix(sudo:session): session opened for user user(uid=1000) by (uid=0)
+Nov 02 09:57:02 g01 rustdesk[2168]: Cannot load libcuda.so.1
+Nov 02 09:57:03 g01 rustdesk[2168]: Cannot load libcuda.so.1
+=== 是否已有 --server 最新日志（09:57 后有没有新增）===
+大小=3025 修改=2026-11-02 09:57:05.988071306 +0000
+=== DONE ===
+

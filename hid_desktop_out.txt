@@ -1,0 +1,23 @@
+=== 找 flatpak 的 Hidamari .desktop ===
+来源: /var/lib/flatpak/exports/share/applications/io.github.jeffshee.Hidamari.desktop
+=== 桌面目录 ===
+HOME=/home/user
+/home/user/Desktop
+=== 创建桌面快捷方式 ===
+=== 验证 ===
+-rwxr-xr-x 1 user user 279 11月  3 01:12 /home/user/Desktop/Hidamari.desktop
+--- 内容 ---
+[Desktop Entry]
+Name=Hidamari
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=hidamari io.github.jeffshee.Hidamari
+Icon=io.github.jeffshee.Hidamari
+Terminal=false
+Type=Application
+Categories=GTK;Utility;
+StartupNotify=true
+X-Flatpak=io.github.jeffshee.Hidamari
+=== 应用菜单数据目录是否含 flatpak ===
+XDG_DATA_DIRS=
+(系统菜单无 Hidamari 项，需手动刷新)
+=== DONE ===
+

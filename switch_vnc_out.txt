@@ -1,0 +1,30 @@
+=== step: stop old vnc ===
+=== step: kill Xvfb :0 + root xfce stack ===
+Xvfb pid=
+=== step: write physical vnc script ===
+=== step: update vnc.service ===
+=== step: start new vnc ===
+=== verify ===
+active
+--- x11vnc log ---
+02/11/2026 03:19:04 
+
+The VNC desktop is:      g01:0
+
+******************************************************************************
+Have you tried the x11vnc '-ncache' VNC client-side pixel caching feature yet?
+
+The scheme stores pixel data offscreen on the VNC viewer side for faster
+retrieval.  It should work with any VNC viewer.  Try it by running:
+
+    x11vnc -ncache 10 ...
+
+One can also add -ncache_cr for smooth 'copyrect' window motion.
+More info: http://www.karlrunge.com/x11vnc/faq.html#faq-client-caching
+
+--- port 5900 ---
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=27606,fd=8))                      
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=27606,fd=9))                      
+--- X processes now ---
+  24538 root     /usr/lib/xorg/Xorg -core :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt7 -novtswitch
+

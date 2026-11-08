@@ -1,0 +1,12 @@
+FreeCAD 经代理下载已提交
+
+轮询00 fc=True
+轮询06 fc=True
+fc-dl 结束
+=== fc-dl 状态 ===
+inactive
+=== fc_dl.log ===
+Running as unit: fc-dl.service; invocation ID: 5d1543b7d2a4420289bd280899c918b2
+=== 校验点 ===
+=== DONE ===
+

@@ -1,0 +1,69 @@
+=== journalctl rustdesk 服务日志（最近）===
+Nov 02 07:48:00 g01 rustdesk[72632]: Cannot load libcuda.so.1
+Nov 02 07:58:09 g01 systemd[1]: Stopping rustdesk.service - RustDesk...
+Nov 02 07:58:09 g01 sudo[72582]: pam_unix(sudo:session): session closed for user lightdm
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 56318 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 67429 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 71955 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72582 (sudo) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72591 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72632 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Failed to kill control group /system.slice/rustdesk.service, ignoring: Invalid argument
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 56318 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 67429 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 71955 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72582 (sudo) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72591 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72632 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Failed to kill control group /system.slice/rustdesk.service, ignoring: Invalid argument
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Deactivated successfully.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 56318 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 67429 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 71955 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 72591 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 72632 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: Stopped rustdesk.service - RustDesk.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Consumed 12.865s CPU time, 163.5M memory peak, 0B memory swap peak.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Found left-over process 56318 (rustdesk) in control group while starting unit. Ignoring.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Found left-over process 67429 (rustdesk) in control group while starting unit. Ignoring.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Found left-over process 71955 (rustdesk) in control group while starting unit. Ignoring.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Found left-over process 72632 (rustdesk) in control group while starting unit. Ignoring.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Nov 02 07:58:09 g01 systemd[1]: Started rustdesk.service - RustDesk.
+Nov 02 07:58:15 g01 sudo[75049]:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/env
+Nov 02 07:58:15 g01 sudo[75049]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Nov 02 07:58:15 g01 sudo[75049]: pam_unix(sudo:session): session closed for user root
+Nov 02 07:58:15 g01 sudo[75051]:     root : PWD=/ ; USER=lightdm ; ENV=XDG_RUNTIME_DIR=/run/user/111 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 07:58:15 g01 sudo[75051]: pam_unix(sudo:session): session opened for user lightdm(uid=111) by (uid=0)
+Nov 02 07:58:16 g01 rustdesk[75101]: Cannot load libcuda.so.1
+=== journalctl 中所有 rustdesk 相关日志（最近 40 行）===
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 67429 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 71955 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72582 (sudo) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72591 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Killing process 72632 (rustdesk) with signal SIGKILL.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Failed to kill control group /system.slice/rustdesk.service, ignoring: Invalid argument
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Deactivated successfully.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 56318 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 67429 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 71955 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 72591 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Unit process 72632 (rustdesk) remains running after unit stopped.
+Nov 02 07:58:09 g01 systemd[1]: Stopped rustdesk.service - RustDesk.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Consumed 12.865s CPU time, 163.5M memory peak, 0B memory swap peak.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Found left-over process 56318 (rustdesk) in control group while starting unit. Ignoring.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Found left-over process 67429 (rustdesk) in control group while starting unit. Ignoring.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Found left-over process 71955 (rustdesk) in control group while starting unit. Ignoring.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: Found left-over process 72632 (rustdesk) in control group while starting unit. Ignoring.
+Nov 02 07:58:09 g01 systemd[1]: rustdesk.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+Nov 02 07:58:09 g01 systemd[1]: Started rustdesk.service - RustDesk.
+Nov 02 07:58:15 g01 sudo[75051]:     root : PWD=/ ; USER=lightdm ; ENV=XDG_RUNTIME_DIR=/run/user/111 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+Nov 02 07:58:16 g01 rustdesk[75101]: Cannot load libcuda.so.1
+=== DONE ===
+

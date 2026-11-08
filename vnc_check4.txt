@@ -1,0 +1,2 @@
+11629 apt install -y xfce4 xfce4-goodies x11vnc xvfb dbus-x11
+---installed---

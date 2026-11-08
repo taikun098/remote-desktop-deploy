@@ -1,0 +1,13 @@
+===qm===
+AddonManager_zh-CN.qm
+AddonManager_zh-TW.qm
+designer_zh_TW.qm
+qtbase_zh_TW.qm
+designer_zh_CN.qm
+linguist_zh_CN.qm
+assistant_zh_CN.qm
+qtdeclarative_zh_TW.qm
+qtmultimedia_zh_CN.qm
+qtwebengine_zh_CN.qm
+===qm count===
+310

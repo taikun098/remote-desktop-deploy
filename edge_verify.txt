@@ -1,0 +1,6 @@
+===edge bin===
+/usr/bin/microsoft-edge
+===edge dpkg===
+ii  microsoft-edge-stable                          156.0.4314.58-1                                  amd64        The web browser from Microsoft
+===edge proc===
+38606 bash -c echo '===edge bin==='; which microsoft-edge || ls /opt/microsoft/msedge/ 2>/dev/null | head -3; echo '===edge dpkg==='; dpkg -l | grep -E 'microsoft-edge' | head -3; echo '===edge proc==='; pgrep -fa microsoft-edge | head -2 || echo none

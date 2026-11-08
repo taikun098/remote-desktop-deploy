@@ -1,0 +1,20 @@
+=== snap 内核心翻译文件（freecad 主界面 *.qm）===
+--- 含 zh 的 qm ---
+/snap/freecad/2741/usr/Mod/AddonManager/Resources/translations/AddonManager_zh-CN.qm
+/snap/freecad/2741/usr/Mod/AddonManager/Resources/translations/AddonManager_zh-TW.qm
+--- translations 目录里的 qm 计数 ---
+31
+=== /usr/local/bin/freecad 指向 ===
+lrwxrwxrwx 1 root root 29 11月  1 17:16 /usr/local/bin/freecad -> /opt/freecad/FreeCAD.AppImage
+lrwxrwxrwx 1 root root 45 11月  2 13:10 /usr/local/bin/freecadcmd -> /opt/freecad/squashfs-root/usr/bin/freecadcmd
+=== snap freecad 能否启动（版本）===
+system_key.go:147: cannot determine nfs usage in generateSystemKey: cannot parse /etc/fstab: expected at least 3 fields, found 1
+错误：timeout waiting for snap system profiles to get updated
+=== 旧 AppImage 启动器 /opt/freecad ===
+总计 801592
+drwxr-xr-x 3 root root      4096 11月  2 13:07 .
+drwxr-xr-x 6 root root      4096 11月  2 13:42 ..
+-rwxr-xr-x 1 root root 820812280 11月  2 13:07 FreeCAD.AppImage
+drwxr-xr-x 3 root root      4096 11月  2 13:07 squashfs-root
+=== DONE ===
+

@@ -1,0 +1,29 @@
+=== tun0 接口 ===
+3: tun0: <POINTOPOINT,UP,LOWER_UP> mtu 1360 qdisc fq_codel state UNKNOWN group default qlen 500
+    link/none 
+    inet 10.1.0.20/24 brd 10.1.0.255 scope global tun0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::cbb4:adc0:4fe:1c68/64 scope link stable-privacy 
+       valid_lft forever preferred_lft forever
+=== EasyTier 进程/服务 ===
+active
+   1355 /usr/local/bin/easytier-core --network-name lw --network-secret admin@8897802. -i 10.1.0.20 -p tcp://60.31.207.20:11011 tcp://yc.445800773.xyz:11011 --instance-name g01 --multi-thread true --bind-device true
+=== 对端列表（easytier-cli）===
+/usr/local/bin/easytier-cli
+| ipv4         | hostname  | cost  | lat(ms) | loss | rx       | tx       | tunnel  | NAT            | version         |
+|--------------|-----------|-------|---------|------|----------|----------|---------|----------------|-----------------|
+| 10.1.0.20/24 | g01       | Local | -       | -    | -        | -        | -       | PortRestricted | 2.6.4-8428a89d  |
+| 10.1.0.1/24  | dlan      | p2p   | 57.71   | 0.0% | 6.22 kB  | 12.89 kB | tcp     | PortRestricted | 2.6.4-8428a89d  |
+| 10.1.0.2/24  | YongChang | p2p   | 4.04    | 0.0% | 21.14 kB | 22.59 kB | tcp,udp | PortRestricted | 2.6.4-8428a89d  |
+| 10.1.0.3/24  | 店里      | p2p   | 61.17   | 3.0% | 57.61 kB | 52.10 kB | udp     | PortRestricted | 2.4.5-4c4d172e~ |
+| 10.1.0.4/24  | 迷你终端  | p2p   | 0.53    | 0.0% | 19.34 kB | 20.96 kB | tcp     | PortRestricted | 2.4.5-4c4d172e~ |
+| 10.1.0.5/24  | 小米      | p2p   | 64.72   | 0.0% | 19.51 kB | 20.29 kB | udp     | PortRestricted | 2.4.5-4c4d172e  |
+| 10.1.0.31/24 | hinas     | p2p   | 0.86    | 0.0% | 2.85 kB  | 3.10 kB  | tcp     | PortRestricted | 2.6.4-8428a89d  |
+=== 本机 ping 网关 10.1.0.1 ===
+--- 10.1.0.1 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 57.585/57.780/57.976/0.195 ms
+=== 路由表（tun0 相关）===
+10.1.0.0/24 dev tun0 proto kernel scope link src 10.1.0.20 
+=== DONE ===
+

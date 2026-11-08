@@ -1,0 +1,92 @@
+=== easytier-core help ===
+A full meshed p2p VPN, connecting all your devices in one network with one command.
+
+Usage: easytier-core [OPTIONS]
+
+Options:
+  -w, --config-server <CONFIG_SERVER>
+          config server address, allow format:
+          full url: --config-server udp://127.0.0.1:22020/admin, 'udp' can be replaced with tcp, ws,
+          wss (when config server ws is proxied to wss)
+          only user name: --config-server admin, will use official server
+           [env: ET_CONFIG_SERVER=]
+      --machine-id <MACHINE_ID>
+          the machine id to identify this machine, used for config recovery after disconnection,
+          must be unique and fixed. by default it is loaded from persisted local state; on first
+          start it may be migrated from system information or generated, then remains fixed.
+           [env: ET_MACHINE_ID=]
+  -c, --config-file <CONFIG_FILE>...
+          path to the config file, NOTE: the options set by cmdline args will override options in
+          config file [env: ET_CONFIG_FILE=]
+      --config-dir <CONFIG_DIR>
+          Load all .toml files in the directory to start network instances, and store the received
+          configurations in this directory. [env: ET_CONFIG_DIR=]
+      --network-name <NETWORK_NAME>
+          network name to identify this vpn network [env: ET_NETWORK_NAME=]
+      --network-secret <NETWORK_SECRET>
+          network secret to verify this node belongs to the vpn network [env: ET_NETWORK_SECRET=]
+  -i, --ipv4 <IPV4>
+          ipv4 address of this vpn node, if empty, this node will only forward packets and no TUN
+          device will be created [env: ET_IPV4=]
+      --ipv6 <IPV6>
+          ipv6 address of this vpn node, can be used together with ipv4 for dual-stack operation
+          [env: ET_IPV6=]
+      --ipv6-public-addr-provider [<IPV6_PUBLIC_ADDR_PROVIDER>]
+          share this node's public IPv6 subnet with other peers so they can obtain public IPv6
+          addresses (Linux only) [env: ET_IPV6_PUBLIC_ADDR_PROVIDER=] [possible values: true, false]
+      --ipv6-public-addr-auto [<IPV6_PUBLIC_ADDR_AUTO>]
+          auto-obtain a public IPv6 address from a peer that shares its IPv6 subnet [env:
+          ET_IPV6_PUBLIC_ADDR_AUTO=] [possible values: true, false]
+      --ipv6-public-addr-prefix <IPV6_PUBLIC_ADDR_PREFIX>
+          manually specify the public IPv6 subnet to share, instead of auto-detecting from system
+          routes [env: ET_IPV6_PUBLIC_ADDR_PREFIX=]
+  -d, --dhcp [<DHCP>]
+          automatically determine and set IP address by Easytier, and the IP address starts from
+          10.0.0.1 by default. Warning, if there is an IP conflict in the network when using DHCP,
+          the IP will be automatically changed. [env: ET_DHCP=] [possible values: true, false]
+  -p, --peers [<PEERS>...]
+          peers to connect initially [env: ET_PEERS=]
+  -e, --external-node <EXTERNAL_NODE>
+          use a public shared node to discover peers [env: ET_EXTERNAL_NODE=]
+  -n, --proxy-networks <PROXY_NETWORKS>
+=== easytier-cli help (brief) ===
+A full meshed p2p VPN, connecting all your devices in one network with one command.
+
+Usage: easytier-cli [OPTIONS] <COMMAND>
+
+Commands:
+  peer              show peers info
+  connector         manage connectors
+  mapped-listener   manage mapped listeners
+  stun              do stun test
+  route             show route info
+  peer-center       show global peers info
+  vpn-portal        show vpn portal (wireguard) info
+  node              inspect self easytier-core status
+  service           manage easytier-core as a system service
+  proxy             show tcp/kcp proxy status
+  acl               show ACL rules statistics
+  port-forward      manage port forwarding
+  whitelist         manage TCP/UDP whitelist
+  stats             show statistics information
+  logger            manage logger configuration
+  credential        manage temporary credentials
+  gen-autocomplete  generate shell completions
+  help              Print this message or the help of the given subcommand(s)
+
+Options:
+  -p, --rpc-portal <RPC_PORTAL>  easytier-core rpc portal address [default: 127.0.0.1:15888]
+  -v, --verbose                  verbose output
+  -o, --output <OUTPUT_FORMAT>   output format [default: table] [possible values: table, json]
+      --no-trunc                 disable column truncation
+  -i, --instance-id <ID>         the instance id
+=== any example config shipped ===
+=== check schema via --print-default-config if exists ===
+error: unexpected argument '--print-default-config' found
+
+  tip: a similar argument exists: '--multi-thread-count'
+
+Usage: easytier-core <--network-name <NETWORK_NAME>|--network-secret <NETWORK_SECRET>|--ipv4 <IPV4>|--ipv6 <IPV6>|--ipv6-public-addr-provider [<IPV6_PUBLIC_ADDR_PROVIDER>]|--ipv6-public-addr-auto [<IPV6_PUBLIC_ADDR_AUTO>]|--ipv6-public-addr-prefix <IPV6_PUBLIC_ADDR_PREFIX>|--dhcp [<DHCP>]|--peers [<PEERS>...]|--external-node <EXTERNAL_NODE>|--proxy-networks <PROXY_NETWORKS>|--listeners [<LISTENERS>...]|--mapped-listeners [<MAPPED_LISTENERS>...]|--no-listener|--hostname <HOSTNAME>|--instance-name <INSTANCE_NAME>|--vpn-portal <VPN_PORTAL>|--default-protocol <DEFAULT_PROTOCOL>|--disable-encryption [<DISABLE_ENCRYPTION>]|--encryption-algorithm <ENCRYPTION_ALGORITHM>|--multi-thread [<MULTI_THREAD>]|--multi-thread-count <MULTI_THREAD_COUNT>|--disable-ipv6 [<DISABLE_IPV6>]|--dev-name <DEV_NAME>|--mtu <MTU>|--latency-first [<LATENCY_FIRST>]|--exit-nodes [<EXIT_NODES>...]|--enable-exit-node [<ENABLE_EXIT_NODE>]|--proxy-forward-by-system [<PROXY_FORWARD_BY_SYSTEM>]|--no-tun [<NO_TUN>]|--use-smoltcp [<USE_SMOLTCP>]|--manual-routes [<MANUAL_ROUTES>...]|--relay-network-whitelist [<RELAY_NETWORK_WHITELIST>...]|--p2p-only [<P2P_ONLY>]|--lazy-p2p [<LAZY_P2P>]|--disable-p2p [<DISABLE_P2P>]|--disable-udp-hole-punching [<DISABLE_UDP_HOLE_PUNCHING>]|--disable-tcp-hole-punching [<DISABLE_TCP_HOLE_PUNCHING>]|--disable-sym-hole-punching [<DISABLE_SYM_HOLE_PUNCHING>]|--disable-upnp [<DISABLE_UPNP>]|--enable-udp-broadcast-relay [<ENABLE_UDP_BROADCAST_RELAY>]|--relay-all-peer-rpc [<RELAY_ALL_PEER_RPC>]|--need-p2p [<NEED_P2P>]|--socks5 <SOCKS5>|--compression <COMPRESSION>|--bind-device <BIND_DEVICE>|--enable-kcp-proxy [<ENABLE_KCP_PROXY>]|--disable-kcp-input [<DISABLE_KCP_INPUT>]|--enable-quic-proxy [<ENABLE_QUIC_PROXY>]|--disable-quic-input [<DISABLE_QUIC_INPUT>]|--port-forward <PORT_FORWARD>...|--accept-dns <ACCEPT_DNS>|--tld-dns-zone <TLD_DNS_ZONE>|--private-mode <PRIVATE_MODE>|--foreign-relay-bps-limit <FOREIGN_RELAY_BPS_LIMIT>|--instance-recv-bps-limit <INSTANCE_RECV_BPS_LIMIT>|--tcp-whitelist [<TCP_WHITELIST>...]|--udp-whitelist [<UDP_WHITELIST>...]|--disable-relay-kcp [<DISABLE_RELAY_KCP>]|--disable-relay-quic [<DISABLE_RELAY_QUIC>]|--enable-relay-foreign-network-kcp [<ENABLE_RELAY_FOREIGN_NETWORK_KCP>]|--enable-relay-foreign-network-quic [<ENABLE_RELAY_FOREIGN_NETWORK_QUIC>]|--stun-servers [<STUN_SERVERS>...]|--stun-servers-v6 [<STUN_SERVERS_V6>...]|--secure-mode [<SECURE_MODE>]|--local-private-key <LOCAL_PRIVATE_KEY>|--local-public-key <LOCAL_PUBLIC_KEY>|--credential <CREDENTIAL>|--credential-file <CREDENTIAL_FILE>>
+
+For more information, try '--help'.
+

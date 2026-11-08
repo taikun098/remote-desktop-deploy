@@ -1,0 +1,59 @@
+===各设备内核驱动===
+	Kernel driver in use: skl_uncore
+	Kernel driver in use: pcieport
+00:14.0 USB controller: Intel Corporation Tiger Lake-H USB 3.2 Gen 2x1 xHCI Host Controller (rev 11)
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+	Kernel driver in use: intel-lpss
+	Kernel modules: intel_lpss_pci
+	Kernel driver in use: intel-lpss
+	Kernel modules: intel_lpss_pci
+	Kernel driver in use: intel-lpss
+	Kernel modules: intel_lpss_pci
+	Kernel driver in use: mei_me
+	Kernel modules: mei_me
+00:17.0 SATA controller: Intel Corporation Device 43d2 (rev 11)
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+	Kernel driver in use: pcieport
+00:1f.3 Audio device: Intel Corporation Device f0c8 (rev 11)
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+	Kernel driver in use: intel-spi
+	Kernel modules: spi_intel_pci
+01:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Polaris 20 XL [Radeon RX 580 2048SP] (rev e7)
+	Kernel driver in use: amdgpu
+	Kernel modules: amdgpu
+01:00.1 Audio device: Advanced Micro Devices, Inc. [AMD/ATI] Ellesmere HDMI Audio [Radeon RX 470/480 / 570/580/590]
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller (rev 11)
+	Subsystem: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
+	Kernel driver in use: r8169
+	Kernel modules: r8169
+===网卡驱动===
+snd_hda_codec_realtek   212992  1
+snd_hda_codec_generic   122880  1 snd_hda_codec_realtek
+snd_hda_codec         204800  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+snd_hda_core          139264  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+snd                   143360  8 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
+r8169                 118784  0
+realtek                36864  1
+===音频模块===
+snd_hda_codec_realtek   212992  1
+snd_hda_codec_generic   122880  1 snd_hda_codec_realtek
+snd_hda_codec_hdmi     94208  1
+snd_hda_intel          61440  0
+snd_intel_dspcfg       36864  1 snd_hda_intel
+snd_hda_codec         204800  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+snd_hda_core          139264  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+snd_hwdep              20480  1 snd_hda_codec
+snd_pcm               192512  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+snd                   143360  8 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm
+===固件包===
+awk: cmd. line:1: {print \, \}
+awk: cmd. line:1:        ^ backslash not last character on line
+===推荐/专有驱动===
+===glx===

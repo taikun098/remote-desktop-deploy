@@ -1,0 +1,18 @@
+=== 精确查找 FreeCAD_*.qm（文件名开头）===
+数量: 0
+=== usr/share 结构（找 FreeCAD 数据目录）===
+--- 若有 freecad 数据目录，看 translations ---
+/opt/freecad/squashfs-root/usr/Mod/AddonManager/Resources/translations
+/opt/freecad/squashfs-root/usr/share/qt6/translations
+/opt/freecad/squashfs-root
+/opt/freecad/squashfs-root/usr
+/opt/freecad/squashfs-root/usr/libexec
+/opt/freecad/squashfs-root/usr/libexec/xkbcommon
+/opt/freecad/squashfs-root/usr/fonts
+/opt/freecad/squashfs-root/usr/Ext
+/opt/freecad/squashfs-root/usr/Ext/PySide
+/opt/freecad/squashfs-root/usr/Ext/PySide/__pycache__
+/opt/freecad/squashfs-root/usr/Ext/freecad
+/opt/freecad/squashfs-root/usr/Ext/freecad/gui
+=== DONE ===
+

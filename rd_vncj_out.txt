@@ -1,0 +1,23 @@
+=== vnc.service 完整状态 ===
+○ vnc.service - x11vnc VNC Server on physical desktop :0
+     Loaded: loaded (/etc/systemd/system/vnc.service; enabled; preset: enabled)
+     Active: inactive (dead)
+=== 本次开机 journalctl -u vnc ===
+-- No entries --
+=== 是否有 ordering cycle ===
+Nov 02 11:29:17 g01 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Nov 02 11:29:17 g01 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+Nov 02 11:29:17 g01 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x33e452fbb2f, max_idle_ns: 440795236593 ns
+Nov 02 11:29:17 g01 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 7200.00 BogoMIPS (lpj=3600000)
+Nov 02 11:29:17 g01 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Nov 02 11:29:17 g01 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Nov 02 11:29:17 g01 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x33e4505a81e, max_idle_ns: 440795320847 ns
+Nov 02 11:29:17 g01 systemd[1]: graphical.target: Found ordering cycle on multi-user.target/start
+Nov 02 11:29:17 g01 systemd[1]: graphical.target: Found dependency on vnc.service/start
+Nov 02 11:29:17 g01 systemd[1]: graphical.target: Job vnc.service/start deleted to break ordering cycle starting with graphical.target/start
+=== lightdm 是否起 ===
+active
+   1349 root     /usr/sbin/lightdm
+   1365 root     /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+=== DONE ===
+

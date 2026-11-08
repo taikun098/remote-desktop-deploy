@@ -1,0 +1,25 @@
+=== 安装 ===
+Selecting previously unselected package rustdesk.
+(Reading database ... 145026 files and directories currently installed.)
+Preparing to unpack /tmp/rustdesk-1.5.0-x86_64.deb ...
+Failed to stop rustdesk.service: Unit rustdesk.service not loaded.
+Unpacking rustdesk (1.5.0) ...
+Setting up rustdesk (1.5.0) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/rustdesk.service → /usr/lib/systemd/system/rustdesk.service.
+=== 重载+启用+启动 ===
+=== 状态 ===
+active
+=== 进程 ===
+  43446 lightdm  [rustdesk] <defunct>
+  78753 root     /usr/bin/rustdesk --service
+  79027 root     sudo -E XDG_RUNTIME_DIR=/run/user/111 -u lightdm /usr/share/rustdesk/rustdesk --server
+  79028 lightdm  /usr/share/rustdesk/rustdesk --server
+  79036 lightdm  /usr/share/rustdesk/rustdesk --tray
+=== 端口 ===
+(无 rustdesk tcp)
+UNCONN 0      0                                0.0.0.0:32884      0.0.0.0:*    users:(("rustdesk",pid=79028,fd=19))     
+UNCONN 0      0                                0.0.0.0:21119      0.0.0.0:*    users:(("rustdesk",pid=79028,fd=18))     
+=== 版本 ===
+1.5.0
+=== DONE ===
+

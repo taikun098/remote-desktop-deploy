@@ -1,0 +1,19 @@
+=== 重新安装并捕获完整错误 ===
+(Reading database ... 145026 files and directories currently installed.)
+Preparing to unpack /tmp/rustdesk-1.5.0-x86_64.deb ...
+Failed to stop rustdesk.service: Unit rustdesk.service not loaded.
+Unpacking rustdesk (1.5.0) ...
+dpkg-deb (subprocess): cannot copy archive member from '/tmp/rustdesk-1.5.0-x86_64.deb' to decompressor pipe: unexpected end of file or stream
+dpkg-deb (subprocess): decompressing archive '/tmp/rustdesk-1.5.0-x86_64.deb' (size=13712137) member 'data.tar': lzma error: internal error (bug)
+dpkg-deb: error: <decompress> subprocess returned error exit status 2
+dpkg: error processing archive /tmp/rustdesk-1.5.0-x86_64.deb (--install):
+ cannot copy extracted data for './usr/share/rustdesk/lib/librustdesk.so' to '/usr/share/rustdesk/lib/librustdesk.so.dpkg-new': unexpected end of file or stream
+Errors were encountered while processing:
+ /tmp/rustdesk-1.5.0-x86_64.deb
+=== exit: dpkg 结果 ===
+(未安装)
+=== 若失败尝试 --configure -a ===
+=== 包是否完整解包 ===
+(rustdesk 二进制不存在)
+=== DONE ===
+

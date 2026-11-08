@@ -1,0 +1,21 @@
+=== 源配置 ===
+deb [trusted=yes] https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04/ ./
+=== 仓库可达性 ===
+HTTP/1.1 404 Not Found
+
+Server: nginx
+
+Date: Mon, 02 Nov 2026 13:45:10 GMT
+
+=== 该源更新 ===
+忽略:5 https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04 ./ InRelease
+忽略:6 https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04 ./ Release
+忽略:7 https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04 ./ Packages
+忽略:8 https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04 ./ Translation-zh
+忽略:9 https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04 ./ Translation-zh_CN
+忽略:10 https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04 ./ Translation-en
+忽略:7 https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04 ./ Packages
+忽略:8 https://ci.deepin.com/repo/obs/linglong:/CI:/release/xUbuntu_24.04 ./ Translation-zh
+=== 仓库内容 ===
+=== DONE ===
+

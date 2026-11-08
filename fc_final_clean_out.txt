@@ -1,0 +1,9 @@
+=== 删除 ~/.local/share/FreeCAD ===
+已删除 ✅
+=== 清空回收站中 freecad 条目 ===
+已清空回收站 freecad ✅
+=== 最终全盘复核 ===
+/home/user/.cache/FreeCAD
+(无输出 = 彻底无残留)
+=== DONE ===
+

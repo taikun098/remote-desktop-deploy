@@ -1,0 +1,2 @@
+zh locale: zh_CN.utf8
+current LANG: \

@@ -1,0 +1,55 @@
+=== 桌面环境 ===
+XDG_CURRENT_DESKTOP=
+Type=tty
+/usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0
+/usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+xfce4-panel
+xfce4-power-manager
+xfce4-session
+xfdesktop
+=== 找 Wallpaper Engine 安装目录（Steam/Proton）===
+安装目录: /home/user/.steam/steam/steamapps/common/wallpaper_engine
+assets
+bin
+ChromaAppInfo.xml
+config_backups
+config.json
+distribution
+installer.exe
+launcher.exe
+locale
+plugins
+=== 已下载壁纸（workshop content/431960）===
+workshop 目录: /home/user/.steam/debian-installation/steamapps/workshop/content/431960
+1081733658
+1083136273
+1107777168
+1145490477
+1268460398
+1310234891
+1313251195
+1375031246
+1386004994
+1412411110
+1420096943
+1491155746
+1551961057
+1677256185
+1807038666
+1888870814
+1911074603
+1940761299
+2018766992
+2048218531
+--- 其中视频类壁纸(mp4/webm/gif)数量 ---
+63
+--- 样例 ---
+/home/user/.steam/debian-installation/steamapps/workshop/content/431960/2522553111/world of warcraft.mp4
+/home/user/.steam/debian-installation/steamapps/workshop/content/431960/1386004994/TeddyLoid - ME!ME!ME! (feat. daoko) - REAL 1080p!!!.mp4
+/home/user/.steam/debian-installation/steamapps/workshop/content/431960/923576681/1.webm
+/home/user/.steam/debian-installation/steamapps/workshop/content/431960/923576681/2.webm
+/home/user/.steam/debian-installation/steamapps/workshop/content/431960/923576681/3.webm
+=== 是否有 mpv / xwallpaper ===
+=== DONE ===
+

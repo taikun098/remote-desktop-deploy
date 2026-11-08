@@ -1,0 +1,17 @@
+--- status ---
+active
+--- unit ExecStart ---
+ExecStart=/usr/local/bin/easytier-core --network-name lw --network-secret admin@8897802. -i 10.1.0.20 -p tcp://60.31.207.20:11011 tcp://yc.445800773.xyz:11011 --instance-name g01 --multi-thread true --bind-device true
+--- peer 状态 ---
+| ipv4         | hostname  | cost  | lat(ms) | loss | rx      | tx      | tunnel  | NAT            | version         |
+|--------------|-----------|-------|---------|------|---------|---------|---------|----------------|-----------------|
+| 10.1.0.20/24 | g01       | Local | -       | -    | -       | -       | -       | PortRestricted | 2.6.4-8428a89d  |
+| 10.1.0.1/24  | dlan      | p2p   | 58.34   | 0.0% | 2.95 kB | 3.39 kB | tcp     | PortRestricted | 2.6.4-8428a89d  |
+| 10.1.0.2/24  | YongChang | p2p   | 4.62    | 0.0% | 398 B   | 467 B   | tcp,udp | PortRestricted | 2.6.4-8428a89d  |
+| 10.1.0.3/24  | 店里      | p2p   | 61.69   | 0.0% | 822 B   | 1.40 kB | udp     | PortRestricted | 2.4.5-4c4d172e~ |
+| 10.1.0.4/24  | 迷你终端  | p2p   | 0.61    | 0.0% | 2.50 kB | 3.76 kB | tcp     | PortRestricted | 2.4.5-4c4d172e~ |
+| 10.1.0.31/24 | hinas     | p2p   | 1.20    | 0.0% | 667 B   | 512 B   | tcp     | PortRestricted | 2.6.4-8428a89d  |
+--- tun ipv4 ---
+    inet 10.1.0.20/24 brd 10.1.0.255 scope global tun0
+--- DONE ---
+

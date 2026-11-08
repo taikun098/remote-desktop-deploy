@@ -1,0 +1,34 @@
+===all LISTEN===
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+LISTEN 0      4096       127.0.0.1:631       0.0.0.0:*          
+LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*          
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*          
+LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*          
+LISTEN 0      32           0.0.0.0:5900      0.0.0.0:*          
+LISTEN 0      4096            [::]:22           [::]:*          
+LISTEN 0      4096           [::1]:631          [::]:*          
+LISTEN 0      32              [::]:5900         [::]:*          
+===x11vnc procs===
+24352 x11vnc -display :0 -forever -shared -noxdamage -rfbauth /etc/x11vnc.pass -rfbport 5900 -o /var/log/x11vnc.log
+25007 bash -c echo '===all LISTEN==='; ss -tln; echo '===x11vnc procs==='; pgrep -fa x11vnc; echo '===lsof 5900==='; (which lsof >/dev/null && echo 1 | sudo -S lsof -i :5900) || echo '(no lsof)'; echo '===systemctl status==='; systemctl status vnc --no-pager 2>&1 | tail -15
+===lsof 5900===
+COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+x11vnc  24352 root    8u  IPv4  57332      0t0  TCP *:5900 (LISTEN)
+x11vnc  24352 root    9u  IPv6  57333      0t0  TCP *:5900 (LISTEN)
+===systemctl status===
+             ├─24916 /usr/libexec/evolution-source-registry
+             ├─24925 /usr/libexec/evolution-calendar-factory
+             └─24936 /usr/libexec/evolution-addressbook-factory
+
+Nov 01 16:02:59 g01 dbus-daemon[24281]: [session uid=0 pid=24279] Successfully activated service 'ca.desrt.dconf'
+Nov 01 16:02:59 g01 vnc-start.sh[24Warning: The unit file, source configuration file or drop-ins of vnc.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+848]: Another notification daemon is running, exiting
+Nov 01 16:02:59 g01 polkit-gnome-au[24881]: Unable to determine the session we are in: No session for pid 24881
+Nov 01 16:02:59 g01 dbus-daemon[24281]: [session uid=0 pid=24279] Activating service name='org.gnome.evolution.dataserver.Sources5' requested by ':1.37' (uid=0 pid=24877 comm="/usr/libexec/evolution-data-server/evolution-alarm" label="unconfined")
+Nov 01 16:02:59 g01 dbus-daemon[24281]: [session uid=0 pid=24279] Successfully activated service 'org.gnome.evolution.dataserver.Sources5'
+Nov 01 16:02:59 g01 dbus-daemon[24281]: [session uid=0 pid=24279] Activating service name='org.gnome.evolution.dataserver.Calendar8' requested by ':1.37' (uid=0 pid=24877 comm="/usr/libexec/evolution-data-server/evolution-alarm" label="unconfined")
+Nov 01 16:02:59 g01 dbus-daemon[24281]: [session uid=0 pid=24279] Successfully activated service 'org.gnome.evolution.dataserver.Calendar8'
+Nov 01 16:02:59 g01 evolution-calen[24925]: e_source_unset_last_credentials_required_arguments: assertion 'E_IS_SOURCE (source)' failed
+Nov 01 16:02:59 g01 dbus-daemon[24281]: [session uid=0 pid=24279] Activating service name='org.gnome.evolution.dataserver.AddressBook10' requested by ':1.40' (uid=0 pid=24925 comm="/usr/libexec/evolution-calendar-factory" label="unconfined")
+Nov 01 16:02:59 g01 dbus-daemon[24281]: [session uid=0 pid=24279] Successfully activated service 'org.gnome.evolution.dataserver.AddressBook10'
+[sudo] password for user: 

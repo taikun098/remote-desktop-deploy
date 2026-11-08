@@ -1,0 +1,15 @@
+=== 玲珑商店 + 环境最终状态 ===
+linglong-bin  1.14.0-1
+linglong-box  2.2.1-1
+linglong-installer  1.6.8-1
+linglong-store  3.7.0
+--- ll-cli ---
+如意玲珑CLI版本 1.14.0
+--- 桌面入口 ---
+Name[zh_CN]=玲珑应用商店社区版
+=== 二次验证商店 GUI 启动（:0）===
+商店GUI正常启动 ✅
+=== 源(玲珑) ===
+deb [trusted=yes] https://ci.deepin.com/repo/obs/linglong:/CI:/release/Ubuntu_24.04/ ./
+=== DONE ===
+

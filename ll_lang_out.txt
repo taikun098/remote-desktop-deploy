@@ -1,0 +1,45 @@
+=== 系统默认 locale ===
+System Locale: LANG=zh_CN.UTF-8
+               LANGUAGE=zh_CN:zh:en
+--- 已装中文语言包 ---
+zh_CN.utf8
+=== user 会话环境里的 LANG ===
+user      8058    8053  0 11:55 ?        00:00:00 xfce4-session
+user    134727    8171  3 14:36 ?        00:19:59 /opt/linglong-store/linglong_store
+=== 商店进程及其 LANG 环境 ===
+商店 PID: 134727
+HOME=/home/user
+LANG=zh_CN.UTF-8
+=== 商店桌面入口 ===
+desktop: /usr/share/applications/com.dongpl.linglong-store.v2.desktop
+Name=Linyaps Store Community Edition
+Name[ar]=متجر تطبيقات Linglong (الإصدار المجتمعي)
+Name[de]=Linyaps Store Community Edition
+Name[en]=Linyaps Store Community Edition
+Name[es]=Tienda de Aplicaciones Linyaps Edición Comunitaria
+Name[fr]=Linyaps Store Édition Communautaire
+Name[ja]=Linyaps ストアコミュニティ版
+Name[ko]=Linyaps 스토어 커뮤니티 에디션
+Name[ru]=Магазин Linyaps — версия сообщества
+Name[zh_CN]=玲珑应用商店社区版
+Name[zh_TW]=玲瓏應用商店社群版
+GenericName=Application Store
+GenericName[ar]=متجر التطبيقات
+GenericName[de]=App-Store
+GenericName[en]=Application Store
+GenericName[es]=Tienda de aplicaciones
+GenericName[fr]=Magasin d'applications
+GenericName[ja]=アプリストア
+GenericName[ko]=앱 스토어
+GenericName[ru]=Магазин приложений
+GenericName[zh_CN]=应用商店
+GenericName[zh_TW]=應用商店
+Exec=linglong-store %u
+=== linglong store 配置（语言项）===
+/home/user/.config/microsoft-edge/Subresource Filter/Unindexed Rules/9.56.0/manifest.json
+/home/user/.config/microsoft-edge/Subresource Filter/Unindexed Rules/9.56.0/_metadata/verified_contents.json
+/home/user/.config/microsoft-edge/Edge3pSerp/2026.9.20.1/google_image_v2_config/1.0.2/metadata.json
+/home/user/.config/microsoft-edge/Edge3pSerp/2026.9.20.1/google_video_config/1.0.2/metadata.json
+/home/user/.config/microsoft-edge/Edge3pSerp/2026.9.20.1/youtube_watch_config/1.0.0/metadata.json
+=== DONE ===
+

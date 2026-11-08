@@ -1,0 +1,10 @@
+[0] ping不通
+[1] ping不通
+[2] ping不通
+[3] ping不通
+[4] ping不通
+[5] ping不通
+[6] ping不通
+[7] ping不通
+[8] SSH 通了! 开机时间=2026-11-02 09:56:49
+READY

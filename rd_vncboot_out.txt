@@ -1,0 +1,38 @@
+=== vnc.service 状态 ===
+○ vnc.service - x11vnc VNC Server on physical desktop :0
+     Loaded: loaded (/etc/systemd/system/vnc.service; enabled; preset: enabled)
+     Active: inactive (dead)
+=== journalctl 最近日志 ===
+Nov 02 10:50:59 g01 systemd[1]: Stopped vnc.service - x11vnc VNC Server on physical desktop :0.
+Nov 02 10:50:59 g01 systemd[1]: Starting vnc.service - x11vnc VNC Server on physical desktop :0...
+Nov 02 10:51:07 g01 systemd[1]: Started vnc.service - x11vnc VNC Server on physical desktop :0.
+Nov 02 10:51:07 g01 x11vnc[43185]: PORT=5900
+Nov 02 11:14:22 g01 x11vnc[43185]: Libgcrypt warning: missing initialization - please fix the application
+Nov 02 11:16:14 g01 systemd[1]: vnc.service: Main process exited, code=exited, status=1/FAILURE
+Nov 02 11:16:14 g01 systemd[1]: vnc.service: Failed with result 'exit-code'.
+Nov 02 11:16:14 g01 systemd[1]: vnc.service: Consumed 9.530s CPU time.
+Nov 02 11:16:19 g01 systemd[1]: vnc.service: Scheduled restart job, restart counter is at 162.
+Nov 02 11:16:19 g01 systemd[1]: Starting vnc.service - x11vnc VNC Server on physical desktop :0...
+Nov 02 11:16:27 g01 systemd[1]: Started vnc.service - x11vnc VNC Server on physical desktop :0.
+Nov 02 11:16:28 g01 x11vnc[47668]: PORT=5900
+Nov 02 11:17:00 g01 x11vnc[47668]: Libgcrypt warning: missing initialization - please fix the application
+Nov 02 11:25:06 g01 systemd[1]: graphical.target: Found ordering cycle on vnc.service/stop
+Nov 02 11:25:06 g01 systemd[1]: graphical.target: Found dependency on multi-user.target/stop
+Nov 02 11:25:06 g01 systemd[1]: graphical.target: Found dependency on graphical.target/stop
+Nov 02 11:25:06 g01 systemd[1]: graphical.target: Job vnc.service/stop deleted to break ordering cycle starting with graphical.target/stop
+Nov 02 11:25:06 g01 systemd[1]: vnc.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED
+Nov 02 11:25:06 g01 systemd[1]: vnc.service: Failed with result 'exit-code'.
+Nov 02 11:25:06 g01 systemd[1]: vnc.service: Consumed 17.846s CPU time.
+=== 手动起一次 x11vnc 到 :0 ===
+PORT=5900
+--- log ---
+
+    x11vnc -ncache 10 ...
+
+One can also add -ncache_cr for smooth 'copyrect' window motion.
+More info: http://www.karlrunge.com/x11vnc/faq.html#faq-client-caching
+
+caught signal: 15
+02/11/2026 11:27:29 deleted 60 tile_row polling images.
+=== DONE ===
+

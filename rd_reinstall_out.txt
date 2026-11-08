@@ -1,0 +1,21 @@
+=== 1. 停并禁用服务 ===
+ok
+=== 2. 卸载包（purge）===
+Processing triggers for desktop-file-utils (0.27-2build1) ...
+Processing triggers for bamfdaemon (0.5.6+22.04.20220217-0ubuntu5) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+purge done
+=== 3. 清理所有 rustdesk 配置/日志 ===
+cleaned
+=== 4. 安装新 deb ===
+Processing triggers for bamfdaemon (0.5.6+22.04.20220217-0ubuntu5) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Errors were encountered while processing:
+ /tmp/rustdesk-1.5.0-x86_64.deb
+install done
+=== 5. 重载并启动 ===
+Failed to enable unit: Unit file rustdesk.service does not exist.
+
+[e] Failed to start rustdesk.service: Unit rustdesk.service not found.
+

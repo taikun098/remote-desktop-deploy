@@ -1,0 +1,16 @@
+=== 21118 是否监听（TCP/UDP）===
+LISTEN 0      128                *:21118            *:*    users:(("rustdesk",pid=50314,fd=19))                   
+UDP 21118 未监听
+=== 本机 21118 直连握手 ===
+00000000: b04a 2a0a 206b 3736 7237 726b            .J*. k76r7rk
+=== rustdesk 到 yc 的 UDP 心跳（21116/21118）===
+=== --server 日志新增（注册是否完成）===
+size=3455 mtime=2026-11-02 11:23:49.776792352 +0000
+--- 是否有 register / hbbs 放行 / online 相关 ---
+[2026-11-02 11:21:43.024588 +00:00] INFO [src/rendezvous_mediator.rs:1367] Direct server listening on: Some(Ok([::]:21118))
+=== 全部 rustdesk 监听端口 ===
+LISTEN 0      128                *:21118            *:*    users:(("rustdesk",pid=50314,fd=19))                   
+UNCONN 0      0                                0.0.0.0:21119      0.0.0.0:*    users:(("rustdesk",pid=50314,fd=20))      
+UNCONN 0      0                                0.0.0.0:37773      0.0.0.0:*    users:(("rustdesk",pid=50314,fd=18))      
+=== DONE ===
+

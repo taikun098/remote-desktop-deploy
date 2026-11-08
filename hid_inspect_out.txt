@@ -1,0 +1,29 @@
+=== 1) 应用权限 ===
+[Context]
+shared=network;ipc;
+sockets=x11;pulseaudio;
+devices=dri;
+filesystems=xdg-videos/Hidamari:create;
+
+[Session Bus Policy]
+org.gnome.Shell.Extensions=talk
+org.gnome.SessionManager=talk
+org.cinnamon.ScreenSaver=talk
+org.gnome.ScreenSaver=talk
+org.freedesktop.ScreenSaver=talk
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.Flatpak=talk
+
+[System Bus Policy]
+org.freedesktop.login1=talk
+=== 2) 源码里的 mode 枚举（Hidamari 是 Python 应用）===
+样例源码: /var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py
+MODE_NULL
+MODE_STREAM
+MODE_VIDEO
+MODE_WEBPAGE
+=== 3) data_source 如何写（找样例）===
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/utils.py
+/var/lib/flatpak/app/io.github.jeffshee.Hidamari/x86_64/stable/cfd2f0f4de8cf84ae03c390fad791c3dfc6ae8ffdfcb3609bbf4d0e749a2bba5/files/share/hidamari/hidamari/server.py
+=== DONE ===
+

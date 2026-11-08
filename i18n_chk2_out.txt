@@ -1,0 +1,29 @@
+=== /etc/default/locale (系统默认) ===
+LANG=zh_CN.UTF-8
+LANGUAGE=zh_CN:zh:en
+LC_NUMERIC=zh_CN.UTF-8
+LC_TIME=zh_CN.UTF-8
+LC_MONETARY=zh_CN.UTF-8
+LC_PAPER=zh_CN.UTF-8
+LC_NAME=zh_CN.UTF-8
+LC_ADDRESS=zh_CN.UTF-8
+LC_TELEPHONE=zh_CN.UTF-8
+LC_MEASUREMENT=zh_CN.UTF-8
+LC_IDENTIFICATION=zh_CN.UTF-8
+=== user 的 LANG ===
+LANG=zh_CN.UTF-8 LC_ALL=
+=== 当前 locale ===
+LANG=zh_CN.UTF-8
+LANGUAGE=zh_CN:zh:en
+LC_CTYPE="zh_CN.UTF-8"
+=== 已生成的中文 locale ===
+zh_CN.utf8
+=== 已装语言包 ===
+krb5-locales 1.20.1-6ubuntu2.10
+language-pack-zh-hans 1:24.04+20260905
+language-pack-zh-hans-base 1:24.04+20260905
+locales 2.39-0ubuntu8.9
+python-apt-common 2.7.7ubuntu5.3
+=== lightdm/登录屏语言 ===
+=== DONE ===
+

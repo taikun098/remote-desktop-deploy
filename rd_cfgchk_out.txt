@@ -1,0 +1,40 @@
+=== user RustDesk2.toml 全文 ===
+rendezvous_server = 'yc.445800773.xyz:21116'
+nat_type = 1
+serial = 0
+unlock_pin = ''
+trusted_devices = ''
+
+[options]
+av1-test = 'Y'
+key = 'Or36bSikmefnl+vTHhlXeuPcZq8VaxRLJJdzSlMlI9M='
+local-ip-addr = '192.168.0.20'
+allow-linux-headless = 'Y'
+custom-rendezvous-server = 'yc.445800773.xyz'
+verification-method = 'use-permanent-password'
+=== root RustDesk2.toml 全文 ===
+rendezvous_server = 'yc.445800773.xyz:21116'
+nat_type = 1
+serial = 0
+unlock_pin = ''
+trusted_devices = ''
+
+[options]
+key = 'Or36bSikmefnl+vTHhlXeuPcZq8VaxRLJJdzSlMlI9M='
+allow-linux-headless = 'Y'
+local-ip-addr = '192.168.0.20'
+custom-rendezvous-server = 'yc.445800773.xyz'
+av1-test = 'Y'
+verification-method = 'use-permanent-password'
+=== 实际 --server 进程 pid/线程/连接 ===
+server pid=2082
+State:	S (sleeping)
+VmRSS:	    7476 kB
+Threads:	1
+--- 该进程到 yc 的连接 ---
+ESTAB    0      0             192.168.0.20:37151 36.102.85.112:43865 users:(("easytier-core",pid=1355,fd=45))
+SYN-SENT 0      1      192.168.0.20%enp2s0:33467 36.102.85.112:11011 users:(("easytier-core",pid=1355,fd=31))
+--- 该进程全部 socket ---
+4
+=== DONE ===
+

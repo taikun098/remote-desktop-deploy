@@ -1,0 +1,10 @@
+===edge wrapper===
+-rwxr-xr-x 1 root root 165 Nov  1 16:57 /usr/local/bin/edge
+===freecad dl===
+downloading
+total 681400
+drwxr-xr-x 2 root root      4096 Nov  1 16:57 .
+drwxr-xr-x 4 root root      4096 Nov  1 16:57 ..
+-rw-r--r-- 1 root root 697741312 Nov  1 17:01 FreeCAD.AppImage
+===unit===
+active

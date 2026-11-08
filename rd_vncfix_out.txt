@@ -1,0 +1,24 @@
+Created symlink /etc/systemd/system/graphical.target.wants/vnc.service → /etc/systemd/system/vnc.service.
+=== 状态 ===
+active
+=== 5900 监听 ===
+LISTEN 0      32           0.0.0.0:5900       0.0.0.0:*    users:(("x11vnc",pid=3347,fd=8))                       
+LISTEN 0      32              [::]:5900          [::]:*    users:(("x11vnc",pid=3347,fd=9))                       
+=== 验证没有 ordering cycle ===
+=== DONE ===
+
+[e] + cat
++ systemctl daemon-reload
++ systemctl enable vnc.service
++ systemctl restart vnc.service
++ sleep 3
++ echo '=== 状态 ==='
++ systemctl is-active vnc.service
++ echo '=== 5900 监听 ==='
++ ss -tlnp
++ grep 5900
++ echo '=== 验证没有 ordering cycle ==='
++ systemd-analyze verify /etc/systemd/system/vnc.service
++ head
++ echo '=== DONE ==='
+

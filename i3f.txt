@@ -1,0 +1,3 @@
+inactive
+INSTALL3_DONE
+/usr/bin/fcitx5

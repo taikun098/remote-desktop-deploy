@@ -1,0 +1,5 @@
+===apt running===
+11629 apt install -y xfce4 xfce4-goodies x11vnc xvfb dbus-x11
+===installed?===
+awk: cmd. line:1: {print \}
+awk: cmd. line:1:        ^ backslash not last character on line

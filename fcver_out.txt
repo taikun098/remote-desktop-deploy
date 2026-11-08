@@ -1,0 +1,5 @@
+=== 查询 FreeCAD 最新稳定版 ===
+最新 tag: 1.1.4
+AppImage URL: https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Linux-aarch64-py311.AppImage
+=== DONE ===
+
