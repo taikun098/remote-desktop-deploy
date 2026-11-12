@@ -1,9 +1,7 @@
 # remote-desktop-deploy
 
-> **仓库说明**：GitHub 为主库，对外开源展示 → https://github.com/taikun098/
-remote-desktop-deploy
-> Gitee 为国内镜像站，访问加速用 → https://gitee.com/wjk098/
-remote-desktop-deploy
+> **仓库说明**：GitHub 为主库，对外开源展示 → https://github.com/taikun098/remote-desktop-deploy
+> Gitee 为国内镜像站，访问加速用 → https://gitee.com/wjk098/remote-desktop-deploy
 > 两边内容保持一致；Issue / PR 请走 GitHub，Gitee 侧不单独接受合并。
 
 Linux 主机远程桌面环境（xrdp / VNC / noVNC / EasyTier 组网 / Steam 与输入法）部署与排障脚本集。
